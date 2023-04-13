@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.3.0](https://github.com/OrdinaNederland/frontendfestival.nl/compare/v1.2.0...v1.3.0) (2023-04-13)
+
+
+### Changed and fixed
+
+* Added bio Kitze ([10bdff3](https://github.com/OrdinaNederland/frontendfestival.nl/commit/10bdff316b26b09f62abbe86f91e5eba49e32cda))
+* Added picture Kitze ([acfa63c](https://github.com/OrdinaNederland/frontendfestival.nl/commit/acfa63cc76d613cc18c6e8386933f86b47ba629a))
+* Fixed speakers spacing ([6d9cf61](https://github.com/OrdinaNederland/frontendfestival.nl/commit/6d9cf6198109526a09fe16fca8d43735b21af404))
+* Replaced Remi Appels placeholder with actual info ([926d5b9](https://github.com/OrdinaNederland/frontendfestival.nl/commit/926d5b912e451ac404a238b1fa55b2aa4154491a))
+
+
+### Miscellaneous
+
+* **deps:** Updated dependencies ([ff75c8a](https://github.com/OrdinaNederland/frontendfestival.nl/commit/ff75c8af4cfd0e519d070511ac83ed513ed7d696))
+* Move to npm ([936e520](https://github.com/OrdinaNederland/frontendfestival.nl/commit/936e52010c967f5dc6490a75bc1c1e7abe0d29c2))
+
+
+### New
+
+* Added bio of Davy Engone ([4768c85](https://github.com/OrdinaNederland/frontendfestival.nl/commit/4768c85019e4d1e3bedd066c877ec39ca8d39e79))
+* Splash screen ([0dd91fd](https://github.com/OrdinaNederland/frontendfestival.nl/commit/0dd91fd461dcef02d6f3fc98496d78602a3f17db))
+
 ## [1.2.0](https://github.com/OrdinaNederland/frontendfestival.nl/compare/v1.1.0...v1.2.0) (2023-03-09)
 
 
