@@ -1,5 +1,65 @@
 # Changelog
 
+## [1.3.0](https://github.com/Ordina-Group/frontendfestival.nl/compare/v1.2.0...v1.3.0) (2024-03-25)
+
+
+### New
+
+* Add Jodie Burchell speaker info ([f0eeabf](https://github.com/Ordina-Group/frontendfestival.nl/commit/f0eeabfbed9ec587b4ea5a4e5ed0726a6e909b2a))
+* Added bio of Davy Engone ([4768c85](https://github.com/Ordina-Group/frontendfestival.nl/commit/4768c85019e4d1e3bedd066c877ec39ca8d39e79))
+* Added Laís' talk to the schedule ([9a85aa9](https://github.com/Ordina-Group/frontendfestival.nl/commit/9a85aa9f39bcd6e1f60da01eedcc12ba0c4a968e))
+* Added speaker info for Jan-Hein Bührman ([8c7c258](https://github.com/Ordina-Group/frontendfestival.nl/commit/8c7c2584c3fd96564df0ffcc2565187d8873ed21))
+* Added speaker info for Laís Carvalho ([3b3195a](https://github.com/Ordina-Group/frontendfestival.nl/commit/3b3195a54866e46508d589790b0e26ce184cbedf))
+* Added speaker info for Sebastiaan Zeeff ([02b966e](https://github.com/Ordina-Group/frontendfestival.nl/commit/02b966e0ab1b7e3b6a23a948522f63b970fee503))
+* created a code of conduct page ([438aca3](https://github.com/Ordina-Group/frontendfestival.nl/commit/438aca3795280ddd681d4c6b84dde54ecff88fd7))
+* New speaker section design ([a08d3c0](https://github.com/Ordina-Group/frontendfestival.nl/commit/a08d3c066505230a1ffc9dcf56c1a3eda836b550))
+* Splash screen ([0dd91fd](https://github.com/Ordina-Group/frontendfestival.nl/commit/0dd91fd461dcef02d6f3fc98496d78602a3f17db))
+
+
+### Changed and fixed
+
+* add 'the' to make sentence more clear ([a8cb8a7](https://github.com/Ordina-Group/frontendfestival.nl/commit/a8cb8a7a7d2175568dae17f0bdb54cdf7dbbcadc))
+* Added "Media Plaza" as location ([b6d1e0f](https://github.com/Ordina-Group/frontendfestival.nl/commit/b6d1e0fc79d380f5c07bd6c0500be71f897339cc))
+* Added bio Kitze ([10bdff3](https://github.com/Ordina-Group/frontendfestival.nl/commit/10bdff316b26b09f62abbe86f91e5eba49e32cda))
+* Added end date for registration ([5af2c28](https://github.com/Ordina-Group/frontendfestival.nl/commit/5af2c2808a1571343f6d29a272cbe30462b9264a))
+* Added picture Kitze ([acfa63c](https://github.com/Ordina-Group/frontendfestival.nl/commit/acfa63cc76d613cc18c6e8386933f86b47ba629a))
+* Added speaker info for Marc-André Lemburg ([3a56738](https://github.com/Ordina-Group/frontendfestival.nl/commit/3a56738acbbb102d6247fdcbc3d14c0bbbff2272))
+* Changed employer of Jodie Burchell ([cd8f446](https://github.com/Ordina-Group/frontendfestival.nl/commit/cd8f446071e248b482c69493098d04a1a6f7fc4b))
+* changed logo ([c892367](https://github.com/Ordina-Group/frontendfestival.nl/commit/c89236756da6137fa12350077bf1349b0d07e87d))
+* Changed title of Laís' talk ([7670d6d](https://github.com/Ordina-Group/frontendfestival.nl/commit/7670d6dcbc5527f994ed702b44a18b6c3148169c))
+* commented to used info ([b887179](https://github.com/Ordina-Group/frontendfestival.nl/commit/b887179103449b8d60bb3ac8d5685b646888d338))
+* First known changes from FEF to PYC ([39a2dd9](https://github.com/Ordina-Group/frontendfestival.nl/commit/39a2dd9d5d73b6beea5eb20270d3dab7591a1e6a))
+* Fixed speakers spacing ([6d9cf61](https://github.com/Ordina-Group/frontendfestival.nl/commit/6d9cf6198109526a09fe16fca8d43735b21af404))
+* Fixed time for Jan-Hein's talk ([a9a2b30](https://github.com/Ordina-Group/frontendfestival.nl/commit/a9a2b308a2487ecf3b941b6ea3a985a225ee0ab6))
+* JS syntax to PY syntax for tickets button joke ([48589fe](https://github.com/Ordina-Group/frontendfestival.nl/commit/48589fe1b56f6d578a16f0470f9018bb1f4d711c))
+* Makes mt photo more data-friendly ([f06ac51](https://github.com/Ordina-Group/frontendfestival.nl/commit/f06ac51de8eabcd41728f45d3acf7594aaa888a3))
+* New intro text ([68c524c](https://github.com/Ordina-Group/frontendfestival.nl/commit/68c524c925114919ebafbc7c46110a10092bc348))
+* Remove header animation, as it is epilepsy inducing. ([029f2c8](https://github.com/Ordina-Group/frontendfestival.nl/commit/029f2c8bb3e9ba25040a50c2a4fad6fa224cb8e9))
+* Removed "workshops" ([2d66e5f](https://github.com/Ordina-Group/frontendfestival.nl/commit/2d66e5f1bfdd252b98ae8ac6f851ea6127ffd461))
+* Replace JS joke with Python joke ([ad9c49a](https://github.com/Ordina-Group/frontendfestival.nl/commit/ad9c49a24c1d6e5868dceb78574b4254c87014b6))
+* Replaced Remi Appels placeholder with actual info ([926d5b9](https://github.com/Ordina-Group/frontendfestival.nl/commit/926d5b912e451ac404a238b1fa55b2aa4154491a))
+* Talk titles now on top ([641989e](https://github.com/Ordina-Group/frontendfestival.nl/commit/641989e8d7c9567f8ae32d56b22ae6add869b225))
+* Text style changes based on feedback ([3d80008](https://github.com/Ordina-Group/frontendfestival.nl/commit/3d80008ea5c6b8d77452c92acdb50bad5f82ab20))
+
+
+### Miscellaneous
+
+* **deps:** Updated dependencies ([ff75c8a](https://github.com/Ordina-Group/frontendfestival.nl/commit/ff75c8af4cfd0e519d070511ac83ed513ed7d696))
+* **main:** release 1.3.0 ([ed92fe5](https://github.com/Ordina-Group/frontendfestival.nl/commit/ed92fe5d2333c757fb77f7bffecabba8a98bc5bf))
+* **main:** release 1.3.1 ([d19f5e5](https://github.com/Ordina-Group/frontendfestival.nl/commit/d19f5e5b1fc876fc9bae630a15fdc31340e8f054))
+* **main:** release 1.3.2 ([c82c5e0](https://github.com/Ordina-Group/frontendfestival.nl/commit/c82c5e01c874d3c2cec57b27383b6d295cd38ffc))
+* **main:** release 1.3.3 ([82b8449](https://github.com/Ordina-Group/frontendfestival.nl/commit/82b84495f0a71809382f1074be4ac73f8bcf3e80))
+* **main:** release 1.4.0 ([3b680ba](https://github.com/Ordina-Group/frontendfestival.nl/commit/3b680bad34b0fe30f979303f7dcf45b52551e4c7))
+* **main:** release 1.5.0 ([720c921](https://github.com/Ordina-Group/frontendfestival.nl/commit/720c921e10487912251d59b102e063ef3751b267))
+* **main:** release 1.5.1 ([8b1d423](https://github.com/Ordina-Group/frontendfestival.nl/commit/8b1d423dfd2584bc5e2be6cc810133f68fb32fe4))
+* **main:** release 1.5.2 ([cd5bedd](https://github.com/Ordina-Group/frontendfestival.nl/commit/cd5bedd293d09bded386c2296f6f422bd438547c))
+* **main:** release 1.5.3 ([623b751](https://github.com/Ordina-Group/frontendfestival.nl/commit/623b751b4db108a087fc8394a092bd4d4275374e))
+* **main:** release 1.5.4 ([3cbe106](https://github.com/Ordina-Group/frontendfestival.nl/commit/3cbe10643507092f751dbb2449cd1299d8b3f98f))
+* **main:** release 1.5.5 ([48c2f48](https://github.com/Ordina-Group/frontendfestival.nl/commit/48c2f4898f06e60e83bd3d24daa57db08866cae0))
+* **main:** release 1.5.6 ([ea117e9](https://github.com/Ordina-Group/frontendfestival.nl/commit/ea117e90aacf90b69ae457b831cdb061cb32f2c6))
+* **main:** release 1.6.0 ([1cdde9e](https://github.com/Ordina-Group/frontendfestival.nl/commit/1cdde9e292f8a0d6cda4468c8d5346e8bc591029))
+* Move to npm ([936e520](https://github.com/Ordina-Group/frontendfestival.nl/commit/936e52010c967f5dc6490a75bc1c1e7abe0d29c2))
+
 ## [1.6.0](https://github.com/Ordina-Group/pythonconferentie.nl/compare/v1.5.6...v1.6.0) (2024-03-25)
 
 
