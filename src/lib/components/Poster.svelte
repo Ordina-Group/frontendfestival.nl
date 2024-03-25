@@ -9,6 +9,15 @@
 
 	export let animated: boolean = false;
 	export let colors: string[] = ['#1A1D1F', '#61BFC3', '#61BFC3', '#E6E2DB', '#FF8133', '#FF8133'];
+	// export let colors: string[] = ['#6222b333;', '#89289033', '#cf022b33', '#ffb15d33'];
+	// export let colors: string[] = [
+	// 	'#4C1F8233',
+	// 	'#4C1F8233',
+	// 	'#89289033',
+	// 	'#89289033',
+	// 	'#CF022B33',
+	// 	'#CF022B33'
+	// ];
 	let width;
 	let height;
 	let balls = [];
@@ -61,7 +70,7 @@
 	});
 </script>
 
-<div class="absolute top-0 left-0 h-full w-full overflow-hidden">
+<div class="absolute left-0 top-0 h-full w-full overflow-hidden">
 	<div class="z-10 h-full w-full bg-western blur-3xl" bind:this={wrapper}>
 		{#each balls as ball, i (ball.id)}
 			<PosterBall
