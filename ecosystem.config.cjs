@@ -1,7 +1,7 @@
 module.exports = {
 	apps: [
 		{
-			name: 'pythonconference',
+			name: 'frontendfestival',
 			script: './build/index.js',
 			cwd: '/home/site/wwwroot/build'
 		}
