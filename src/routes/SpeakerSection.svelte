@@ -1,158 +1,204 @@
-<script lang="ts">
-  import TagBlock from '$lib/components/TagBlock.svelte';
-  import {fade} from 'svelte/transition';
-
-  type Speaker = {
-		name: string;
-		letters: string;
-		title: string;
-		employer: string;
-		image?: string;
-		bio?: string;
-	};
-
-	let speakers: Speaker[] = [
-		{
-			name: 'Marcelo Trylesinski',
-			letters: 'MT',
-			title: 'Senior Software Engineer',
-			employer: 'Pydantic',
-			image: '/speakers/mt.png',
-			bio: "Marcelo is an open-source developer who has made significant contributions to the FastAPI community. He maintains Starlette, a critical dependency of FastAPI, and Uvicorn, a high-performance web server that powers FastAPI applications. His invaluable contributions led to his hiring as a senior software engineer by Pydantic, a widely used library for data validation and serialization. Apart from software development, Marcelo enjoys fitness, soccer, photography, and dancing. He's a well-rounded individual who's always eager to learn and grow."
-		},
-		{
-			name: 'Jan-Hein Bührman',
-			letters: 'JB',
-			title: 'Principal Consultant',
-			employer: 'Ordina',
-			image: '/speakers/jhb.png',
-			bio: 'Jan-Hein is a software engineer who witnessed Python’s first baby steps up very close, and loves programming in Python since then. While he worked in different software development roles, he always kept an eye on its development. After he has founded a dedicated Python software unit within Ordina, the company he works for, he’s now back at the work that leaves him with a positive energy balance at the end of the day: programming in Python!',
-		},
-		{
-			name: 'Marc-André Lemburg',
-			letters: 'ML',
-			title: 'CEO',
-			employer: 'eGenix.com',
-      image: '/speakers/ml.png',
-      bio: 'Marc-Andre is the CEO and founder of eGenix.com, a Python-focused project and consulting company based in Germany, specializing in the data, finance and database space. He has a degree in mathematics from the University of Düsseldorf.\n\nHis work with and for Python started in 1994. He is a Python Core Developer, designed and implemented the Unicode support in Python, and author of several open source libraries and tools (e.g. the mx Extensions mxDateTime and mxODBC).\n\nMarc-Andre is a EuroPython Society (EPS) Fellow, a Python Software Foundation (PSF) founding Fellow and co-founded a local Python meeting in Düsseldorf (PyDDF). He served on the board of the PSF and EPS for many years and loves to contribute to the growth of Python wherever he can.',
-		},
-		{
-			name: 'Laís Carvalho',
-			letters: 'LC',
-			title: 'Software Engineer',
-			employer: 'Workday',
-			image: '/speakers/lc.png',
-			bio: 'Laís Carvalho is an active member of the Python community, being the first black female board member of Python Ireland, an organiser of the EuroPython Conference and HumbleData events, a non-profit organisation focused on mentoring underrepresented minorities on Python and Data Science. Lais is an experienced developer advocate and speaker who is passionate about leadership and volunteering. She now works as a Software Developer building monitoring tools at Workday Inc. Lais is excited about food, documentation, and communication. Her main core values are courage and kindness.'
-		},
-		{
-			name: 'Jodie Burchell',
-			letters: 'JB',
-			title: 'Data Science Developer Advocate',
-			employer: 'JetBrains',
-			image: '/speakers/jb.png',
-			bio: "Dr. Jodie Burchell is the Developer Advocate in Data Science at JetBrains, and was previously a Lead Data Scientist at Verve Group Europe. She completed a PhD in clinical psychology and a postdoc in biostatistics, before leaving academia for a data science career. She has worked for 7 years as a data scientist in both Australia and Germany, developing a range of products including recommendation systems, analysis platforms, search engine improvements and audience profiling. She has held a broad range of responsibilities in her career, doing everything from data analytics to maintaining machine learning solutions in production. She is a long time content creator in data science, across conference and user group presentations, books, webinars, and posts on both her own and JetBrain's blogs."
-		},
-		{
-			name: 'Sebastiaan Zeeff',
-			letters: 'SZ',
-			title: 'Senior Software Engineer',
-			employer: 'Ordina',
-			image: '/speakers/sz.png',
-			bio: 'Sebastiaan is a senior software engineer for the Ordina Pythoneers and a Fellow of the Python Software Foundation. He is also one of the founders of Python Discord and an organiser of EuroPython. Sebastiaan frequently speaks at conferences all around the world, including PyCon US, EuroPython, PyCon APAC, and various regional PyCons.'
-		}
-	];
-
-	let focussedSpeaker: number | null = null;
+<script>
+	import TagBlock from '$lib/components/TagBlock.svelte';
 </script>
 
-<div class="relative w-full bg-gray-300 px-2 py-10 text-black" id="speakers">
-	<div class="mb-24 w-full text-center text-4xl">Speakers</div>
-
-	{#if focussedSpeaker === null}
-		<div
-			in:fade={{ duration: 250, delay: 250 }}
-			out:fade={{ duration: 250 }}
-			class="mx-auto grid w-3/4 grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3"
-		>
-			{#each speakers as speaker, index}
-				<div class="mb-16 h-56 w-full">
-					<div
-						class="flex w-full flex-col items-center rounded-2xl bg-fountain p-5 text-center shadow-xl"
-					>
-						{#if speaker.image}
-							<img
-								class="-mt-16 aspect-square h-32 w-32 rounded-full"
-								src={speaker.image}
-								alt={speaker.name}
-							/>
-						{:else}
-							<div
-								class="relative -mt-16 inline-flex h-32 w-32 items-center justify-center overflow-hidden rounded-full bg-fountain-600"
-							>
-								<span class="text-6xl font-medium text-fountain-800">{speaker.letters}</span>
-							</div>
-						{/if}
-						<div class="text-xl md:text-2xl font-bold">{speaker.name}</div>
-						<div class="text-lg italic">{speaker.title}</div>
-						<div class="text-md">{speaker.employer}</div>
-						<div class="line-clamp-2 overflow-ellipsis text-sm">
-							{#if speaker.bio}
-								{speaker.bio}
-							{:else}
-								AttributeError: 'dict' object has no attribute 'speakerInfo'<br />&nbsp;
-							{/if}
-						</div>
-						{#if speaker.bio}
-							<button
-								on:click={() => (focussedSpeaker = index)}
-								class="mt-2 cursor-pointer select-none"
-							>
-								<TagBlock small backgroundColor="ordina">Read more</TagBlock>
-							</button>
-						{:else}
-							<TagBlock class="mt-2 opacity-75" small backgroundColor="ordina"
-								>Bio coming soon..</TagBlock
-							>
-						{/if}
+<div class="w-full bg-fountain py-10 text-black" id="speakers">
+	<div class="mb-5 w-full text-center text-4xl">Speakers</div>
+	<div class="m-auto w-full max-w-6xl">
+		<TagBlock class="float-right max-w-lg" direction="left" extend="true">
+			<div class="flex w-full flex-col">
+				<div class="flex grow items-center gap-2">
+					<img class="aspect-square h-14 w-14 rounded-full" src="/speakers/ki.png" alt="Kitze" />
+					<div class="flex grow flex-col">
+						<div class="text-2xl">Kitze</div>
+						<div class="text-xl">Founder @ Sizzy</div>
 					</div>
 				</div>
-			{/each}
-		</div>
-	{:else}
-		<div
-			in:fade={{ duration: 250, delay: 250 }}
-			out:fade={{ duration: 250 }}
-			class="mx-auto flex w-full flex-col items-center rounded-2xl bg-fountain p-5 text-center shadow-xl md:w-2/3 xl:w-1/3"
-		>
-			{#if speakers[focussedSpeaker].image}
-				<img
-					class="-mt-16 aspect-square h-32 w-32 rounded-full"
-					src={speakers[focussedSpeaker].image}
-					alt={speakers[focussedSpeaker].name}
-				/>
-			{:else}
-				<div
-					class="relative -mt-16 inline-flex h-32 w-32 items-center justify-center overflow-hidden rounded-full bg-fountain-600"
-				>
-					<span class="text-6xl font-medium text-fountain-800"
-						>{speakers[focussedSpeaker].letters}</span
-					>
+				<div>
+					Kitze loves to rant about webdev. He is the founder of Sizzy - the browser for developers.
+					He created React Academy to teach React and GraphQL around the world. He's documenting his
+					journey on YouTube, streams on Twitch, and has a blog that he maintains once in a blue
+					moon. He made Better, showGPT, Twizzle, Glink, JSUI, Lucky Retweet, OK Google, etc.
 				</div>
-			{/if}
-			<div class="text-xl">{speakers[focussedSpeaker].name}</div>
-			<div class="text-lg">{speakers[focussedSpeaker].title}</div>
-			<div class="text-md">{speakers[focussedSpeaker].employer}</div>
-			<div class="whitespace-pre-line">
-				{#if speakers[focussedSpeaker].bio}
-					{speakers[focussedSpeaker].bio}
-				{:else}
-					AttributeError: 'dict' object has no attribute 'speakerInfo' - this speakers bio is coming
-					soon.
-				{/if}
 			</div>
-			<button on:click={() => (focussedSpeaker = null)} class="mt-2 cursor-pointer select-none">
-				<TagBlock small backgroundColor="ordina">Back</TagBlock>
-			</button>
-		</div>
-	{/if}
+		</TagBlock>
+
+		<TagBlock
+			class="float-left mt-5 max-w-lg lg:mt-24"
+			direction="right"
+			backgroundColor="shark"
+			extend="true"
+		>
+			<div class="flex w-full flex-col">
+				<div class="flex grow items-center gap-2">
+					<img
+						class="aspect-square h-14 w-14 rounded-full"
+						src="/speakers/fvp.png"
+						alt="Frank van Puffelen"
+					/>
+					<div class="flex grow flex-col">
+						<div class="text-2xl">Frank van Puffelen / puf</div>
+						<div class="text-xl">Firebase engineer @ Google</div>
+					</div>
+				</div>
+				<div>
+					Frank van Puffelen (puf) is a Firebase engineer at Google in San Francisco, where he helps
+					developers build better apps using Firebase and other Google technologies. He's the host
+					of the Firebase Release Notes video series, one of the top contributors on Stack Overflow,
+					and multi-time speaker at Google I/O.
+				</div>
+			</div>
+		</TagBlock>
+
+		<TagBlock class="float-right mt-5 max-w-lg lg:mt-36" direction="left" extend="true">
+			<div class="flex w-full flex-col">
+				<div class="flex grow items-center gap-2">
+					<img
+						class="aspect-square h-14 w-14 rounded-full"
+						src="/speakers/de.png"
+						alt="Davy Engone"
+					/>
+					<div class="flex grow flex-col">
+						<div class="text-2xl">Davy Engone</div>
+						<div class="text-xl">Founder @ Hackages.io</div>
+					</div>
+				</div>
+				<div>
+					Davy is a software engineer who loves types. He's building education tools for developers.
+					He loves sharing knowledge and learning from everyone. If he's not coding, he's spending
+					time with his 2 boys and his fiancée. He's also a long-distance runner and a basketball
+					player.
+				</div>
+			</div>
+		</TagBlock>
+
+		<TagBlock
+			class="float-left mt-5 max-w-lg lg:mt-28"
+			direction="right"
+			backgroundColor="shark"
+			extend="true"
+		>
+			<div class="flex w-full flex-col">
+				<div class="flex grow items-center gap-2">
+					<img
+						class="aspect-square h-14 w-14 rounded-full"
+						src="/speakers/oh.png"
+						alt="Oscar Hahn"
+					/>
+					<div class="flex grow flex-col">
+						<div class="text-2xl">Oscar Hahn</div>
+						<div class="text-xl">Solutions Architect @ AWS</div>
+					</div>
+				</div>
+				<div>
+					Oscar is a cloud computing expert with experience in building serverless (web)
+					applications using CI/CD principles. In his current Solutions Architect role at AWS he is
+					advising and guiding customers in designing and implementing cloud based solutions to
+					optimise their business operations.
+				</div>
+			</div>
+		</TagBlock>
+
+		<TagBlock class="float-right mt-5 max-w-lg lg:mt-32" direction="left" extend="true">
+			<div class="flex w-full flex-col">
+				<div class="flex grow items-center gap-2">
+					<img
+						class="aspect-square h-14 w-14 rounded-full"
+						src="/speakers/rs.png"
+						alt="Robbin Schepers"
+					/>
+					<div class="flex grow flex-col">
+						<div class="text-2xl">Robbin Schepers / Roboroads</div>
+						<div class="text-xl">Senior Software Engineer @ Ordina</div>
+					</div>
+				</div>
+				<div>
+					Robbin Schepers is a Professional Computer Nerd and has a deep love for everythiong
+					computer and tech related. He is a Senior Software Engineer at Ordina since 2021,
+					freelancer since 2013 and even public speaker since 2022. He loves representing tech
+					stacks that use the least amount of code whilst still being fully functional like Flutter
+					and Svelte. He also created this website in SvelteKit!
+				</div>
+			</div>
+		</TagBlock>
+
+		<TagBlock
+			class="float-left mt-5 max-w-lg lg:mt-48"
+			direction="right"
+			backgroundColor="shark"
+			extend="true"
+		>
+			<div class="flex w-full flex-col">
+				<div class="flex grow items-center gap-2">
+					<img
+						class="aspect-square h-14 w-14 rounded-full"
+						src="/speakers/jk.png"
+						alt="Oscar Hahn"
+					/>
+					<div class="flex grow flex-col">
+						<div class="text-2xl">Jorrik Klijnsma</div>
+						<div class="text-xl">Software Engineer @ Ordina</div>
+					</div>
+				</div>
+				<div>
+					Jorrik’s first lines of code were in the days jQuery ruled. That didn’t scare him. Now he
+					has 6+ years of frontend experience using React and Vue during his day job. In the evening
+					and night hours, a lot of fun projects and other libraries passed his ‘git clone’. When
+					not coding he gets his fair share of laughs going to comedy shows.
+				</div>
+			</div>
+		</TagBlock>
+
+		<TagBlock class="float-right mt-5 max-w-lg lg:mt-44" direction="left" extend="true">
+			<div class="flex w-full flex-col">
+				<div class="flex grow items-center gap-2">
+					<img
+						class="aspect-square h-14 w-14 rounded-full"
+						src="/speakers/pe.png"
+						alt="Peter Eijgermans"
+					/>
+					<div class="flex grow flex-col">
+						<div class="text-2xl">Peter Eijgermans</div>
+						<div class="text-xl">Code Smith @ Ordina</div>
+					</div>
+				</div>
+				<div>
+					Peter Eijgermans is a long-time software developer and an adventurous and passionate
+					CodeSmith Frontend at Ordina Netherlands. He likes to travel around the world with his
+					bike. Always seeking for the unexpected and unknown. For his job he tries out the latest
+					techniques and frameworks. He loves to share his experience by speaking at conferences all
+					over the World and writing for the Dutch Java magazine, ToTheRoot.nl and DZone. He
+					believes that you as the front-end developer are the spider in the web to bring the user,
+					the team and the product together.
+				</div>
+			</div>
+		</TagBlock>
+
+		<TagBlock
+			class="float-left mt-5 max-w-lg lg:mt-72"
+			direction="right"
+			backgroundColor="shark"
+			extend="true"
+		>
+			<div class="flex w-full flex-col">
+				<div class="flex grow items-center gap-2">
+					<img
+						class="aspect-square h-14 w-14 rounded-full"
+						src="/speakers/ra.png"
+						alt="Remi Appels"
+					/>
+					<div class="flex grow flex-col">
+						<div class="text-2xl">Remi Appels</div>
+						<div class="text-xl">Solution Lead @ Ordina</div>
+					</div>
+				</div>
+				<div>
+					Remi Appels has been developing and architecting mobile solutions since the announcement
+					of Apple's iPhone and the rise of Android, using native and cross-platform technology.
+					Currently, he is a Flutter enthusiast.
+				</div>
+			</div>
+		</TagBlock>
+	</div>
+	<div class="clear-both" />
 </div>

@@ -1,6 +1,6 @@
-# PythonConferentie.nl
+# FrontEndFesitival.nl
 
-Here's the code of the website [pythonconferentie.nl](https://pythonconferentie.nl/).
+Here's the code of the website [FrontEndFestival.nl](https://frontendfestival.nl/).
 
 ## Tech stack
 
@@ -18,18 +18,8 @@ Here's the code of the website [pythonconferentie.nl](https://pythonconferentie.
 This should do it all:
 
 ```bash
-npm i
-npm run dev
+# Link node_modules
+yarn
+# Run the dev server
+yarn dev
 ```
-
-## Azure notes
-
-Make sure startup script is the following in azure:
-
-```bash
-pm2 start ecosystem.config.cjs --no-daemon
-```
-
-### Releasing
-
-Releasing is as simple as pushing to main and merging the PR created by release-please after.
