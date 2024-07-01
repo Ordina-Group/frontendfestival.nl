@@ -11,7 +11,7 @@
 	<TagBlock class="mt-5" direction="right" extend="true" backgroundColor="ordina">
 		<div class="flex w-screen max-w-xl gap-5">
 			<div class="pl-5 text-2xl sm:pl-0">When:</div>
-			<div class="grow text-2xl">April 13th 2023, 16:00 - 22:00</div>
+			<div class="grow text-2xl">September 5th</div>
 		</div>
 	</TagBlock>
 
@@ -36,15 +36,18 @@
 		</div>
 	</TagBlock>
 
-	<div class="mt-10 text-xl">Limited places available, so hurry up!</div>
+<!--	<div class="mt-10 text-xl">Limited places available, so hurry up!</div>-->
 
 	<a
 		class="mt-5 inline"
 		target="_blank"
 		rel="noreferrer"
-		href="https://www.eventbrite.com/e/tickets-frontend-festival-522544092447"
+		href="#"
 	>
-		<TagBlock class="text-xl">tickets.getYoursFor<span class="font-bold">Free</span>();</TagBlock>
+		<TagBlock class="text-xl">
+<!--      tickets.getYoursFor<span class="font-bold">Free</span>();-->
+      Tickets Available Soon
+    </TagBlock>
 	</a>
 
 	<a

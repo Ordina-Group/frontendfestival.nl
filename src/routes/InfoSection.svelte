@@ -5,7 +5,7 @@
 <div class="w-full bg-western py-32 text-black" id="info">
 	<div class="m-auto w-full max-w-6xl text-xl">
 		<TagBlock class="float-left max-w-lg" direction="right" extend="true">
-			April 13th Ordina is organizing FRONTEND FESTIVAL. An event with international speakers and
+      September 5th Ordina is organizing the FRONTEND FESTIVAL again. An event with international speakers and
 			workshops, free of charge! You can expect new insights, lots of delicious snacks, a cozy
 			atmosphere and more…
 		</TagBlock>
@@ -15,7 +15,8 @@
 			backgroundColor="shark"
 			extend="true"
 		>
-			Are you a frontend developer who is ‘in’ for inspiration? Join us and get your ticket now!
+<!--			Are you a frontend developer who is ‘in’ for inspiration? Join us and get your ticket now!-->
+      More information coming soon!
 		</TagBlock>
 	</div>
 	<div class="clear-both" />

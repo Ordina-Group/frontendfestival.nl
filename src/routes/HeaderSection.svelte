@@ -17,10 +17,21 @@
 			class="inline"
 			target="_blank"
 			rel="noreferrer"
-			href="https://www.eventbrite.com/e/tickets-frontend-festival-522544092447"
+			href="#"
 		>
 			<TagBlock class="text-lg" backgroundColor="fountain">
-				tickets.getYoursFor<span class="font-bold">Free</span>();
+<!--				tickets.getYoursFor<span class="font-bold">Free</span>();-->
+        Tickets Available Soon
+			</TagBlock>
+		</a>
+		<a
+			class="inline mt-10"
+			target="_blank"
+			rel="noreferrer"
+			href="#"
+		>
+			<TagBlock class="text-lg" backgroundColor="ordina">
+				CFP's Are <span class="font-bold">Open</span>
 			</TagBlock>
 		</a>
 		<div class="flex-center absolute bottom-0 left-0 w-full">

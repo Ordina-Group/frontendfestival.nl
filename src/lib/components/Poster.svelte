@@ -8,7 +8,7 @@
 	const SPEED = [50, 70];
 
 	export let animated: boolean = false;
-	export let colors: string[] = ['#1A1D1F', '#61BFC3', '#61BFC3', '#E6E2DB', '#FF8133', '#FF8133'];
+	export let colors: string[] = ['#61BFC3']; //['#1A1D1F', '#61BFC3', '#61BFC3', '#E6E2DB', '#FF8133', '#FF8133'];
 	let width;
 	let height;
 	let balls = [];
