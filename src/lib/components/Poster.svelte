@@ -8,9 +8,9 @@
 	const SPEED = [50, 70];
 
 	export let animated: boolean = false;
-	export let colors: string[] = ['#61BFC3']; //['#1A1D1F', '#61BFC3', '#61BFC3', '#E6E2DB', '#FF8133', '#FF8133'];
-	let width;
-	let height;
+	export let colors: string[] = ['#1A1D1F', '#61BFC3', '#61BFC3', '#E6E2DB', '#FF8133', '#FF8133'];
+	let width: number;
+	let height: number;
 	let balls = [];
 	let wrapper: HTMLElement;
 	let lastBallId = 0;
@@ -61,7 +61,7 @@
 	});
 </script>
 
-<div class="absolute top-0 left-0 h-full w-full overflow-hidden">
+<div class="absolute left-0 top-0 h-full w-full overflow-hidden">
 	<div class="z-10 h-full w-full bg-western blur-3xl" bind:this={wrapper}>
 		{#each balls as ball, i (ball.id)}
 			<PosterBall
