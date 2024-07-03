@@ -10,7 +10,7 @@ Here's the code of the website [FrontEndFestival.nl](https://frontendfestival.nl
 - [TypeScript](https://www.typescriptlang.org/) (There's not much script though)
 - [TailwindCSS](https://tailwindcss.com/)
 - Hosted on [Azure Web Apps](https://azure.microsoft.com/en-us/services/app-service/web/)
-- [Yarn](https://yarnpkg.com/) zero installs
+  - Automated with [Terraform](https://www.terraform.io/)
 - [Prettier](https://prettier.io/) for code formatting
 
 ## Running
@@ -18,8 +18,8 @@ Here's the code of the website [FrontEndFestival.nl](https://frontendfestival.nl
 This should do it all:
 
 ```bash
-# Link node_modules
-yarn
+# Install dependencies
+npm install
 # Run the dev server
-yarn dev
+npm run dev
 ```
