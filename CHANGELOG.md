@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.3.0](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.2.0...frontendfestival.nl-v1.3.0) (2024-07-04)
+
+
+### New
+
+* Code of Conduct ([2c35610](https://github.com/Ordina-Group/frontendfestival.nl/commit/2c356108641ce56bb7444c4fbf44e345ea37b3da))
+
+
+### Changed and/or fixed
+
+* Removed debug only blue color on Poster ([04a7b5d](https://github.com/Ordina-Group/frontendfestival.nl/commit/04a7b5d45f9d639530f5e1e842adeb0bafd1083f))
+* Removed old speaker photos ([a613549](https://github.com/Ordina-Group/frontendfestival.nl/commit/a6135496afccb83d0c49399c98917a4736176e1a))
+* Updated links for CFP and tickets ([f77f1a9](https://github.com/Ordina-Group/frontendfestival.nl/commit/f77f1a9c8c9a14566995d8826b00db5231b51e00))
+* Updated year and information ([97353b9](https://github.com/Ordina-Group/frontendfestival.nl/commit/97353b9c7cf00addf7b34467992395207f3b2cc4))
+
+
+### Miscellaneous
+
+* Prettier and Terraform config files for IDEA ([09cc6fd](https://github.com/Ordina-Group/frontendfestival.nl/commit/09cc6fdf5560da9875f6de3d616bdd868dc781bf))
+* Update Readme ([5ecff47](https://github.com/Ordina-Group/frontendfestival.nl/commit/5ecff47039dc10db683b558f50c52acffe725c8c))
+
 ## [1.2.0](https://github.com/OrdinaNederland/frontendfestival.nl/compare/v1.1.0...v1.2.0) (2023-03-09)
 
 
