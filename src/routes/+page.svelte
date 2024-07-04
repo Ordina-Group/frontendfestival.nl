@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>Frontend Festival 2023</title>
+	<title>Frontend Festival 2024</title>
 
 	<meta name="title" property="og:title" content="Frontend Festival 2023" />
 	<meta
@@ -28,9 +28,6 @@
 </svelte:head>
 
 <HeaderSection />
-<InfoSection />
-<!--<SpeakerScheduleSection />-->
-<Spacer />
-<!--<WorkshopScheduleSection />-->
-<!--<SpeakerSection />-->
+<InfoSection /><!--<SpeakerScheduleSection />-->
+<Spacer /><!--<WorkshopScheduleSection />--><!--<SpeakerSection />-->
 <PracticalInformationSection />

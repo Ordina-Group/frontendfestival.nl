@@ -4,19 +4,19 @@
 
 <div class="w-full bg-western py-32 text-black" id="info">
 	<div class="m-auto w-full max-w-6xl text-xl">
-		<TagBlock class="float-left max-w-lg" direction="right" extend="true">
-      September 5th Ordina is organizing the FRONTEND FESTIVAL again. An event with international speakers and
-			workshops, free of charge! You can expect new insights, lots of delicious snacks, a cozy
-			atmosphere and more…
+		<TagBlock class="float-left max-w-lg" direction="right" extend>
+			On the 5th of September, Sopra Steria will be hosting the second iteration of the Frontend
+			Festival! Join us for an evening of drinks, talks and workshops about various topics in the
+			world of opensource Frontend development.
 		</TagBlock>
 		<TagBlock
 			class="float-right mt-10 max-w-lg lg:mt-48"
 			direction="left"
 			backgroundColor="shark"
-			extend="true"
+			extend
 		>
-<!--			Are you a frontend developer who is ‘in’ for inspiration? Join us and get your ticket now!-->
-      More information coming soon!
+			Last year we had a blast and got together with over a hundred Frontend enthusiasts from around
+			the Utrecht area. Join us for dinner, get inspired by the talks and stay for the company.
 		</TagBlock>
 	</div>
 	<div class="clear-both" />

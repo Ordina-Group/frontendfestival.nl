@@ -5,7 +5,7 @@
 <div class="w-full bg-fountain py-10 text-black" id="speakers">
 	<div class="mb-5 w-full text-center text-4xl">Speakers</div>
 	<div class="m-auto w-full max-w-6xl">
-		<TagBlock class="float-right max-w-lg" direction="left" extend="true">
+		<TagBlock class="float-right max-w-lg" direction="left" extend>
 			<div class="flex w-full flex-col">
 				<div class="flex grow items-center gap-2">
 					<img class="aspect-square h-14 w-14 rounded-full" src="/speakers/ki.png" alt="Kitze" />
@@ -27,7 +27,7 @@
 			class="float-left mt-5 max-w-lg lg:mt-24"
 			direction="right"
 			backgroundColor="shark"
-			extend="true"
+			extend
 		>
 			<div class="flex w-full flex-col">
 				<div class="flex grow items-center gap-2">
@@ -50,7 +50,7 @@
 			</div>
 		</TagBlock>
 
-		<TagBlock class="float-right mt-5 max-w-lg lg:mt-36" direction="left" extend="true">
+		<TagBlock class="float-right mt-5 max-w-lg lg:mt-36" direction="left" extend>
 			<div class="flex w-full flex-col">
 				<div class="flex grow items-center gap-2">
 					<img
@@ -76,7 +76,7 @@
 			class="float-left mt-5 max-w-lg lg:mt-28"
 			direction="right"
 			backgroundColor="shark"
-			extend="true"
+			extend
 		>
 			<div class="flex w-full flex-col">
 				<div class="flex grow items-center gap-2">
@@ -99,7 +99,7 @@
 			</div>
 		</TagBlock>
 
-		<TagBlock class="float-right mt-5 max-w-lg lg:mt-32" direction="left" extend="true">
+		<TagBlock class="float-right mt-5 max-w-lg lg:mt-32" direction="left" extend>
 			<div class="flex w-full flex-col">
 				<div class="flex grow items-center gap-2">
 					<img
@@ -126,7 +126,7 @@
 			class="float-left mt-5 max-w-lg lg:mt-48"
 			direction="right"
 			backgroundColor="shark"
-			extend="true"
+			extend
 		>
 			<div class="flex w-full flex-col">
 				<div class="flex grow items-center gap-2">
@@ -149,7 +149,7 @@
 			</div>
 		</TagBlock>
 
-		<TagBlock class="float-right mt-5 max-w-lg lg:mt-44" direction="left" extend="true">
+		<TagBlock class="float-right mt-5 max-w-lg lg:mt-44" direction="left" extend>
 			<div class="flex w-full flex-col">
 				<div class="flex grow items-center gap-2">
 					<img
@@ -178,7 +178,7 @@
 			class="float-left mt-5 max-w-lg lg:mt-72"
 			direction="right"
 			backgroundColor="shark"
-			extend="true"
+			extend
 		>
 			<div class="flex w-full flex-col">
 				<div class="flex grow items-center gap-2">
