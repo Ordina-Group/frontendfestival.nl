@@ -13,22 +13,16 @@
 				<img src="/logo.svg" alt="Frontend Festival Logo" class="" />
 			</a>
 		</h1>
-		<a
-			class="inline"
-			target="_blank"
-			rel="noreferrer"
-			href="#"
-		>
+		<a class="inline" target="_blank" rel="noreferrer" href="#">
 			<TagBlock class="text-lg" backgroundColor="fountain">
-<!--				tickets.getYoursFor<span class="font-bold">Free</span>();-->
-        Tickets Available Soon
+				<!--				tickets.getYoursFor<span class="font-bold">Free</span>();-->Tickets Available July 15th
 			</TagBlock>
 		</a>
 		<a
-			class="inline mt-10"
+			class="mt-10 inline"
 			target="_blank"
 			rel="noreferrer"
-			href="#"
+			href="https://forms.office.com/e/4MeUwRn1Dd"
 		>
 			<TagBlock class="text-lg" backgroundColor="ordina">
 				CFP's Are <span class="font-bold">Open</span>
