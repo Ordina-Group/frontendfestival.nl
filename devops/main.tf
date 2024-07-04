@@ -47,8 +47,9 @@ resource "azurerm_linux_web_app" "frontendfestival" {
   https_only = true
 
   site_config {
-    always_on     = false
-    http2_enabled = true
+    always_on        = false
+    http2_enabled    = true
+    app_command_line = "pm2 start ecosystem.config.cjs --no-daemon"
 
     application_stack {
       node_version = "20-lts"

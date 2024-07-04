@@ -8,14 +8,14 @@
 >
 	<div class="text-4xl">Practical information</div>
 
-	<TagBlock class="mt-5" direction="right" extend="true" backgroundColor="ordina">
+	<TagBlock class="mt-5" direction="right" extend backgroundColor="ordina">
 		<div class="flex w-screen max-w-xl gap-5">
 			<div class="pl-5 text-2xl sm:pl-0">When:</div>
-			<div class="grow text-2xl">September 5th</div>
+			<div class="grow text-2xl">September 5th 2024</div>
 		</div>
 	</TagBlock>
 
-	<TagBlock class="mt-2" direction="left" extend="true" backgroundColor="fountain">
+	<TagBlock class="mt-2" direction="left" extend backgroundColor="fountain">
 		<div class="flex w-screen max-w-xl items-center gap-5">
 			<div class="pl-5 text-2xl" />
 			<div class="flex flex-col items-center gap-2 md:flex-row">
@@ -36,18 +36,13 @@
 		</div>
 	</TagBlock>
 
-<!--	<div class="mt-10 text-xl">Limited places available, so hurry up!</div>-->
+	<!--	<div class="mt-10 text-xl">Limited places available, so hurry up!</div>-->
 
-	<a
-		class="mt-5 inline"
-		target="_blank"
-		rel="noreferrer"
-		href="#"
-	>
+	<a class="mt-5 inline" target="_blank" rel="noreferrer" href="#">
 		<TagBlock class="text-xl">
-<!--      tickets.getYoursFor<span class="font-bold">Free</span>();-->
-      Tickets Available Soon
-    </TagBlock>
+			<!--      tickets.getYoursFor<span class="font-bold">Free</span>();-->Tickets Available July
+			15th
+		</TagBlock>
 	</a>
 
 	<a
