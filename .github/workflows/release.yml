@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - next
+      - main
 
 permissions:
   contents: write
