@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.3.0...frontendfestival.nl-v1.3.1) (2024-07-04)
+
+
+### Changed and/or fixed
+
+* Fixed years and OG tags ([b0b25b1](https://github.com/Ordina-Group/frontendfestival.nl/commit/b0b25b1214e336ca9d10b8a456d6cf80df5307bf))
+
 ## [1.3.0](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.2.0...frontendfestival.nl-v1.3.0) (2024-07-04)
 
 
