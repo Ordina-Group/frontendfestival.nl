@@ -2,7 +2,6 @@ name: Release
 on:
   push:
     branches:
-      - next
       - main
 
 permissions:
@@ -14,5 +13,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: googleapis/release-please-action@v4
-        with:
-          target-branch: main
