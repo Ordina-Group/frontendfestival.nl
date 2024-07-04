@@ -45,12 +45,18 @@
 		</TagBlock>
 	</a>
 
-	<a
-		class="mt-10 inline"
-		target="_blank"
-		rel="noreferrer"
-		href="https://github.com/OrdinaNederland/frontendfestival.nl"
-	>
-		<TagBlock backgroundColor="fountain" small>Source on GitHub</TagBlock>
-	</a>
+	<div class="mt-10 flex gap-6">
+		<a class="inline" target="_blank" href="/code-of-conduct">
+			<TagBlock backgroundColor="fountain" small>Code of Conduct</TagBlock>
+		</a>
+
+		<a
+			class="inline"
+			target="_blank"
+			rel="noreferrer"
+			href="https://github.com/OrdinaNederland/frontendfestival.nl"
+		>
+			<TagBlock backgroundColor="fountain" small>Source on GitHub</TagBlock>
+		</a>
+	</div>
 </div>
