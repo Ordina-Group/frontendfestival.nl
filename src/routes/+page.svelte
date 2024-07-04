@@ -11,11 +11,11 @@
 <svelte:head>
 	<title>Frontend Festival 2024</title>
 
-	<meta name="title" property="og:title" content="Frontend Festival 2023" />
+	<meta name="title" property="og:title" content="Frontend Festival 2024" />
 	<meta
 		name="description"
 		property="og:description"
-		content="Are you a frontend developer who is ‘in’ for inspiration? Join us and get your ticket now!"
+		content="On the 5th of September, Sopra Steria will be hosting the second iteration of the Frontend Festival!"
 	/>
 	<meta name="type" property="og:type" content="website" />
 	<meta name="url" property="og:url" content="https://frontendfestival.nl/" />
