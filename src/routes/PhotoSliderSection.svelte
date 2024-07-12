@@ -13,7 +13,7 @@
 			eager: true,
 			query: {
 				enhanced: true,
-				w: '600'
+				w: '600;400'
 			}
 		})
 	)
