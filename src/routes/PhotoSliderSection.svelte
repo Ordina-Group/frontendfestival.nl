@@ -12,7 +12,8 @@
 		import.meta.glob('/assets/events/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}', {
 			eager: true,
 			query: {
-				enhanced: true
+				enhanced: true,
+				w: '600'
 			}
 		})
 	)
@@ -114,7 +115,7 @@
 						class="h-full w-full object-cover"
 						src={module.default}
 						alt="A past event"
-						sizes="(min-width:1920px) 1280px, (min-width:1080px) 640px, (min-width:768px) 400px"
+						sizes="(min-width:768px) 400px, (min-width:480px) 600px, 400px"
 					/>
 				</div>
 			{/each}
