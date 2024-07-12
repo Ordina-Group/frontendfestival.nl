@@ -26,9 +26,19 @@
 	let animationFrame = 0;
 	let lastFrameTime = Date.now();
 	let translateSpeed = 0.9; // Adjust for slower or faster animation
+
 	let imageContainer: HTMLElement;
-	$: imageContainerWidth = imageContainer?.clientWidth ?? imageModules.length * 2 * 500;
-	$: maxScroll = -imageContainerWidth + (imageContainer?.parentElement?.clientWidth ?? 1000);
+	let imageContainerWidth: number;
+	let maxScroll: number;
+	$: {
+		recalculateSizes(imageContainer);
+	}
+
+	function recalculateSizes(imageContainer: HTMLElement) {
+		imageContainerWidth = imageContainer?.clientWidth ?? imageModules.length * 2 * 500;
+		maxScroll = -imageContainerWidth + (imageContainer?.parentElement?.clientWidth ?? 1000);
+		boundsCheck();
+	}
 
 	function animate() {
 		const now = Date.now();
@@ -64,6 +74,10 @@
 
 		const scrollWidth = imageContainer.children[0].clientWidth;
 		translateX = direction === 'left' ? translateX + scrollWidth : translateX - scrollWidth;
+		boundsCheck();
+	}
+
+	function boundsCheck() {
 		if (translateX > 0) {
 			translateX = 0;
 		} else if (translateX < maxScroll) {
@@ -82,8 +96,9 @@
 	});
 </script>
 
+<svelte:window on:resize={() => recalculateSizes(imageContainer)} />
 <div
-	class="flex-center relative w-full flex-col bg-fountain px-5 py-32 text-black"
+	class="flex-center relative w-full flex-col bg-fountain px-5 py-16 text-black"
 	id="past-events"
 >
 	<div class="text-4xl">Past Events</div>
@@ -91,7 +106,7 @@
 		<div class="flex min-w-[min-content] gap-2" bind:this={imageContainer}>
 			{#each [...imageModules, ...imageModules] as module}
 				<div
-					class="picture-container flex aspect-[4/3] w-full items-center justify-center object-cover md:w-96"
+					class="picture-container flex aspect-[4/3] w-[80vw] items-center justify-center object-cover md:w-96"
 					class:pause={!isPlaying}
 					style={`transform: translateX(${translateX}px);`}
 				>
@@ -99,6 +114,7 @@
 						class="h-full w-full object-cover"
 						src={module.default}
 						alt="A past event"
+						sizes="(min-width:1920px) 1280px, (min-width:1080px) 640px, (min-width:768px) 400px"
 					/>
 				</div>
 			{/each}
