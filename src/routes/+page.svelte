@@ -1,6 +1,7 @@
 <script>
 	import HeaderSection from './HeaderSection.svelte';
 	import InfoSection from './InfoSection.svelte';
+	import PhotoSliderSection from './PhotoSliderSection.svelte';
 	import PracticalInformationSection from './PracticalInformationSection.svelte';
 	import Spacer from './Spacer.svelte';
 	import SpeakerScheduleSection from './SpeakerScheduleSection.svelte';
@@ -30,4 +31,5 @@
 <HeaderSection />
 <InfoSection /><!--<SpeakerScheduleSection />-->
 <Spacer /><!--<WorkshopScheduleSection />--><!--<SpeakerSection />-->
+<PhotoSliderSection />
 <PracticalInformationSection />

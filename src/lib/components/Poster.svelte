@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { debounce, random, sample } from 'lodash-es';
+	import { debounce, omit, random, sample } from 'lodash-es';
 	import PosterBall from '$lib/components/PosterBall.svelte';
 
 	const BLUR_RADIUS = 64;
@@ -53,8 +53,6 @@
 		};
 	}
 
-	$: console.log(balls.length);
-
 	onMount(() => {
 		setWidthHeight();
 		window.addEventListener('resize', setWidthHeight);
@@ -65,7 +63,7 @@
 	<div class="z-10 h-full w-full bg-western blur-3xl" bind:this={wrapper}>
 		{#each balls as ball, i (ball.id)}
 			<PosterBall
-				{...ball}
+				{...omit(ball, 'id')}
 				{animated}
 				screenWidth={width}
 				on:done={() => (balls[i] = generateBall())}
