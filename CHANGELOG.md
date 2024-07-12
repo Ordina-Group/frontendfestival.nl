@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.4.0](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.3.1...frontendfestival.nl-v1.4.0) (2024-07-12)
+
+
+### New
+
+* Photoslider ([9834a63](https://github.com/Ordina-Group/frontendfestival.nl/commit/9834a63d2caec26dcd182c3f9f09ca7f134a97ef))
+
+
+### Miscellaneous
+
+* Update devops ([edcf66c](https://github.com/Ordina-Group/frontendfestival.nl/commit/edcf66c652abb71820bbf50d220a80c0ff4bed8b))
+* Updates ([da8a5fe](https://github.com/Ordina-Group/frontendfestival.nl/commit/da8a5fe7a39df09852b0e4f55bf8b4b1074049e1))
+* Upgrade to Svelte 4, SvelteKit 2 and static adapter ([ebbbabd](https://github.com/Ordina-Group/frontendfestival.nl/commit/ebbbabd532297982e4089c7c4112e993f39f30d2))
+
 ## [1.3.1](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.3.0...frontendfestival.nl-v1.3.1) (2024-07-04)
 
 
