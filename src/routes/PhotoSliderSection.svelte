@@ -98,11 +98,11 @@
 
 <svelte:window on:resize={() => recalculateSizes(imageContainer)} />
 <div
-	class="flex-center relative w-full flex-col bg-fountain px-5 py-16 text-black"
+	class="flex-center relative w-full flex-col bg-fountain px-5 py-16 text-white"
 	id="past-events"
 >
 	<div class="text-4xl">Past Events</div>
-	<div class="m-auto flex w-full overflow-hidden text-xl">
+	<div class="mx-auto mt-5 flex w-full overflow-hidden text-xl">
 		<div class="flex min-w-[min-content] gap-2" bind:this={imageContainer}>
 			{#each [...imageModules, ...imageModules] as module}
 				<div
