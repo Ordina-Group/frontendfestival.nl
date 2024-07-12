@@ -63,13 +63,28 @@ resource "azurerm_app_service_custom_hostname_binding" "frontendfestival" {
   resource_group_name = azurerm_resource_group.frontendfestival.name
 }
 
+resource "azurerm_app_service_custom_hostname_binding" "wwwFrontendfestival" {
+  hostname            = "www.frontendfestival.nl"
+  app_service_name    = azurerm_linux_web_app.frontendfestival.name
+  resource_group_name = azurerm_resource_group.frontendfestival.name
+}
+
 resource "azurerm_app_service_managed_certificate" "frontendfestival" {
   custom_hostname_binding_id = azurerm_app_service_custom_hostname_binding.frontendfestival.id
+}
+resource "azurerm_app_service_managed_certificate" "wwwFrontendfestival" {
+  custom_hostname_binding_id = azurerm_app_service_custom_hostname_binding.wwwFrontendfestival.id
 }
 
 resource "azurerm_app_service_certificate_binding" "frontendfestival" {
   hostname_binding_id = azurerm_app_service_custom_hostname_binding.frontendfestival.id
   certificate_id      = azurerm_app_service_managed_certificate.frontendfestival.id
+  ssl_state           = "SniEnabled"
+}
+
+resource "azurerm_app_service_certificate_binding" "wwwFrontendfestival" {
+  hostname_binding_id = azurerm_app_service_custom_hostname_binding.wwwFrontendfestival.id
+  certificate_id      = azurerm_app_service_managed_certificate.wwwFrontendfestival.id
   ssl_state           = "SniEnabled"
 }
 
