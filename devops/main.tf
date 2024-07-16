@@ -56,11 +56,31 @@ resource "azurerm_static_web_app" "frontendfestival" {
 resource "azurerm_static_web_app_custom_domain" "frontendfestival" {
   static_web_app_id = azurerm_static_web_app.frontendfestival.id
   domain_name       = "frontendfestival.nl"
-  validation_type   = "cname-delegation"
+  validation_type   = "dns-txt-token"
 }
 
 resource "azurerm_static_web_app_custom_domain" "wwwFrontendfestival" {
   static_web_app_id = azurerm_static_web_app.frontendfestival.id
   domain_name       = "www.frontendfestival.nl"
   validation_type   = "cname-delegation"
+
+  lifecycle {
+    ignore_changes = [
+      validation_type # When refreshing this is null, so it will always try to update
+    ]
+  }
+}
+
+output "dns_records" {
+  value = <<EOT
+${azurerm_static_web_app_custom_domain.frontendfestival.domain_name} ALIAS ${azurerm_static_web_app.frontendfestival.default_host_name}
+${azurerm_static_web_app_custom_domain.frontendfestival.domain_name} TXT ${azurerm_static_web_app_custom_domain.frontendfestival.validation_token}
+${azurerm_static_web_app_custom_domain.wwwFrontendfestival.domain_name} CNAME ${azurerm_static_web_app.frontendfestival.default_host_name}
+EOT
+  sensitive = true
+}
+
+output "github_actions_secret" {
+  value = azurerm_static_web_app.frontendfestival.api_key
+  sensitive = true
 }
