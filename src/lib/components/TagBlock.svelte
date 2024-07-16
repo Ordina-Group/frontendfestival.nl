@@ -3,13 +3,10 @@
 	export let direction: 'left' | 'right' | 'both' = 'both';
 	export let extend: boolean = false;
 	export let small: boolean = false;
-
-	let componentClass;
-	export { componentClass as class };
 </script>
 
 <div
-	class="relative inline-flex {componentClass} {backgroundColor === 'ordina'
+	class="relative inline-flex {$$props.class} {backgroundColor === 'ordina'
 		? 'text-shark'
 		: 'text-white'}"
 >

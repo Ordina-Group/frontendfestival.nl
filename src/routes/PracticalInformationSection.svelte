@@ -38,12 +38,14 @@
 
 	<!--	<div class="mt-10 text-xl">Limited places available, so hurry up!</div>-->
 
-	<a class="mt-5 inline" target="_blank" rel="noreferrer" href="#">
-		<TagBlock class="text-xl">
-			<!--      tickets.getYoursFor<span class="font-bold">Free</span>();-->Tickets Available July
-			15th
-		</TagBlock>
-	</a>
+	<!--	<a class="mt-5 inline" target="_blank" rel="noreferrer" href="#">-->
+	<!--		<TagBlock class="text-xl">-->
+	<!--			tickets.getYoursFor<span class="font-bold">Free</span>();-->
+	<!--		</TagBlock>-->
+	<!--	</a>-->
+	<div class="mt-5 inline">
+		<TagBlock class="text-xl">Tickets Available July 18th</TagBlock>
+	</div>
 
 	<div class="mt-10 flex gap-6">
 		<a class="inline" target="_blank" href="/code-of-conduct">

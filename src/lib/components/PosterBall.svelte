@@ -7,13 +7,13 @@
 	const BLUR_RADIUS = 64;
 
 	export let animated: boolean = false;
-	export let backgroundColor;
-	export let size;
-	export let zIndex;
-	export let top;
-	export let left;
-	export let screenWidth;
-	export let speed;
+	export let backgroundColor: string;
+	export let size: number;
+	export let zIndex: number;
+	export let top: number;
+	export let left: number;
+	export let screenWidth: number;
+	export let speed: number;
 
 	let endTop = 0;
 	let endLeft = 0;
@@ -25,7 +25,7 @@
 		endLeft = screenWidth + BLUR_RADIUS + size;
 		transitionTime = Math.round(((endLeft - left) / speed) * 1000);
 
-		let timeout;
+		let timeout: number;
 		if (screenWidth > 768 && animated) {
 			timeout = setTimeout(() => {
 				started = true;

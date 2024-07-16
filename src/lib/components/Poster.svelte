@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { debounce, omit, random, sample } from 'lodash-es';
 	import PosterBall from '$lib/components/PosterBall.svelte';
+	import type { ComponentProps } from 'svelte';
 
 	const BLUR_RADIUS = 64;
 	const BALL_SIZE = [600, 800];
@@ -11,7 +12,8 @@
 	export let colors: string[] = ['#1A1D1F', '#61BFC3', '#61BFC3', '#E6E2DB', '#FF8133', '#FF8133'];
 	let width: number;
 	let height: number;
-	let balls = [];
+	type PosterBallProps = ComponentProps<PosterBall> & { id: number };
+	let balls: PosterBallProps[] = [];
 	let wrapper: HTMLElement;
 	let lastBallId = 0;
 
@@ -40,7 +42,7 @@
 		regenerate();
 	}
 
-	function generateBall(left?: number, top?: number) {
+	function generateBall(left?: number, top?: number): PosterBallProps {
 		let size = random(BALL_SIZE[0], BALL_SIZE[1]);
 		return {
 			id: lastBallId++,
@@ -48,7 +50,7 @@
 			left: left ?? -1 * BLUR_RADIUS - size,
 			size: size,
 			zIndex: random(0, 100),
-			backgroundColor: sample(colors),
+			backgroundColor: sample(colors) as string,
 			speed: random(SPEED[0], SPEED[1])
 		};
 	}
