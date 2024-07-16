@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.5.0](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.4.0...frontendfestival.nl-v1.5.0) (2024-07-16)
+
+
+### New
+
+* App now builds statically ([b386dce](https://github.com/Ordina-Group/frontendfestival.nl/commit/b386dcee53f38d0bea8920ce401faf3b539fa85f))
+
+
+### Changed and/or fixed
+
+* Fixed photoslider on mobile ([ad27643](https://github.com/Ordina-Group/frontendfestival.nl/commit/ad276433e95a2d48f19dbfc6e3d26680895420d9))
+* Fixed types after upgrading ([556e7d2](https://github.com/Ordina-Group/frontendfestival.nl/commit/556e7d2318e2216b2c0308d8f0729c315ea32aa5))
+* Past events more margin ([b5f8f14](https://github.com/Ordina-Group/frontendfestival.nl/commit/b5f8f140487bbf21d04ec3175f8efeb3b5bfd3e9))
+* Photoslider now renders responsive images ([f15d7ea](https://github.com/Ordina-Group/frontendfestival.nl/commit/f15d7ea4ffb78b4237e64962860035040465a998))
+* Photoslider now renders responsive images ([98bd8d3](https://github.com/Ordina-Group/frontendfestival.nl/commit/98bd8d36cf8ae33ffc7363a890454ff065a19bcd))
+
+
+### Miscellaneous
+
+* **main:** release frontendfestival.nl 1.5.0 ([dc361ff](https://github.com/Ordina-Group/frontendfestival.nl/commit/dc361ff2326b940b394ed15489741f551e086430))
+
 ## [1.4.0](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.3.1...frontendfestival.nl-v1.4.0) (2024-07-12)
 
 ### New
