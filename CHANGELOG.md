@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.5.2](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.5.1...frontendfestival.nl-v1.5.2) (2024-07-17)
+
+
+### Changed and/or fixed
+
+* Updated git link ([564acd0](https://github.com/Ordina-Group/frontendfestival.nl/commit/564acd069b52a2cb6afad14309fdfeafd7fa44f9))
+
+
+### Miscellaneous
+
+* Added logo  to readme ([24e6355](https://github.com/Ordina-Group/frontendfestival.nl/commit/24e635549772ae589042e51cc9c812864478b966))
+
 ## [1.5.1](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.5.0...frontendfestival.nl-v1.5.1) (2024-07-17)
 
 
