@@ -13,14 +13,16 @@
 				<img src="/logo.svg" alt="Frontend Festival Logo" />
 			</a>
 		</h1>
-		<!--		<a class="inline" target="_blank" rel="noreferrer" href="#">-->
-		<!--			<TagBlock class="text-lg" backgroundColor="fountain">-->
-		<!--				tickets.getYoursFor<span class="font-bold">Free</span>();-->
-		<!--			</TagBlock>-->
-		<!--		</a>-->
-		<div class="inline">
-			<TagBlock class="text-lg" backgroundColor="fountain">Tickets Available July 18th</TagBlock>
-		</div>
+		<a
+			class="inline"
+			target="_blank"
+			rel="noreferrer"
+			href="https://www.eventbrite.nl/e/frontend-festival-tickets-927209848617"
+		>
+			<TagBlock class="text-lg" backgroundColor="fountain">
+				tickets.getYours<span class="font-bold">Now</span>();
+			</TagBlock>
+		</a>
 		<a
 			class="mt-10 inline"
 			target="_blank"

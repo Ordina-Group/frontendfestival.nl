@@ -36,16 +36,18 @@
 		</div>
 	</TagBlock>
 
-	<!--	<div class="mt-10 text-xl">Limited places available, so hurry up!</div>-->
+	<div class="mt-10 text-xl">Limited places available, so hurry up!</div>
 
-	<!--	<a class="mt-5 inline" target="_blank" rel="noreferrer" href="#">-->
-	<!--		<TagBlock class="text-xl">-->
-	<!--			tickets.getYoursFor<span class="font-bold">Free</span>();-->
-	<!--		</TagBlock>-->
-	<!--	</a>-->
-	<div class="mt-5 inline">
-		<TagBlock class="text-xl">Tickets Available July 18th</TagBlock>
-	</div>
+	<a
+		class="mt-5 inline"
+		target="_blank"
+		rel="noreferrer"
+		href="https://www.eventbrite.nl/e/frontend-festival-tickets-927209848617"
+	>
+		<TagBlock class="text-xl">
+			tickets.getYours<span class="font-bold">Now</span>();
+		</TagBlock>
+	</a>
 
 	<div class="mt-10 flex gap-6">
 		<a class="inline" target="_blank" href="/code-of-conduct">
