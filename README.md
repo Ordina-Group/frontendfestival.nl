@@ -1,3 +1,5 @@
+![Frontend Festival Logo](./static/marketing/socials.png)
+
 # FrontEndFesitival.nl
 
 Here's the code of the website [FrontEndFestival.nl](https://frontendfestival.nl/).
