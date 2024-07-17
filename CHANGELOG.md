@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.5.1](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.5.0...frontendfestival.nl-v1.5.1) (2024-07-17)
+
+
+### Changed and/or fixed
+
+* Added tickets link ([7a73bdd](https://github.com/Ordina-Group/frontendfestival.nl/commit/7a73bdd81ea182e29e8b1f0c5c1b0d45bf97f96e))
+
+
+### Miscellaneous
+
+* Added dependabot ([4a14d8d](https://github.com/Ordina-Group/frontendfestival.nl/commit/4a14d8d9eaece6024a36c269e484f60951159369))
+* Moved tf files to root ([f715ad4](https://github.com/Ordina-Group/frontendfestival.nl/commit/f715ad49ba395c27f1f3c6c710d5d9df148c7dbb))
+* Updated readme ([e51ac1b](https://github.com/Ordina-Group/frontendfestival.nl/commit/e51ac1b9c4b18df5b5f9218a975c7e242fedd91e))
+
 ## [1.5.0](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.4.0...frontendfestival.nl-v1.5.0) (2024-07-16)
 
 
