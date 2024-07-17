@@ -58,7 +58,7 @@
 			class="inline"
 			target="_blank"
 			rel="noreferrer"
-			href="https://github.com/OrdinaNederland/frontendfestival.nl"
+			href="https://github.com/Ordina-Group/frontendfestival.nl"
 		>
 			<TagBlock backgroundColor="fountain" small>Source on GitHub</TagBlock>
 		</a>
