@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.3](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.5.2...frontendfestival.nl-v1.5.3) (2024-07-24)
+
+
+### Changed and/or fixed
+
+* Added time ([493300b](https://github.com/Ordina-Group/frontendfestival.nl/commit/493300bd30f9fbe7605e870c2151d6fc1d6fe878))
+
 ## [1.5.2](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.5.1...frontendfestival.nl-v1.5.2) (2024-07-17)
 
 
