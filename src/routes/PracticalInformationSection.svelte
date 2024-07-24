@@ -11,7 +11,7 @@
 	<TagBlock class="mt-5" direction="right" extend backgroundColor="ordina">
 		<div class="flex w-screen max-w-xl gap-5">
 			<div class="pl-5 text-2xl sm:pl-0">When:</div>
-			<div class="grow text-2xl">September 5th 2024</div>
+			<div class="grow text-2xl">September 5th 2024, 16:00 - 22:00</div>
 		</div>
 	</TagBlock>
 
