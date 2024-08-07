@@ -23,16 +23,11 @@
 				tickets.getYours<span class="font-bold">Now</span>();
 			</TagBlock>
 		</a>
-		<a
-			class="mt-10 inline"
-			target="_blank"
-			rel="noreferrer"
-			href="https://forms.office.com/e/4MeUwRn1Dd"
-		>
+		<div class="mt-10 inline">
 			<TagBlock class="text-lg" backgroundColor="ordina">
-				CFP's Are <span class="font-bold">Open</span>
+				CFP is now <span class="font-bold">closed</span>
 			</TagBlock>
-		</a>
+		</div>
 		<div class="flex-center absolute bottom-0 left-0 w-full">
 			<a class="mb-10 inline" href="#info">
 				<Icon class="text-white opacity-75" data={chevronDown} scale={3} />
