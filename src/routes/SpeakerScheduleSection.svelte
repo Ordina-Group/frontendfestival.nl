@@ -7,7 +7,7 @@
 	<div class="px-2 text-xl">The following schedule is not final and is subject to change.</div>
 	<TagBlock class="mt-5" direction="right" extend backgroundColor="fountain">
 		<div class="flex w-screen max-w-xl gap-5">
-			<div class="pl-5 text-2xl sm:pl-0">16:00</div>
+			<div class="pl-5 text-2xl sm:pl-0">17:00</div>
 			<div class="grow text-2xl">Welcome</div>
 		</div>
 	</TagBlock>
