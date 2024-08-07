@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.5.4](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.5.3...frontendfestival.nl-v1.5.4) (2024-08-07)
+
+
+### Changed and/or fixed
+
+* Changed start time ([5873165](https://github.com/Ordina-Group/frontendfestival.nl/commit/58731654d6f2c6a046d83919abb42aa71435199b))
+* Closed CFP ([49b85fb](https://github.com/Ordina-Group/frontendfestival.nl/commit/49b85fbee7911a81dab25dbad57d220f2715da22))
+
+
+### Miscellaneous
+
+* Deps update ([a0d001d](https://github.com/Ordina-Group/frontendfestival.nl/commit/a0d001d737de78c100d9d99f8fc8fae32b13fc16))
+
 ## [1.5.3](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.5.2...frontendfestival.nl-v1.5.3) (2024-07-24)
 
 
