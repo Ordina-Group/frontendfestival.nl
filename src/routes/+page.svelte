@@ -29,7 +29,9 @@
 </svelte:head>
 
 <HeaderSection />
-<InfoSection /><!--<SpeakerScheduleSection />-->
-<Spacer /><!--<WorkshopScheduleSection />--><!--<SpeakerSection />-->
+<InfoSection />
+<SpeakerScheduleSection />
+<Spacer /><!--<WorkshopScheduleSection />-->
+<SpeakerSection />
 <PhotoSliderSection />
 <PracticalInformationSection />
