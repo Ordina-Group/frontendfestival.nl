@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.6.0...frontendfestival.nl-v1.6.1) (2024-08-19)
+
+
+### Changed and/or fixed
+
+* Pictures of Jorrik Klijnsma and Bjorn Schijff, also added picture + bio for Rowdy Rabouw ([0d8057e](https://github.com/Ordina-Group/frontendfestival.nl/commit/0d8057ecff77e4aa19e458e834acc6b7e8a20c43))
+
 ## [1.6.0](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.5.4...frontendfestival.nl-v1.6.0) (2024-08-19)
 
 
