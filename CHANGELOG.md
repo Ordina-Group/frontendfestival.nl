@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.2](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.6.1...frontendfestival.nl-v1.6.2) (2024-08-19)
+
+
+### Changed and/or fixed
+
+* Moved speakers around ([13a81be](https://github.com/Ordina-Group/frontendfestival.nl/commit/13a81beeefc010514c0311a0b138a45a4d6f7497))
+* Typo in Jorriks last name ([dae59de](https://github.com/Ordina-Group/frontendfestival.nl/commit/dae59de7102217fe5719bcab9a02f92e3eed402c))
+
 ## [1.6.1](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.6.0...frontendfestival.nl-v1.6.1) (2024-08-19)
 
 
