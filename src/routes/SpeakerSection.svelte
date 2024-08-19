@@ -21,6 +21,14 @@
 			// bio: ""
 		},
 		{
+			name: 'Rowdy Rabouw',
+			letters: 'RR',
+			title: 'Front-end expert',
+			employer: 'Various employers',
+			image: '/speakers/rr.webp',
+			bio: 'Rowdy Rabouw is a Google Developer Expert in Web Technologies with over 25 years of experience in HTML, CSS, JavaScript, and PHP. Currently, he works as a Front-End-Focused Senior DevOps Engineer on Vue, Node and NestJS projects, paying special attention to usability and accessibility. Rowdy loves watching superhero movies and Formula One races and enjoys riding his mountain bike to unwind.'
+		},
+		{
 			name: 'Jorrik Klijnsma',
 			letters: 'JK',
 			title: 'Frontend Developer',
@@ -35,14 +43,6 @@
 			employer: 'Ordina',
 			image: '/speakers/bs.webp',
 			bio: 'Bjorn is an experienced software developer with lots of experience using Angular, RxJS and TypeScript. He has a passion for anything tech related and is happy to share that passion with people.'
-		},
-		{
-			name: 'Rowdy Rabouw',
-			letters: 'RR',
-			title: 'Front-end expert',
-			employer: 'Various employers',
-			image: '/speakers/rr.webp',
-			bio: 'Rowdy Rabouw is a Google Developer Expert in Web Technologies with over 25 years of experience in HTML, CSS, JavaScript, and PHP. Currently, he works as a Front-End-Focused Senior DevOps Engineer on Vue, Node and NestJS projects, paying special attention to usability and accessibility. Rowdy loves watching superhero movies and Formula One races and enjoys riding his mountain bike to unwind.'
 		}
 	];
 
