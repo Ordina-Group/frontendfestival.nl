@@ -20,7 +20,7 @@
 		{
 			time: '19:00',
 			title: 'Ctrl+Alt+VR: Create VR-First Websites for the 2D Web',
-			speaker: 'Jorrik Klijsma'
+			speaker: 'Jorrik Klijnsma'
 		},
 		{
 			time: '20:00',
