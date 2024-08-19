@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.5.4...frontendfestival.nl-v1.6.0) (2024-08-19)
+
+
+### New
+
+* Speakers & Schedule ([720244d](https://github.com/Ordina-Group/frontendfestival.nl/commit/720244da7adf51879d73b23eb020792e317a8c95))
+
 ## [1.5.4](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.5.3...frontendfestival.nl-v1.5.4) (2024-08-07)
 
 
