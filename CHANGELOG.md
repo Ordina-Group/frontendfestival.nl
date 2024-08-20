@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.3](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.6.2...frontendfestival.nl-v1.6.3) (2024-08-20)
+
+
+### Changed and/or fixed
+
+* Added Stacy Cashmores bio and photo ([d25052f](https://github.com/Ordina-Group/frontendfestival.nl/commit/d25052fb84651d18c8b1dd27045dfd38708126bb))
+
 ## [1.6.2](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.6.1...frontendfestival.nl-v1.6.2) (2024-08-19)
 
 
