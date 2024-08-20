@@ -16,9 +16,9 @@
 			name: 'Stacy Cashmore',
 			letters: 'SC',
 			title: 'Tech Explorer DevOps',
-			employer: 'Omniplan'
-			// image: '/speakers/sc.png',
-			// bio: ""
+			employer: 'Omniplan',
+			image: '/speakers/sc.webp',
+			bio: 'Speaker, author, and software developer. Stacy has been developing solutions since the mid-1990s in various companies and industries ranging from facilitating contract jobbing to allowing consumers to close a mortgage without the help of a financial adviser – with lots in between.\n\nShe has a passion for sharing knowledge: using storytelling for sharing her experiences to help teams grow in the ways that they develop software and work together and performing live coding demonstrations to inspire others to try new technologies.\n\nStacy published her first book in 2022, aimed at helping developers get started building dynamic applications using C#, Azure Functions, and Azure Static Web Apps. She is currently busy updating it for a second edition with new SWA functionality and using .NET 9.\n\nFor her effort in the community, Stacy has been awarded the Microsoft MVP for Developer Technologies since 2020.'
 		},
 		{
 			name: 'Rowdy Rabouw',
