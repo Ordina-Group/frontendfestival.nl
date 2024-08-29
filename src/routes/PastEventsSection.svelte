@@ -99,7 +99,7 @@
 
 <svelte:window on:resize={() => recalculateSizes(imageContainer)} />
 <div
-	class="flex-center relative w-full flex-col bg-fountain px-5 py-16 text-white"
+	class="flex-center relative w-full flex-col bg-soprasteria px-5 py-16 text-white"
 	id="past-events"
 >
 	<div class="text-4xl">Past Events</div>

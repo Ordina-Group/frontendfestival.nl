@@ -19,12 +19,12 @@
 			rel="noreferrer"
 			href="https://www.eventbrite.nl/e/frontend-festival-tickets-927209848617"
 		>
-			<TagBlock class="text-lg" backgroundColor="fountain">
+			<TagBlock class="text-lg" backgroundColor="honey-flower">
 				tickets.getYours<span class="font-bold">Now</span>();
 			</TagBlock>
 		</a>
 		<div class="mt-10 inline">
-			<TagBlock class="text-lg" backgroundColor="ordina">
+			<TagBlock class="text-lg" backgroundColor="soprasteria">
 				CFP is now <span class="font-bold">closed</span>
 			</TagBlock>
 		</div>

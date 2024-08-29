@@ -13,7 +13,7 @@
 			<div class="grow text-2xl">Welcome</div>
 		</div>
 	</TagBlock>
-	<TagBlock class="mt-2" direction="left" extend backgroundColor="fountain">
+	<TagBlock class="mt-2" direction="left" extend backgroundColor="honey-flower">
 		<div class="flex w-screen max-w-xl gap-5">
 			<div class="pl-5 text-2xl">16:30</div>
 			<div class="inline-flex grow flex-col">
@@ -22,7 +22,7 @@
 			</div>
 		</div>
 	</TagBlock>
-	<TagBlock class="mt-2" direction="left" extend backgroundColor="fountain">
+	<TagBlock class="mt-2" direction="left" extend backgroundColor="honey-flower">
 		<div class="flex w-screen max-w-xl gap-5">
 			<div class="pl-5 text-2xl">17:30</div>
 			<div class="inline-flex grow flex-col">
@@ -35,7 +35,7 @@
 					</div>
 					<div class="flex grow flex-col">
 						<div class="text-xl">- Flutter</div>
-						<div class="text-lg">Remi Appels (Ordina)</div>
+						<div class="text-lg">Remi Appels (Sopra Steria)</div>
 						<div>Creating a review app in 90 minutes using Flutter 3.</div>
 					</div>
 				</div>
@@ -48,7 +48,7 @@
 			<div class="grow text-2xl">Drinks & Dinner</div>
 		</div>
 	</TagBlock>
-	<TagBlock class="mt-2" direction="left" extend backgroundColor="fountain">
+	<TagBlock class="mt-2" direction="left" extend backgroundColor="honey-flower">
 		<div class="flex w-screen max-w-xl gap-5">
 			<div class="pl-5 text-2xl">19:15</div>
 			<div class="inline-flex grow flex-col">

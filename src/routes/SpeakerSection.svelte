@@ -32,7 +32,7 @@
 			name: 'Jorrik Klijnsma',
 			letters: 'JK',
 			title: 'Frontend Developer',
-			employer: 'Ordina',
+			employer: 'Sopra Steria',
 			image: '/speakers/jk.webp',
 			bio: 'Jorrik is a creative front-end developer at Sopra Steria with a passion for getting and sharing information. He focuses on new and inspiring topics. The moment AI ‘entered the chat’, it won his digital heart. His 8+ years of frontend experience is coming in at a close second.'
 		},
@@ -40,7 +40,7 @@
 			name: 'Bjorn Schijff',
 			letters: 'BS',
 			title: 'Sr. Front-end Engineer / Architect',
-			employer: 'Ordina',
+			employer: 'Sopra Steria',
 			image: '/speakers/bs.webp',
 			bio: 'Bjorn is an experienced software developer with lots of experience using Angular, RxJS and TypeScript. He has a passion for anything tech related and is happy to share that passion with people.'
 		}
@@ -49,8 +49,8 @@
 	let focussedSpeaker: number | null = null;
 </script>
 
-<div class="relative w-full bg-gray-300 px-2 py-10 text-black" id="speakers">
-	<div class="mb-24 w-full text-center text-4xl">Speakers</div>
+<div class="relative w-full bg-gray-300 px-2 py-10 text-white" id="speakers">
+	<div class="mb-24 w-full text-center text-4xl text-black">Speakers</div>
 
 	{#if focussedSpeaker === null}
 		<div
@@ -61,7 +61,7 @@
 			{#each speakers as speaker, index}
 				<div class="mb-16 h-56 w-full">
 					<div
-						class="flex w-full flex-col items-center rounded-2xl bg-fountain p-5 text-center shadow-xl"
+						class="flex w-full flex-col items-center rounded-2xl bg-honey-flower p-5 text-center shadow-xl"
 					>
 						{#if speaker.image}
 							<img
@@ -71,9 +71,9 @@
 							/>
 						{:else}
 							<div
-								class="relative -mt-16 inline-flex h-32 w-32 items-center justify-center overflow-hidden rounded-full bg-fountain-600"
+								class="relative -mt-16 inline-flex h-32 w-32 items-center justify-center overflow-hidden rounded-full bg-honey-flower-600"
 							>
-								<span class="text-6xl font-medium text-fountain-800">{speaker.letters}</span>
+								<span class="text-6xl font-medium text-honey-flower-800">{speaker.letters}</span>
 							</div>
 						{/if}
 						<div class="text-xl md:text-2xl font-bold">{speaker.name}</div>
@@ -91,10 +91,10 @@
 								on:click={() => (focussedSpeaker = index)}
 								class="mt-2 cursor-pointer select-none"
 							>
-								<TagBlock small backgroundColor="ordina">Read more</TagBlock>
+								<TagBlock small backgroundColor="soprasteria">Read more</TagBlock>
 							</button>
 						{:else}
-							<TagBlock class="mt-2 opacity-75" small backgroundColor="ordina"
+							<TagBlock class="mt-2 opacity-75" small backgroundColor="soprasteria"
 								>Bio coming soon..</TagBlock
 							>
 						{/if}
@@ -106,7 +106,7 @@
 		<div
 			in:fade={{ duration: 250, delay: 250 }}
 			out:fade={{ duration: 250 }}
-			class="mx-auto flex w-full flex-col items-center rounded-2xl bg-fountain p-5 text-center shadow-xl md:w-2/3 xl:w-1/3"
+			class="mx-auto flex w-full flex-col items-center rounded-2xl bg-honey-flower p-5 text-center shadow-xl md:w-2/3 xl:w-1/3"
 		>
 			{#if speakers[focussedSpeaker].image}
 				<img
@@ -116,9 +116,9 @@
 				/>
 			{:else}
 				<div
-					class="relative -mt-16 inline-flex h-32 w-32 items-center justify-center overflow-hidden rounded-full bg-fountain-600"
+					class="relative -mt-16 inline-flex h-32 w-32 items-center justify-center overflow-hidden rounded-full bg-honey-flower-600"
 				>
-					<span class="text-6xl font-medium text-fountain-800"
+					<span class="text-6xl font-medium text-honey-flower-800"
 						>{speakers[focussedSpeaker].letters}</span
 					>
 				</div>
@@ -134,7 +134,7 @@
 				{/if}
 			</div>
 			<button on:click={() => (focussedSpeaker = null)} class="mt-2 cursor-pointer select-none">
-				<TagBlock small backgroundColor="ordina">Back</TagBlock>
+				<TagBlock small backgroundColor="soprasteria">Back</TagBlock>
 			</button>
 		</div>
 	{/if}

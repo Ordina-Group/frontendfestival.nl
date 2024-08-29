@@ -52,7 +52,7 @@
 			class="mt-5"
 			direction={item.speaker ? 'left' : 'right'}
 			extend
-			backgroundColor={item.speaker ? 'ordina' : 'fountain'}
+			backgroundColor={item.speaker ? 'soprasteria' : 'honey-flower'}
 		>
 			<div class="flex w-screen max-w-xl gap-5">
 				<div class="pl-5 text-2xl sm:pl-0">{item.time}</div>
