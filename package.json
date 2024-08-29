@@ -1,6 +1,6 @@
 {
 	"name": "frontendfestival.nl",
-	"version": "1.6.3",
+	"version": "1.7.0",
 	"private": true,
 	"engines": {
 		"node": ">=20.0.0"

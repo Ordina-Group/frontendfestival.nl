@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.6.3...frontendfestival.nl-v1.7.0) (2024-08-29)
+
+
+### New
+
+* Full rebrand to Sopra Steria colors ([52490f4](https://github.com/Ordina-Group/frontendfestival.nl/commit/52490f44ae6fabc1bd7117b6320356e3b5319383))
+
 ## [1.6.3](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.6.2...frontendfestival.nl-v1.6.3) (2024-08-20)
 
 
