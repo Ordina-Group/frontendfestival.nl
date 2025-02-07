@@ -29,8 +29,8 @@
 
 <HeaderSection />
 <InfoSection />
-<SpeakerScheduleSection />
-<Spacer /><!--<WorkshopScheduleSection />-->
-<SpeakerSection />
+<!-- <SpeakerScheduleSection /> -->
+<!-- <Spacer /><WorkshopScheduleSection /> -->
+<!-- <SpeakerSection /> -->
 <PastEventsSection />
 <PracticalInformationSection />
