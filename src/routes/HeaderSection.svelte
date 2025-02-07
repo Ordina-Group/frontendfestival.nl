@@ -13,19 +13,19 @@
 				<img src="/logo.svg" alt="Frontend Festival Logo" />
 			</a>
 		</h1>
-		<a
+		<!-- <a
 			class="inline"
 			target="_blank"
 			rel="noreferrer"
 			href="https://www.eventbrite.nl/e/frontend-festival-tickets-927209848617"
-		>
+		> -->
 			<TagBlock class="text-lg" backgroundColor="honey-flower">
 				tickets.getYours<span class="font-bold">Now</span>();
 			</TagBlock>
-		</a>
+		<!-- </a> -->
 		<div class="mt-10 inline">
 			<TagBlock class="text-lg" backgroundColor="soprasteria">
-				CFP is now <span class="font-bold">closed</span>
+				CFP is <span class="font-bold">opening soon!</span>
 			</TagBlock>
 		</div>
 		<div class="flex-center absolute bottom-0 left-0 w-full">

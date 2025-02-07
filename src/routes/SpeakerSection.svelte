@@ -11,40 +11,41 @@
 		bio?: string;
 	};
 
-	let speakers: Speaker[] = [
-		{
-			name: 'Stacy Cashmore',
-			letters: 'SC',
-			title: 'Tech Explorer DevOps',
-			employer: 'Omniplan',
-			image: '/speakers/sc.webp',
-			bio: 'Speaker, author, and software developer. Stacy has been developing solutions since the mid-1990s in various companies and industries ranging from facilitating contract jobbing to allowing consumers to close a mortgage without the help of a financial adviser – with lots in between.\n\nShe has a passion for sharing knowledge: using storytelling for sharing her experiences to help teams grow in the ways that they develop software and work together and performing live coding demonstrations to inspire others to try new technologies.\n\nStacy published her first book in 2022, aimed at helping developers get started building dynamic applications using C#, Azure Functions, and Azure Static Web Apps. She is currently busy updating it for a second edition with new SWA functionality and using .NET 9.\n\nFor her effort in the community, Stacy has been awarded the Microsoft MVP for Developer Technologies since 2020.'
-		},
-		{
-			name: 'Rowdy Rabouw',
-			letters: 'RR',
-			title: 'Front-end expert',
-			employer: 'Various employers',
-			image: '/speakers/rr.webp',
-			bio: 'Rowdy Rabouw is a Google Developer Expert in Web Technologies with over 25 years of experience in HTML, CSS, JavaScript, and PHP. Currently, he works as a Front-End-Focused Senior DevOps Engineer on Vue, Node and NestJS projects, paying special attention to usability and accessibility. Rowdy loves watching superhero movies and Formula One races and enjoys riding his mountain bike to unwind.'
-		},
-		{
-			name: 'Jorrik Klijnsma',
-			letters: 'JK',
-			title: 'Frontend Developer',
-			employer: 'Sopra Steria',
-			image: '/speakers/jk.webp',
-			bio: 'Jorrik is a creative front-end developer at Sopra Steria with a passion for getting and sharing information. He focuses on new and inspiring topics. The moment AI ‘entered the chat’, it won his digital heart. His 8+ years of frontend experience is coming in at a close second.'
-		},
-		{
-			name: 'Bjorn Schijff',
-			letters: 'BS',
-			title: 'Sr. Front-end Engineer / Architect',
-			employer: 'Sopra Steria',
-			image: '/speakers/bs.webp',
-			bio: 'Bjorn is an experienced software developer with lots of experience using Angular, RxJS and TypeScript. He has a passion for anything tech related and is happy to share that passion with people.'
-		}
-	];
+	let speakers: Speaker[] = []
+	// [
+	// 	{
+	// 		name: 'Stacy Cashmore',
+	// 		letters: 'SC',
+	// 		title: 'Tech Explorer DevOps',
+	// 		employer: 'Omniplan',
+	// 		image: '/speakers/sc.webp',
+	// 		bio: 'Speaker, author, and software developer. Stacy has been developing solutions since the mid-1990s in various companies and industries ranging from facilitating contract jobbing to allowing consumers to close a mortgage without the help of a financial adviser – with lots in between.\n\nShe has a passion for sharing knowledge: using storytelling for sharing her experiences to help teams grow in the ways that they develop software and work together and performing live coding demonstrations to inspire others to try new technologies.\n\nStacy published her first book in 2022, aimed at helping developers get started building dynamic applications using C#, Azure Functions, and Azure Static Web Apps. She is currently busy updating it for a second edition with new SWA functionality and using .NET 9.\n\nFor her effort in the community, Stacy has been awarded the Microsoft MVP for Developer Technologies since 2020.'
+	// 	},
+	// 	{
+	// 		name: 'Rowdy Rabouw',
+	// 		letters: 'RR',
+	// 		title: 'Front-end expert',
+	// 		employer: 'Various employers',
+	// 		image: '/speakers/rr.webp',
+	// 		bio: 'Rowdy Rabouw is a Google Developer Expert in Web Technologies with over 25 years of experience in HTML, CSS, JavaScript, and PHP. Currently, he works as a Front-End-Focused Senior DevOps Engineer on Vue, Node and NestJS projects, paying special attention to usability and accessibility. Rowdy loves watching superhero movies and Formula One races and enjoys riding his mountain bike to unwind.'
+	// 	},
+	// 	{
+	// 		name: 'Jorrik Klijnsma',
+	// 		letters: 'JK',
+	// 		title: 'Frontend Developer',
+	// 		employer: 'Sopra Steria',
+	// 		image: '/speakers/jk.webp',
+	// 		bio: 'Jorrik is a creative front-end developer at Sopra Steria with a passion for getting and sharing information. He focuses on new and inspiring topics. The moment AI ‘entered the chat’, it won his digital heart. His 8+ years of frontend experience is coming in at a close second.'
+	// 	},
+	// 	{
+	// 		name: 'Bjorn Schijff',
+	// 		letters: 'BS',
+	// 		title: 'Sr. Front-end Engineer / Architect',
+	// 		employer: 'Sopra Steria',
+	// 		image: '/speakers/bs.webp',
+	// 		bio: 'Bjorn is an experienced software developer with lots of experience using Angular, RxJS and TypeScript. He has a passion for anything tech related and is happy to share that passion with people.'
+	// 	}
+	// ];
 
 	let focussedSpeaker: number | null = null;
 </script>
