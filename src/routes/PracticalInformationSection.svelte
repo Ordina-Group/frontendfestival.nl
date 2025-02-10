@@ -22,7 +22,7 @@
 				<a target="_blank" rel="noreferrer" href="https://goo.gl/maps/xumZR7ZQR53VJTQk7"
 					><img
 						class="h-48 w-48 rounded-full p-1 ring-2 ring-honey-flower-300"
-						src="/map.png"
+						src="./map.png"
 						alt="A map showing where Sopra Steria Netherlands Headquarters is located, on the line between Nieuwegein and Utrecht"
 					/></a
 				>
