@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>Frontend Festival 2024</title>
+	<title>Frontend Festival 2025</title>
 
 	<meta name="title" property="og:title" content="Frontend Festival 2025" />
 	<meta
