@@ -1,40 +1,54 @@
-name: Release
+name: Deploy to Production
+
 on:
   push:
     branches:
       - main
+  # schedule: # Run workflow automatically
+  #   - cron: '0 1 * * *' # Runs every day at 1:00 AM (min hour day month)
+  workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the Github Actions Workflow page directly
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
 
 jobs:
-  release-please:
+  build:
     runs-on: ubuntu-latest
-    outputs:
-      released: ${{ steps.release.outputs.release_created }}
-    steps:
-      - uses: googleapis/release-please-action@v4
-        id: release
 
-  deploy:
-    needs:
-      - release-please
-    if: needs.release-please.outputs.released
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x]
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
-          node-version-file: '.nvmrc'
-      - run: npm install
-      - run: npm run build
-      - name: Azure Static Web Apps Deploy
-        uses: Azure/static-web-apps-deploy@v1
+          node-version: ${{ matrix.node-version }}
+      - name: Install and Build components 🔧
+        # .nojekyll: do not ignore _ dirs
+        run: |
+          npm ci
+          npm run build
+          touch dist/.nojekyll
+        #     CI: false # true -> fails on warning
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          action: 'upload'
-          app_location: 'build'
-          skip_api_build: true
-          skip_app_build: true
+          # Upload dist repository
+          path: 'dist'
+      - name: Deploy to GitHub Pages 🚀
+        id: deployment
+        uses: actions/deploy-pages@v4
