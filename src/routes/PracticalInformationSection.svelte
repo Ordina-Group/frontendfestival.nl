@@ -11,7 +11,7 @@
 	<TagBlock class="mt-5" direction="right" extend backgroundColor="soprasteria">
 		<div class="flex w-screen max-w-xl gap-5">
 			<div class="pl-5 text-2xl sm:pl-0">When:</div>
-			<div class="grow text-2xl">September 19th 2025, 17:00 - 22:00</div>
+			<div class="grow text-2xl">June 19th 2025, 17:00 - 22:00</div>
 		</div>
 	</TagBlock>
 
@@ -36,8 +36,8 @@
 		</div>
 	</TagBlock>
 
-	<div class="mt-10 text-xl">Limited places available, so hurry up!</div>
-
+	<!-- <div class="mt-10 text-xl">Limited places available, so hurry up!</div> -->
+	<!-- 
 	<a
 		class="mt-5 inline"
 		target="_blank"
@@ -47,7 +47,8 @@
 		<TagBlock class="text-xl">
 			tickets.getYours<span class="font-bold">Now</span>();
 		</TagBlock>
-	</a>
+	</a> -->
+	<TagBlock class="text-xl mt-10">tickets.comingSoon()</TagBlock>
 
 	<div class="mt-10 flex gap-6">
 		<a class="inline" target="_blank" href="/code-of-conduct">

@@ -19,10 +19,12 @@
 			rel="noreferrer"
 			href="https://www.eventbrite.nl/e/frontend-festival-tickets-927209848617"
 		> -->
-		<TagBlock class="text-lg" backgroundColor="honey-flower">
-			<!-- tickets.getYours<span class="font-bold">Now</span>(); -->
-			Tickets coming soon!
-		</TagBlock>
+		<div class="inline">
+			<TagBlock class="text-lg" backgroundColor="honey-flower">
+				<!-- tickets.getYours<span class="font-bold">Now</span>(); -->
+				Tickets coming soon!
+			</TagBlock>
+		</div>
 		<!-- </a> -->
 		<div class="mt-10 inline">
 			<TagBlock class="text-lg" backgroundColor="soprasteria">
