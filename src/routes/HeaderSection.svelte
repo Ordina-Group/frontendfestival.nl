@@ -3,6 +3,7 @@
 	import TagBlock from '$lib/components/TagBlock.svelte';
 	import { Icon } from 'svelte-awesome';
 	import { chevronDown } from 'svelte-awesome/icons';
+	import { base } from '$app/paths';
 </script>
 
 <header class="flex-center relative h-[85vh] w-full bg-shark" id="header">
@@ -10,7 +11,7 @@
 	<div class="z-50 flex max-h-full flex-col justify-center text-center">
 		<h1 class="block w-screen max-w-4xl px-5 py-20">
 			<a href="https://frontendfestival.nl">
-				<img src="/logo.svg" alt="Frontend Festival Logo" class="" />
+				<img src="{base}/logo.svg" alt="Frontend Festival Logo" class="" />
 			</a>
 		</h1>
 		<a

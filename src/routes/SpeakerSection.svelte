@@ -1,5 +1,6 @@
 <script>
 	import TagBlock from '$lib/components/TagBlock.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <div class="w-full bg-fountain py-10 text-black" id="speakers">
@@ -8,7 +9,7 @@
 		<TagBlock class="float-right max-w-lg" direction="left" extend="true">
 			<div class="flex w-full flex-col">
 				<div class="flex grow items-center gap-2">
-					<img class="aspect-square h-14 w-14 rounded-full" src="/speakers/ki.png" alt="Kitze" />
+					<img class="aspect-square h-14 w-14 rounded-full" src="{base}/speakers/ki.png" alt="Kitze" />
 					<div class="flex grow flex-col">
 						<div class="text-2xl">Kitze</div>
 						<div class="text-xl">Founder @ Sizzy</div>
@@ -33,7 +34,7 @@
 				<div class="flex grow items-center gap-2">
 					<img
 						class="aspect-square h-14 w-14 rounded-full"
-						src="/speakers/fvp.png"
+						src="{base}/speakers/fvp.png"
 						alt="Frank van Puffelen"
 					/>
 					<div class="flex grow flex-col">
@@ -55,7 +56,7 @@
 				<div class="flex grow items-center gap-2">
 					<img
 						class="aspect-square h-14 w-14 rounded-full"
-						src="/speakers/de.png"
+						src="{base}/speakers/de.png"
 						alt="Davy Engone"
 					/>
 					<div class="flex grow flex-col">
@@ -82,7 +83,7 @@
 				<div class="flex grow items-center gap-2">
 					<img
 						class="aspect-square h-14 w-14 rounded-full"
-						src="/speakers/oh.png"
+						src="{base}/speakers/oh.png"
 						alt="Oscar Hahn"
 					/>
 					<div class="flex grow flex-col">
@@ -104,7 +105,7 @@
 				<div class="flex grow items-center gap-2">
 					<img
 						class="aspect-square h-14 w-14 rounded-full"
-						src="/speakers/rs.png"
+						src="{base}/speakers/rs.png"
 						alt="Robbin Schepers"
 					/>
 					<div class="flex grow flex-col">
@@ -132,7 +133,7 @@
 				<div class="flex grow items-center gap-2">
 					<img
 						class="aspect-square h-14 w-14 rounded-full"
-						src="/speakers/jk.png"
+						src="{base}/speakers/jk.png"
 						alt="Oscar Hahn"
 					/>
 					<div class="flex grow flex-col">
@@ -154,7 +155,7 @@
 				<div class="flex grow items-center gap-2">
 					<img
 						class="aspect-square h-14 w-14 rounded-full"
-						src="/speakers/pe.png"
+						src="{base}/speakers/pe.png"
 						alt="Peter Eijgermans"
 					/>
 					<div class="flex grow flex-col">
@@ -184,7 +185,7 @@
 				<div class="flex grow items-center gap-2">
 					<img
 						class="aspect-square h-14 w-14 rounded-full"
-						src="/speakers/ra.png"
+						src="{base}/speakers/ra.png"
 						alt="Remi Appels"
 					/>
 					<div class="flex grow flex-col">

@@ -1,5 +1,6 @@
 <script>
 	import TagBlock from '$lib/components/TagBlock.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <div
@@ -22,7 +23,7 @@
 				<a target="_blank" rel="noreferrer" href="https://goo.gl/maps/xumZR7ZQR53VJTQk7"
 					><img
 						class="h-48 w-48 rounded-full p-1 ring-2 ring-fountain-300"
-						src="/map.png"
+						src="{base}/map.png"
 						alt="A map showing where Ordina is located, on the line between Nieuwegein and Utrecht"
 					/></a
 				>
