@@ -29,3 +29,7 @@ npm run dev
 ### Releasing
 
 Releasing is as simple as pushing to main and merging the PR created by release-please after.
+
+Make a tag for each final version of a year in the format `YYYY`, e.g. `2023`. The Github Action `save-assets` will run to save it as an attachment to the tag/release. The Github Action `release` will add it under the path `/2023`.
+
+Merging to the main branch runs the Github Action `release` and the result of the build is deployed to Github Pages. Github Pages is configured to use the custom domain name [frontendfestival.nl](https://frontendfestival.nl).
