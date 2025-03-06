@@ -27,9 +27,14 @@
 		</div>
 		<!-- </a> -->
 		<div class="mt-10 inline">
-			<TagBlock class="text-lg" backgroundColor="soprasteria">
-				CFP is <span class="font-bold">opening soon!</span>
-			</TagBlock>
+			<a
+				href="https://forms.office.com/Pages/ResponsePage.aspx?id=fa-Hi0eGx02N9F9pogEbtXv1xZ6lE2pGnaJX6tCEMDVUQ0FSQTlBUlA1SzFCMzRRVTYwTzA3NU9WUiQlQCN0PWcu"
+				target="_blank"
+			>
+				<TagBlock class="text-lg" backgroundColor="soprasteria">
+					CFP is <span class="font-bold">open!</span>
+				</TagBlock>
+			</a>
 		</div>
 		<div class="flex-center absolute bottom-0 left-0 w-full">
 			<a class="mb-10 inline" href="#info">
