@@ -5,7 +5,7 @@
 <Spacer />
 <div class="flex-center w-full bg-black p-10 text-left text-white">
 	<div class="w-full max-w-screen-md">
-		<h1 class="text-4xl">Code of Conduct - Frontend Festival 2024</h1>
+		<h1 class="text-4xl">Code of Conduct - Frontend Festival 2025</h1>
 		<p>
 			Frontend Festival is a community event intended for networking and collaboration in the
 			developer community. We value the participation of each member of the Frontend Festival
