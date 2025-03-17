@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onDestroy, onMount } from 'svelte';
+	import TagBlock from '$lib/components/TagBlock.svelte';
 	import Icon from 'svelte-awesome';
 	import {
 		faChevronLeft,
@@ -103,6 +104,14 @@
 	id="past-events"
 >
 	<div class="text-4xl">Past Events</div>
+	<div class="flex m-5 text-xl flex-col md:flex-row gap-4 md:gap-20">
+		<a class="block" target="_blank" href="/2024">
+			<TagBlock backgroundColor="shark" small>See the 2024 Edition</TagBlock>
+		</a>
+		<a class="block" target="_blank" href="/2023">
+			<TagBlock backgroundColor="shark" small>See the 2023 Edition</TagBlock>
+		</a>
+	</div>
 	<div class="mx-auto mt-5 flex w-full overflow-hidden text-xl">
 		<div class="flex min-w-[min-content] gap-2" bind:this={imageContainer}>
 			{#each [...imageModules, ...imageModules] as module}
