@@ -37,18 +37,15 @@
 	</TagBlock>
 
 	<!-- <div class="mt-10 text-xl">Limited places available, so hurry up!</div> -->
-	<!-- 
 	<a
 		class="mt-5 inline"
 		target="_blank"
-		rel="noreferrer"
-		href="https://www.eventbrite.nl/e/frontend-festival-tickets-927209848617"
+		href="https://www.eventbrite.nl/e/frontend-festival-2025-tickets-1304037353829?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
 	>
 		<TagBlock class="text-xl">
 			tickets.getYours<span class="font-bold">Now</span>();
 		</TagBlock>
-	</a> -->
-	<TagBlock class="text-xl mt-10">tickets.comingSoon()</TagBlock>
+	</a>
 
 	<div class="mt-10 flex gap-6">
 		<a class="inline" target="_blank" href="/code-of-conduct">

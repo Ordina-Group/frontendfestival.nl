@@ -21,8 +21,12 @@
 		> -->
 		<div class="inline">
 			<TagBlock class="text-lg" backgroundColor="honey-flower">
-				<!-- tickets.getYours<span class="font-bold">Now</span>(); -->
-				Tickets coming soon!
+				<a
+					href="https://www.eventbrite.nl/e/frontend-festival-2025-tickets-1304037353829?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
+					target="_blank"
+				>
+					tickets.getYours<span class="font-bold">Now</span>();
+				</a>
 			</TagBlock>
 		</div>
 		<!-- </a> -->
