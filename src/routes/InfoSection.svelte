@@ -5,7 +5,7 @@
 <div class="w-full bg-western py-32 text-black" id="info">
 	<div class="m-auto w-full max-w-6xl text-xl">
 		<TagBlock class="float-left max-w-lg" direction="right" extend>
-			On the 19th of June, Sopra Steria will be hosting the second iteration of the Frontend
+			On the 19th of June, Sopra Steria will be hosting the third iteration of the Frontend
 			Festival! Join us for an evening of drinks, talks and workshops about various topics in the
 			world of opensource Frontend development.
 		</TagBlock>
