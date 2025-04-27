@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.7.1](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.7.0...frontendfestival.nl-v1.7.1) (2025-02-10)
+
+
+### Miscellaneous
+
+* **2025:** Attempt to set up the 2025 version. ([982c674](https://github.com/Ordina-Group/frontendfestival.nl/commit/982c67456cb3692e0aa2ad976b115353ae0d847e))
+* **2025:** few more updates for the new year ([d23643b](https://github.com/Ordina-Group/frontendfestival.nl/commit/d23643b4ac69d88ad985645797cc25072c15cdbc))
+* **2025:** turns off a couple more sections ([11ae626](https://github.com/Ordina-Group/frontendfestival.nl/commit/11ae626a894dccde16fc03ddfe9f4231ac50eff1))
+
 ## [1.7.0](https://github.com/Ordina-Group/frontendfestival.nl/compare/frontendfestival.nl-v1.6.3...frontendfestival.nl-v1.7.0) (2024-08-29)
 
 
