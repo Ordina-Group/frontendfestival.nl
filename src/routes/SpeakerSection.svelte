@@ -19,6 +19,22 @@
 			employer: 'Sopra Steria',
 			image: '/speakers/rd.webp',
 			bio: 'With over 20 years of experience developing software on the Microsoft stack, Roelant Dieben has a lot to share about stuff that has been obsolete for years. At Sopra Steria he is helping companies with their Azure cloud and AI challenges, he is a Microsoft Azure & AI MVP, and has a passion for machine learning & AI and application lifecycle management.'
+		},
+		{
+			name: 'Coming soon!',
+			letters: 'CS',
+			title: '',
+			employer: '',
+			image: '/speakers/coming-soon.webp',
+			bio: 'Coming soon!'
+		},
+		{
+			name: 'Coming soon!',
+			letters: 'CS',
+			title: '',
+			employer: '',
+			image: '/speakers/coming-soon.webp',
+			bio: 'Coming soon!'
 		}
 	];
 	// [
