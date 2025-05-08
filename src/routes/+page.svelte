@@ -3,6 +3,7 @@
 	import InfoSection from './InfoSection.svelte';
 	import PastEventsSection from './PastEventsSection.svelte';
 	import PracticalInformationSection from './PracticalInformationSection.svelte';
+	import SpeakerSection from './SpeakerSection.svelte';
 </script>
 
 <svelte:head>
@@ -28,6 +29,6 @@
 <InfoSection />
 <!-- <SpeakerScheduleSection /> -->
 <!-- <Spacer /><WorkshopScheduleSection /> -->
-<!-- <SpeakerSection /> -->
+<SpeakerSection />
 <PastEventsSection />
 <PracticalInformationSection />

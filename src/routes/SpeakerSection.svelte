@@ -11,7 +11,16 @@
 		bio?: string;
 	};
 
-	let speakers: Speaker[] = []
+	let speakers: Speaker[] = [
+		{
+			name: 'Roelant Dieben',
+			letters: 'RD',
+			title: 'Cloud & AI architect',
+			employer: 'Sopra Steria',
+			image: '/speakers/rd.webp',
+			bio: 'With over 20 years of experience developing software on the Microsoft stack, Roelant Dieben has a lot to share about stuff that has been obsolete for years. At Sopra Steria he is helping companies with their Azure cloud and AI challenges, he is a Microsoft Azure & AI MVP, and has a passion for machine learning & AI and application lifecycle management.'
+		}
+	];
 	// [
 	// 	{
 	// 		name: 'Stacy Cashmore',
@@ -38,8 +47,8 @@
 	// 		bio: 'Jorrik is a creative front-end developer at Sopra Steria with a passion for getting and sharing information. He focuses on new and inspiring topics. The moment AI ‘entered the chat’, it won his digital heart. His 8+ years of frontend experience is coming in at a close second.'
 	// 	},
 	// 	{
-	// 		name: 'Bjorn Schijff',
-	// 		letters: 'BS',
+	// 		name: 'Roelant Dieben',
+	// 		letters: 'RD',
 	// 		title: 'Sr. Front-end Engineer / Architect',
 	// 		employer: 'Sopra Steria',
 	// 		image: '/speakers/bs.webp',
