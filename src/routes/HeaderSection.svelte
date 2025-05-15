@@ -1,55 +1,74 @@
-<script>
+<script lang="ts">
 	import Poster from '$lib/components/Poster.svelte';
 	import TagBlock from '$lib/components/TagBlock.svelte';
 	import { Icon } from 'svelte-awesome';
 	import { chevronDown } from 'svelte-awesome/icons';
 	import Countdown from './Countdown.svelte';
-	import { divide } from 'lodash-es';
 	import TopNavSection from './TopNavSection.svelte';
+
+	interface Menu {
+		label: string
+		link?: string
+		disabled?: boolean
+	}
+
+	const tickets = { label: "Tickets coming soon", disabled: true };
+	const sponsors = { label: "Call for Sponsors", link: "/sponsors" };
+	const volunteers = { label: "Call for Volunteers" };
+	const papers = { label: "Call for Papers" };
+
+	const menusLeft: Menu[] = [sponsors, volunteers];
+	const menusRight: Menu[] = [papers, tickets];
+
+	const menuStagger = 4;
 </script>
 
-<header class="flex-center relative w-full bg-shark custom-header" id="header">
+<header class="flex-center relative w-full bg-shark header" id="header">
 	<Poster />
 	<div class="relative mt-3 w-full">
 		<TopNavSection></TopNavSection>
 
-		<div class="custom-flex-container">
-			<div class="order-2 md-order-2">
+		<div class="menu">
+
+			<div class="left">
 				<TagBlock direction="right" extend={true} backgroundColor="north3">
 					<div class="inline-flex text-lg text-white">
 						<div class="text-xl">
-							<span class="pr-4 text-ordina font-bold">Save the date 16-10-2025</span>
+							<span class="pr-4 text-ordina font-bold">Save the date <span class="whitespace-pre">16-10-2025</span></span>
 							<Countdown></Countdown>
 						</div>
 					</div>
 				</TagBlock>
+				{#each menusLeft as menu, i}
+					<!-- i + 1 because of the Countdown above -->
+					<div style:padding-right="{menuStagger * (i + 1)}em" style:opacity="{menu.disabled ? 0.5 : 1}">
+						<TagBlock direction="right" extend={true} backgroundColor="north2" link={menu.link}>
+							<div class="inline-flex text-lg">
+								<span class="pr-4 text-ordina font-bold">{menu.label}</span>
+							</div>
+						</TagBlock>
+					</div>
+				{/each}
 			</div>
-			<div class="order-3 md-order-3">
-				<a href="https://pythonconferentie.nl" class="custom-image-container">
-					<img src="/logo-sopra4.svg" alt="Python Conference Logo" class="custom-image" />
+
+			<div class="middle">
+				<a href="https://pythonconferentie.nl" class="logo-container">
+					<img src="/logo-sopra4.svg" alt="Python Conference Logo" class="logo" />
 				</a>
 			</div>
-			<div class="call-for-sponsors">
-				<TagBlock direction="right" extend={true} backgroundColor="north2" link="/sponsors">
-					<div class="inline-flex text-lg text-white">
-						<span class="pr-4 text-ordina font-bold">Call for Sponsors</span>
+
+			<div class="right">
+				{#each menusRight as menu, i}
+					<div style:padding-left="{menuStagger * i}em" style:opacity="{menu.disabled ? 0.5 : 1}">
+						<TagBlock direction="left" extend={true} backgroundColor="north2" link={menu.link}>
+							<div class="inline-flex text-lg">
+								<span class="pr-4 text-ordina font-bold">{menu.label}</span>
+							</div>
+						</TagBlock>
 					</div>
-				</TagBlock>
+				{/each}
 			</div>
-			<div class="order-4 md-order-4">
-				<TagBlock direction="left" extend={true} backgroundColor="north2">
-					<div class="inline-flex text-lg text-white">
-						<span class="pr-4 text-ordina font-bold">Tickets coming soon</span>
-					</div>
-				</TagBlock>
-			</div>
-			<div class="call-for-volunteers">
-				<TagBlock direction="left" extend={true} backgroundColor="north2">
-					<div class="inline-flex text-lg text-white">
-						<span class="pr-4 text-ordina font-bold">Call for Volunteers</span>
-					</div>
-				</TagBlock>
-			</div>
+
 		</div>
 
 		<div class="mt-4 flex items-center justify-center">
@@ -73,98 +92,63 @@
 </header>
 
 <style>
-	.custom-header {
+	.header {
 		height: auto;
 		min-height: 100vh;
 		padding-top: 2rem;
 	}
 
-	.call-for-volunteers {
-		order: 5;
-		margin-top: 15rem;
-	}
-
-	.call-for-sponsors {
-		order: 1;
-		margin-top: 15rem;
-	}
-
-	.custom-flex-container {
+	.menu {
 		margin-top: 2rem;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		gap: 1rem;
 		align-items: center;
 		justify-content: center;
 	}
 
-	.custom-image-container {
+	.left, .right {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+	}
+
+	.left {
+		align-items: end;
+	}
+
+	.right {
+		align-items: start;
+	}
+
+	.logo-container {
 		width: 100%;
 		max-width: 22rem;
 	}
 
-	.custom-image {
+	.logo {
 		width: 100%;
 		height: auto;
 	}
 
-	/* full screen styling */
-	@media (min-width: 768px) {
-		.custom-flex-container {
-			flex-direction: row;
-			gap: 0;
-			column-gap: 1rem;
-		}
-		.md-order-2 {
-			order: 2;
-		}
-		.md-order-3 {
-			order: 3;
-		}
-		.md-order-4 {
-			order: 4;
-		}
-		.call-for-sponsors {
-			order: 1;
-		}
-		.call-for-volunteers {
-			order: 5;
-		}
-	}
-
-	/* mobile styling */
 	@media (max-width: 767px) {
-		.custom-header {
+		.header {
 			padding-top: 1rem;
 		}
-		.custom-image {
+		.logo {
 			max-width: 80vw;
 		}
-		/* andere ordering om de elementen als volgt te orderen in mobile: image, date, `tickets coming soon`, `call for sponsors`, `call for volunteers`, python knop */
-		.md-order-2 {
-			order: 2;
+		.menu {
+			flex-direction: column;
 		}
-		.md-order-3 {
+		.middle {
 			order: 1;
 		}
-		.md-order-4 {
+		.left {
+			order: 2;
+		}
+		.right {
 			order: 3;
 		}
-		.call-for-sponsors {
-			order: 4;
-			margin-top: 0rem;
-		}
-		.call-for-volunteers {
-			order: 5;
-			margin-top: 0rem;
-		}
-	}
-
-	.custom-flex-container > div > a > :global(div) {
-		transition: transform 0.1s ease-in-out;
-	}
-
-	.custom-flex-container > div > a:hover > :global(div) {
-		transform: translateX(1em);
 	}
 </style>
