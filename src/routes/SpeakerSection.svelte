@@ -13,6 +13,14 @@
 
 	let speakers: Speaker[] = [
 		{
+			name: 'Jad Joubran',
+			letters: 'JJ',
+			title: 'Web Performance Consultant & Educator',
+			employer: '',
+			image: '/speakers/jj.webp',
+			bio: "Jad is an independent web performance consultant and educator. He has taught more than 15,000 developers through online platforms, in-person training, and university lectures. He's also the creator of learnjavascript.online and several other courses. Jad was recognized by Google with the Developer Expert award for his contributions to the web community. He focuses on making Modern Web development enjoyable, clear, and accessible."
+		},
+		{
 			name: 'Roelant Dieben',
 			letters: 'RD',
 			title: 'Cloud & AI architect',
@@ -20,14 +28,7 @@
 			image: '/speakers/rd.webp',
 			bio: 'With over 20 years of experience developing software on the Microsoft stack, Roelant Dieben has a lot to share about stuff that has been obsolete for years. At Sopra Steria he is helping companies with their Azure cloud and AI challenges, he is a Microsoft Azure & AI MVP, and has a passion for machine learning & AI and application lifecycle management.'
 		},
-		{
-			name: 'Coming soon!',
-			letters: 'CS',
-			title: '',
-			employer: '',
-			image: '/speakers/coming-soon.webp',
-			bio: 'Coming soon!'
-		},
+
 		{
 			name: 'Coming soon!',
 			letters: 'CS',
