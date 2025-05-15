@@ -42,12 +42,13 @@
         <div class="grid m-auto w-full max-w-6xl text-xl text-black">
             <div>
                 <TagBlock class="float-left max-w-lg" direction="right" extend={true} backgroundColor="north3">
-                    We are excited to invite you to explore our sponsor packages for PyCon NL 2025, taking place on October 16, 2025. Our packages are designed to offer you maximum visibility and engagement with our vibrant community of Python enthusiasts from all over the world.
+                    <p>We are excited to invite you to explore our sponsor packages for PyCon NL 2025, taking place on October 16, 2025.</p>
+                    <p>Our packages are designed to offer you maximum visibility and engagement with our vibrant community of Python enthusiasts from all over the world.</p>
                 </TagBlock>
             </div>
 
             <h2 class="font-bold text-2xl mb-4 spacing-top">Package Details</h2>
-            
+
             <div class="mt-8">
                 <div class="grid gap-4">
                     <TagBlock extend={true} direction="both" backgroundColor="north">

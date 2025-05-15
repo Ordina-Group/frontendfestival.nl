@@ -10,8 +10,7 @@
 
 	<TagBlock class="mt-5" direction="right" extend={true} backgroundColor="north3">
 		<div class="flex w-screen max-w-xl gap-5 text-black">
-			<div class="pl-5 text-2xl sm:pl-0">When:</div>
-			<div class="grow text-2xl">October 16th 2025</div>
+			<div class="pl-5 text-2xl sm:pl-0">When: October 16th 2025</div>
 		</div>
 	</TagBlock>
 
@@ -26,15 +25,15 @@
 						alt="A map showing where the Jaarbeurs Utrecht is located"
 					/></a
 				>
-				<div class="flex flex-col">
+				<div class="md:pl-6 flex flex-col">
 					<div class="text-2xl">Where: Media Plaza (Jaarbeurs Utrecht)</div>
 					<div class="text-xl">Jaarbeursplein 6</div>
 					<div class="text-xl">3521 AL Utrecht</div>
 					<div class="text-xl">The Netherlands</div>
-					<button class="mt-2 ml-6 cursor-pointer text-left select-none"
-								on:click={() => window.location.href = '/practical-information'}
-					>
-						<TagBlock small backgroundColor="ordina" class="hover:scale-105">More info</TagBlock>
+					<button class="mt-2 ml-6 cursor-pointer text-left select-none">
+						<TagBlock small backgroundColor="ordina" class="hover:scale-105" link='/practical-information'>
+							More info
+						</TagBlock>
 					</button>
 				</div>
 			</div>

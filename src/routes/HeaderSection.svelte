@@ -59,7 +59,7 @@
 				backgroundColor="north"
 			>
 				<div class="text-3xl font-bold">
-					PYCON (NL)<span class="px-4">|</span><span class="pr-4 text-ordina">2025</span>
+					PYCON NL<span class="px-4">|</span><span class="pr-4 text-ordina">2025</span>
 				</div>
 			</TagBlock>
 		</div>

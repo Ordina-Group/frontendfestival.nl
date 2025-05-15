@@ -58,6 +58,7 @@
 		/>
 	{/if}
 	<div
+		id="main-container"
 		class="inline py-4 pl-4 pr-4"
 		class:py-4={!small}
 		class:pl-4={!small}
@@ -116,3 +117,9 @@
 </div>
 
 </TagBlockWrapper>
+
+<style>
+	#main-container :global(p:not(:first-child)) {
+		margin-top: 1rem;
+	}
+</style>
