@@ -120,7 +120,7 @@
 </TagBlockWrapper>
 
 <style>
-	#main-container :global(p:not(:first-child)) {
+	#main-container > :global(p:not(:first-child)) {
 		margin-top: 1rem;
 	}
 </style>
