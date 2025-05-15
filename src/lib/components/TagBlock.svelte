@@ -1,4 +1,6 @@
 <script lang="ts">
+	import TagBlockWrapper from "./TagBlockWrapper.svelte";
+
 	export let backgroundColor:
 		| 'shark'
 		| 'fountain'
@@ -10,10 +12,13 @@
 	export let direction: 'left' | 'right' | 'both' = 'both';
 	export let extend: boolean = false;
 	export let small: boolean = false;
+	export let link: string | undefined = undefined;
 
 	let componentClass: string = '';
 	export { componentClass as class };
 </script>
+
+<TagBlockWrapper {link} {direction}>
 
 <div
 	class="relative inline-flex {componentClass} {backgroundColor === 'north3'
@@ -109,3 +114,5 @@
 		/>
 	{/if}
 </div>
+
+</TagBlockWrapper>
