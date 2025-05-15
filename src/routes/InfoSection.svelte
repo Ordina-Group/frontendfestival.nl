@@ -4,6 +4,14 @@
 
 <div class="z-10 w-full bg-western py-6 text-black custom-info" id="info">
 	<div class="text-3xl text-center font-bold">Welcome to PyCon NL!</div>
+
+	<div class="pt-10 mb-10 flex-center">
+		<video controls class="center max-h-[480px]">
+			<source src="/AftermoviePycon2025.mp4" type="video/mp4">
+				<track kind="captions" />
+		</video>
+	</div>
+
 	<div class="grid m-auto w-full max-w-6xl py-6 text-xl text-black">
 		<div>
 			<TagBlock
@@ -52,12 +60,14 @@
 				forging connections that can propel your career and projects forward.</p>
 			</TagBlock>
 		</div>
-		<div class="text-center pt-12 text-xl font-bold">
-			<p>So, mark your calendars, spread the word, and get ready for an unforgettable experience at
-			PyCon NL.</p>
-			<p class="mt-4">Together, let's embrace the spirit of collaboration, knowledge sharing, and
-			community building that defines the essence of Python programming.</p>
-			<p class="mt-4">We can't wait to see you there!</p>
+		<div class="flex-center">
+			<div class="mx-4 pt-12 text-xl font-bold max-w-[768px]">
+				<p>So, mark your calendars, spread the word, and get ready for an unforgettable experience at
+				PyCon NL.</p>
+				<p class="mt-4 font-normal">Together, let's embrace the spirit of collaboration, knowledge sharing, and
+				community building that defines the essence of Python programming.</p>
+				<p class="mt-4">We can't wait to see you there!</p>
+			</div>
 		</div>
 		<div class="clear-both" />
 	</div>
