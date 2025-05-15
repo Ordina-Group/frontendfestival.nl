@@ -62,8 +62,6 @@
 		};
 	}
 
-	$: console.log(balls.length);
-
 	onMount(() => {
 		setWidthHeight();
 		window.addEventListener('resize', setWidthHeight);

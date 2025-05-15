@@ -13,12 +13,13 @@
 	export let extend: boolean = false;
 	export let small: boolean = false;
 	export let link: string | undefined = undefined;
+	export let externalLink: boolean = false;
 
 	let componentClass: string = '';
 	export { componentClass as class };
 </script>
 
-<TagBlockWrapper {link} {direction}>
+<TagBlockWrapper {link} {externalLink} {direction}>
 
 <div
 	class="relative inline-flex {componentClass} {backgroundColor === 'north3'

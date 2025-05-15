@@ -56,12 +56,13 @@
 		</TagBlock>
 	</a> -->
 
-	<a
-		class="mt-10 inline"
-		target="_blank"
-		rel="noreferrer"
-		href="https://github.com/Ordina-Group/pythonconferentie.nl"
-	>
-		<TagBlock backgroundColor="north3" small class="hover:scale-105">Source on GitHub</TagBlock>
-	</a>
+	<div class="mt-10 inline">
+		<TagBlock
+			backgroundColor="north3" small
+			link="https://github.com/Ordina-Group/pythonconferentie.nl"
+			externalLink
+		>
+			Source on GitHub
+		</TagBlock>
+	</div>
 </div>

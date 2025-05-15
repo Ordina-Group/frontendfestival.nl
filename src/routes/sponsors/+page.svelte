@@ -208,13 +208,11 @@
             </div>
 
             <div class="mt-4 flex items-center justify-center">
-                <a href="/PYCON NL Sponsorship brochure.pdf" target="_blank" rel="noopener noreferrer">
-                    <TagBlock class="text-lg" backgroundColor="north">
-                        <div class="hover:scale-105 font-bold">
-                            Download <span class="px-4">|</span><span class="text-ordina">PYCON NL Sponsorship brochure</span>
-                        </div>
-                    </TagBlock>
-                </a>
+                <TagBlock class="text-lg" backgroundColor="north" link="/PYCON NL Sponsorship brochure.pdf" externalLink>
+                    <div class="font-bold">
+                        Download<span class="px-2">|</span><span class="text-ordina">PYCON NL Sponsorship brochure</span>
+                    </div>
+                </TagBlock>
             </div>
 
             <div class="mt-8">
@@ -231,13 +229,11 @@
             </address>
 
             <div class="mt-4 flex items-center justify-center">
-                <a href="mailto:pycon.netherlands@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <TagBlock class="text-lg" backgroundColor="north">
-                        <div class="hover:scale-105 font-bold">
-                            Contact <span class="px-4">|</span><span class="text-ordina">Get in contact about sponsorship!</span>
-                        </div>
-                    </TagBlock>
-                </a>
+                <TagBlock class="text-lg" backgroundColor="north" link="mailto:pycon.netherlands@gmail.com" externalLink>
+                    <div class="font-bold">
+                        Contact<span class="px-2">|</span><span class="text-ordina">Get in contact about sponsorship!</span>
+                    </div>
+                </TagBlock>
             </div>
 
             <div class="mt-8">
