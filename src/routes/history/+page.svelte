@@ -6,6 +6,7 @@
   import Marquee from "svelte-fast-marquee";
 	import TopNavSection from '../TopNavSection.svelte';
 	import PracticalInformationSection from '../PracticalInformationSection.svelte';
+	import Page from "../+page.svelte";
 </script>
 
 <div class="bg-western ">
@@ -16,17 +17,28 @@
     <div class="m-8 mt-20 py-6">
         <div class="grid m-auto w-full max-w-6xl text-xl text-black">
             <div>
+                <TagBlock class="float-right max-w-lg" direction="left" extend={true} backgroundColor="north2">
+                    <p>What began as a small meet-up in 2019 with just 40 attendees quickly evolved into something much bigger.</p>
+                </TagBlock>
+            </div>
+            <div class="mt-4">
                 <TagBlock class="float-left max-w-lg" direction="right" extend={true} backgroundColor="north3">
-                    <p>5 Years ago, the first “pythonconference” was held, with 40 attendees this started as a meet-up. This conference grew into a big and fun conference with up to 150 attendees in 2023.</p>
-                    <p>This year the organization of the “pythonconference” applied to host the first PyCon NL to the Python Software Foundation and we are really proud that today we can actually say that we will host the first PyCon NL on October 16th, 2025.</p>
+                    <p>By 2023, the “Python Conference” had grown into a vibrant event, drawing up to 150 participants!</p>
+                </TagBlock>
+            </div>
+            <div class="mt-4">
+                <TagBlock class="float-right max-w-lg" direction="left" extend={true} backgroundColor="north2">
+                    <p>In 2024, the organizing team took a major step forward by applying to the Python Software Foundation to officially host PyCon Netherlands.</p>
+                    <p>We're now proud to say that on October 10th, 2024, we successfully hosted the very first PyCon NL!</p>
                 </TagBlock>
             </div>
 
-            <div class="pt-10 mb-10">
-                <video controls class="float-right">
+            <div class="pt-10 mb-10 flex-center flex-col">
+                <video controls>
                     <source src="/AftermoviePythonconference 2023.42.mp4" type="video/mp4">
                         <track kind="captions" />
                 </video>
+                <div class="mt-4 italic">Short presentation of the “Python Conference” from 2023.</div>
             </div>
         </div>
     </div>
