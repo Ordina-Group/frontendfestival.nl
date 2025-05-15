@@ -1,15 +1,17 @@
 <script>
 	import TagBlock from '$lib/components/TagBlock.svelte';
+	import Video from '$lib/components/Video.svelte';
 </script>
 
 <div class="z-10 w-full bg-western py-6 text-black custom-info" id="info">
 	<div class="text-3xl text-center font-bold">Welcome to PyCon NL!</div>
 
 	<div class="pt-10 mb-10 flex-center">
-		<video controls class="center max-h-[480px]">
-			<source src="/AftermoviePycon2025.mp4" type="video/mp4">
-				<track kind="captions" />
-		</video>
+		<Video
+			src="/AftermoviePycon2025.mp4"
+			message="Watch the PyCon 2025 Presentation"
+			class="center max-h-[480px]"
+		/>
 	</div>
 
 	<div class="grid m-auto w-full max-w-6xl py-6 text-xl text-black">

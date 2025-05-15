@@ -7,6 +7,7 @@
 	import TopNavSection from '../TopNavSection.svelte';
 	import PracticalInformationSection from '../PracticalInformationSection.svelte';
 	import Page from "../+page.svelte";
+	import Video from "$lib/components/Video.svelte";
 </script>
 
 <div class="bg-western ">
@@ -34,11 +35,11 @@
             </div>
 
             <div class="pt-10 mb-10 flex-center flex-col">
-                <video controls>
-                    <source src="/AftermoviePythonconference 2023.42.mp4" type="video/mp4">
-                        <track kind="captions" />
-                </video>
-                <div class="mt-4 italic">Short presentation of the “Python Conference” from 2023.</div>
+           		<Video
+                    src="/AftermoviePythonconference 2023.42.mp4"
+                    message="Short presentation of the “Python Conference” from 2023"
+                    class="center max-h-[480px]"
+                />
             </div>
         </div>
     </div>
