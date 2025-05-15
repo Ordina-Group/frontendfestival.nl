@@ -30,7 +30,7 @@
 				</a>
 			</div>
 			<div class="call-for-sponsors">
-				<TagBlock direction="right" extend={true} backgroundColor="north2">
+				<TagBlock direction="right" extend={true} backgroundColor="north2" link="/sponsors">
 					<div class="inline-flex text-lg text-white">
 						<span class="pr-4 text-ordina font-bold">Call for Sponsors</span>
 					</div>
@@ -43,7 +43,7 @@
 					</div>
 				</TagBlock>
 			</div>
-			<div class="call-for-volenteers">
+			<div class="call-for-volunteers">
 				<TagBlock direction="left" extend={true} backgroundColor="north2">
 					<div class="inline-flex text-lg text-white">
 						<span class="pr-4 text-ordina font-bold">Call for Volunteers</span>
@@ -53,15 +53,15 @@
 		</div>
 
 		<div class="mt-4 flex items-center justify-center">
-			<!-- <a
-				href="https://www.eventbrite.nl/e/tickets-pycon-nl-916084723067?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
-			> -->
-				<TagBlock class="text-lg" backgroundColor="north">
-					<div class="hover:scale-105 text-3xl font-bold">
-						PYCON (NL)<span class="px-4">|</span><span class="pr-4 text-ordina">2025</span>
-					</div>
-				</TagBlock>
-			<!-- </a> -->
+			<!-- link="https://www.eventbrite.nl/e/tickets-pycon-nl-916084723067?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl" -->
+			<TagBlock
+				class="text-lg"
+				backgroundColor="north"
+			>
+				<div class="text-3xl font-bold">
+					PYCON (NL)<span class="px-4">|</span><span class="pr-4 text-ordina">2025</span>
+				</div>
+			</TagBlock>
 		</div>
 
 		<div class="mt-2 flex justify-center">
@@ -79,7 +79,7 @@
 		padding-top: 2rem;
 	}
 
-	.call-for-volenteers {
+	.call-for-volunteers {
 		order: 5;
 		margin-top: 15rem;
 	}
@@ -88,7 +88,7 @@
 		order: 1;
 		margin-top: 15rem;
 	}
-	
+
 	.custom-flex-container {
 		margin-top: 2rem;
 		display: flex;
@@ -127,7 +127,7 @@
 		.call-for-sponsors {
 			order: 1;
 		}
-		.call-for-volenteers {
+		.call-for-volunteers {
 			order: 5;
 		}
 	}
@@ -154,9 +154,17 @@
 			order: 4;
 			margin-top: 0rem;
 		}
-		.call-for-volenteers {
+		.call-for-volunteers {
 			order: 5;
 			margin-top: 0rem;
 		}
+	}
+
+	.custom-flex-container > div > a > :global(div) {
+		transition: transform 0.1s ease-in-out;
+	}
+
+	.custom-flex-container > div > a:hover > :global(div) {
+		transform: translateX(1em);
 	}
 </style>
