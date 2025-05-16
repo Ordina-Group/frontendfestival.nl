@@ -24,10 +24,10 @@
   }
 </script>
 
-<nav class="bg-north2 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+<nav class="bg-north2 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 min-h-[72px]">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
-    <a href="https://pycon-nl.org/">
+    <a href="https://pycon-nl.org/" class="min-h-[40px]">
       <img src="/logo-sopra4.svg" alt="Python Conference Logo" class="w-10" />
     </a>
 

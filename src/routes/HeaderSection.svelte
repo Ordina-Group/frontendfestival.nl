@@ -5,6 +5,7 @@
 	import { chevronDown } from 'svelte-awesome/icons';
 	import Countdown from './Countdown.svelte';
 	import TopNavSection from './TopNavSection.svelte';
+	import { fade, fly } from "svelte/transition";
 
 	interface Menu {
 		label: string
@@ -31,27 +32,36 @@
 		<div class="menu">
 
 			<div class="left">
-				<TagBlock direction="right" extend={true} backgroundColor="north3">
-					<div class="inline-flex text-lg text-white">
-						<div class="text-xl">
-							<span class="pr-4 text-ordina font-bold">Save the date <span class="whitespace-pre">16-10-2025</span></span>
-							<Countdown></Countdown>
+				<div class="fly-right">
+					<TagBlock direction="right" extend={true} backgroundColor="north3">
+						<div class="inline-flex text-lg text-white">
+							<div class="text-xl">
+								<span class="pr-4 text-ordina font-bold">Save the date <span class="whitespace-pre">16-10-2025</span></span>
+								<Countdown></Countdown>
+							</div>
 						</div>
-					</div>
-				</TagBlock>
+					</TagBlock>
+				</div>
 				{#each menusLeft as menu, i}
 					<!-- i + 1 because of the Countdown above -->
-					<div style:padding-right="{menuStagger * (i + 1)}em" style:opacity="{menu.disabled ? 0.5 : 1}">
+					<div
+						class="fly-right"
+						style:animation-delay="{(i + 1) * 200}ms"
+						style:padding-right="{menuStagger * (i + 1)}em"
+					>
 						<TagBlock direction="right" extend={true} backgroundColor="north2" link={menu.link}>
 							<div class="inline-flex text-lg">
-								<span class="pr-4 text-ordina font-bold">{menu.label}</span>
+								<span class="pr-4 text-ordina font-bold" class:text-white={menu.disabled}>{menu.label}</span>
 							</div>
 						</TagBlock>
 					</div>
 				{/each}
 			</div>
 
-			<div class="middle">
+			<div
+				class="middle fade-in"
+				style="flex: 0.5; aspect-ratio: 1 / 1; min-width: 15em;"
+			>
 				<a href="https://pycon-nl.org/" class="logo-container">
 					<img src="/logo-sopra4.svg" alt="Python Conference Logo" class="logo" />
 				</a>
@@ -59,10 +69,14 @@
 
 			<div class="right">
 				{#each menusRight as menu, i}
-					<div style:padding-left="{menuStagger * i}em" style:opacity="{menu.disabled ? 0.5 : 1}">
+					<div
+						class="fly-left"
+						style:animation-delay="{i * 200}ms"
+						style:padding-left="{menuStagger * i}em"
+					>
 						<TagBlock direction="left" extend={true} backgroundColor="north2" link={menu.link}>
 							<div class="inline-flex text-lg">
-								<span class="pr-4 text-ordina font-bold">{menu.label}</span>
+								<span class="pr-4 text-ordina font-bold" class:text-white={menu.disabled}>{menu.label}</span>
 							</div>
 						</TagBlock>
 					</div>
@@ -92,6 +106,29 @@
 </header>
 
 <style>
+	.fade-in {
+		opacity: 0;
+		animation: anim-fade-in 1s ease-out forwards;
+		animation-delay: 100ms;
+	}
+
+	@keyframes anim-fade-in {
+		to { opacity: 1; }
+	}
+
+	.fly-left, .fly-right {
+		opacity: 0;
+		transform: translateX(10em);
+		animation: anim-fly 0.5s ease-in-out forwards;
+	}
+
+	.fly-left { transform: translateX(10em); }
+	.fly-right { transform: translateX(-10em); }
+
+	@keyframes anim-fly {
+		to { transform: translateX(0); opacity: 1; }
+	}
+
 	.header {
 		height: auto;
 		min-height: 100vh;
