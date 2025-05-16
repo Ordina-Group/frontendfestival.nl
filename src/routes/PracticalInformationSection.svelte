@@ -3,19 +3,19 @@
 </script>
 
 <div
-	class="flex-center relative w-full flex-col bg-north-300 py-10 text-white"
+	class="flex-center relative w-full flex-col bg-north-300 py-16 text-white"
 	id="practical-information"
 >
-	<div class="text-4xl">Practical information</div>
+	<div class="text-4xl font-bold">Practical information</div>
 
 	<TagBlock class="mt-5" direction="right" extend={true} backgroundColor="north3">
-		<div class="flex w-screen max-w-xl gap-5 text-black">
+		<div class="flex justify-end w-screen max-w-xl gap-5 text-black">
 			<div class="pl-5 text-2xl sm:pl-0">When: October 16th 2025</div>
 		</div>
 	</TagBlock>
 
-	<TagBlock class="mt-2" direction="left" extend={true} backgroundColor="north2">
-		<div class="flex w-screen max-w-xl items-center gap-5">
+	<TagBlock class="mt-8" direction="left" extend={true} backgroundColor="north2">
+		<div class="flex w-screen max-w-xl items-center">
 			<div class="pl-5 text-2xl" />
 			<div class="flex flex-col items-center gap-2 md:flex-row">
 				<a target="_blank" rel="noreferrer" href="https://goo.gl/maps/PM1SP5jn8Z9M3LZa7"

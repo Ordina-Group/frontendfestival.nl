@@ -14,7 +14,7 @@
 
 	const tickets = { label: "Tickets coming soon", disabled: true };
 	const sponsors = { label: "Call for Sponsors", link: "/sponsors" };
-	const volunteers = { label: "Call for Volunteers" };
+	const volunteers = { label: "Call for Volunteers", link: "/volunteers" };
 	const papers = { label: "Call for Papers" };
 
 	const menusLeft: Menu[] = [sponsors, volunteers];
@@ -52,7 +52,7 @@
 			</div>
 
 			<div class="middle">
-				<a href="https://pythonconferentie.nl" class="logo-container">
+				<a href="https://pycon-nl.org/" class="logo-container">
 					<img src="/logo-sopra4.svg" alt="Python Conference Logo" class="logo" />
 				</a>
 			</div>

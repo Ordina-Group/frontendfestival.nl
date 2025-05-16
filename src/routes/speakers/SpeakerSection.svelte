@@ -1,8 +1,8 @@
 <script lang="ts">
 	import TagBlock from '$lib/components/TagBlock.svelte';
 	import { fade } from 'svelte/transition';
-	import type { Speaker } from '../SpeakerBio.svelte';
-	import SpeakerBio from '../SpeakerBio.svelte';
+	import type { Speaker } from '$lib/components/SpeakerBio.svelte';
+	import SpeakerBio from '$lib/components/SpeakerBio.svelte';
 
 	let speakers: Speaker[] = [
 	];
@@ -18,7 +18,7 @@
 <div class="relative w-full px-2 py-10 text-black" id="speakers">
 	<!-- <div class="mb-24 w-full text-center text-4xl">Speakers</div> -->
 
-	
+
 	{#if speakers.length === 0}
 	<div
 		in:fade={{ duration: 250, delay: 250 }}
@@ -91,7 +91,7 @@
 						</div>
 					</div>
 				{/each}
-				
+
 			</div>
 		{:else}
 			<SpeakerBio on:goBack={clearFocussedSpeaker} speaker={speakers[focussedSpeaker]} ></SpeakerBio>

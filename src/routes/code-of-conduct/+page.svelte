@@ -1,4 +1,4 @@
-<div class="m-8">
+<div class="p-8 m-auto w-full max-w-4xl">
 	<h1 class="mt-20 py-6 text-3xl font-bold">CODE OF CONDUCT</h1>
 	<div>
 		<p class="pb-4">

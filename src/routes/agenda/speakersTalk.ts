@@ -1,4 +1,4 @@
-import type { Speaker } from "../SpeakerBio.svelte";
+import type { Speaker } from "$lib/components/SpeakerBio.svelte";
 
 export const speakers: Speaker[] = [
 ];
