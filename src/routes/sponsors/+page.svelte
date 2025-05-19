@@ -2,6 +2,9 @@
     import { onMount } from 'svelte';
     import type { PageData } from './$types';
     import TagBlock from '$lib/components/TagBlock.svelte';
+	import Fly from "$lib/components/Fly.svelte";
+    import sponsors from "$lib/assets/images/Sponsor-pana.svg?raw";
+    import tiers from "$lib/assets/images/Holding the arrow-pana.svg?raw";
 
     export let data: PageData;
 
@@ -34,11 +37,18 @@
 
 <div class="m-8 mt-20 py-6">
     <div class="grid m-auto w-full max-w-6xl text-xl text-black">
-        <div>
-            <TagBlock class="float-left max-w-lg" direction="right" extend={true} backgroundColor="north3">
-                <p>We are excited to invite you to explore our sponsor packages for PyCon NL 2025, taking place on October 16, 2025.</p>
-                <p>Our packages are designed to offer you maximum visibility and engagement with our vibrant community of Python enthusiasts from all over the world.</p>
-            </TagBlock>
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
+            <Fly offset={-10} duration={1000}>
+                <TagBlock class="float-left max-w-lg" direction="right" extend={true} backgroundColor="north3">
+                    <p>We are excited to invite you to explore our sponsor packages for PyCon NL 2025, taking place on October 16, 2025.</p>
+                    <p>Our packages are designed to offer you maximum visibility and engagement with our vibrant community of Python enthusiasts from all over the world.</p>
+                </TagBlock>
+            </Fly>
+            <Fly offset={10} duration={1000} delay={400}>
+                <div class="svg-max">
+                    {@html sponsors}
+                </div>
+            </Fly>
         </div>
 
         <h2 class="font-bold text-2xl mb-4 spacing-top">Package Details</h2>
@@ -58,6 +68,10 @@
                     <p>The Bronze Package offers basic visibility with logo placements on the website and in select promotional materials. Bronze sponsors will be featured in event programs or on specific event pages and have 2 complimentary conference passes.</p>
                 </TagBlock>
             </div>
+        </div>
+
+        <div class="w-full flex justify-center svg-max">
+            {@html tiers}
         </div>
 
         <div class="mt-4 flex items-center justify-center">
@@ -235,6 +249,10 @@
         </div>
 
         <!-- TODO: sponsors 2025 toevoegen -->
+        <div class="text-sm mt-12 w-full text-center">
+	    	<a href="https://storyset.com/people">People illustrations by Storyset</a>
+    	</div>
+
     </div>
 </div>
 
@@ -273,5 +291,11 @@
     }
     .spacing-top {
         margin-top: 2rem;
+    }
+
+    .svg-max > :global(svg) {
+        max-height: 400px;
+        aspect-ratio: 1 / 1;
+        width: 100%;
     }
 </style>
