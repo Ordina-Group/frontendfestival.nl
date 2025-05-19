@@ -1,65 +1,88 @@
 <script lang="ts">
 	import TagBlock from "$lib/components/TagBlock.svelte";
+	import Fly from "$lib/components/Fly.svelte";
+
+    import volunteer from "$lib/assets/images/Hello-pana.svg?raw";
+    import organize from "$lib/assets/images/Organizing projects-pana.svg?raw";
+    import ambassador from "$lib/assets/images/Ambassador-pana.svg?raw";
+	import Storyset from "$lib/components/Storyset.svelte";
 </script>
 
 <div class="m-8 mt-20 py-6">
-	<div class="m-auto w-full max-w-4xl text-black">
+	<div class="m-auto w-full max-w-6xl text-black">
         <div class="w-full text-center font-bold text-xl">
             <TagBlock backgroundColor="north3">
                 Want to help make PyCon NL 2025 an unforgettable event?
             </TagBlock>
         </div>
 
-        <div class="m-8 w-full flex justify-center">
+        <div class="w-full flex justify-center top-image -mt-12">
+            {@html volunteer}
+        </div>
+
+        <div class="mb-8 w-full flex justify-center">
             <p class="max-w-2xl">
                 We're looking for enthusiastic volunteers to support us in organizing the conference! PyCon NL is powered by the community, and we can't do it without you.
             </p>
         </div>
 
         <div class="w-full">
-            <TagBlock class="max-w-lg" direction="right" backgroundColor="fountain" extend>
-                <span class="font-bold">There are several ways to contribute</span> — from helping us spread the word, to joining the organizing team, or shaping the content and talks through the program committee.
-            </TagBlock>
         </div>
 
+        <div class="grid grid-cols-1 lg:grid-cols-2 m-auto w-full items-center justify-center">
+            <Fly offset={-10} duration={1000}>
+                <TagBlock class="max-w-lg" direction="right" backgroundColor="fountain" extend>
+                    <p class="font-bold">There are several ways to contribute</p>
+                    <p>
+                        From helping us spread the word, to joining the organizing team, or shaping the content and talks through the program committee.
+                    </p>
+                </TagBlock>
+            </Fly>
+            <Fly offset={10} duration={1000}>
+                {@html organize}
+            </Fly>
+        </div>
+
+
         <div class="my-8 w-full flex flex-col items-center">
-            <div class="max-w-2xl">
+            <div class="max-w-2xl p-8 bg-north3">
                 <div class="text-xl font-bold">
                     Why volunteer?
                 </div>
-                <ul class="my-4 pl-8 list-disc">
+                <ul class="mt-4 pl-8 list-disc">
                     <li>Help create a meaningful event for the Python community</li>
                     <li>Free access to the conference</li>
                     <li>Collaborate with a fantastic team</li>
                     <li>A unique chance to get involved behind the scenes</li>
                 </ul>
             </div>
+        </div>
 
-            <div class="mt-8 text-2xl font-bold text-center italic">
+        <div>
+            <div class="my-8 text-3xl font-bold text-center">
                 Where we need help
             </div>
 
-            <div class="grid m-auto w-full max-w-2xl">
-                <div class="w-full mt-4">
-                    <TagBlock class="float-right max-w-lg" direction="left" backgroundColor="north" extend>
-                        <div class="font-bold">Promotion & Communication:</div>
-                        Social media, newsletters, community outreach
-                    </TagBlock>
-                </div>
-
-                <div class="w-full mt-4">
-                    <TagBlock class="float-left ax-w-lg" direction="right" backgroundColor="north2" extend>
-                        <div class="font-bold">Organizing Committee:</div>
-                        Help plan logistics, coordinate with partners,<br>and make the event run smoothly
-                    </TagBlock>
-                </div>
-
-                <div class="w-full mt-4">
-                    <TagBlock class="float-right max-w-lg" direction="left" backgroundColor="north3" extend>
-                        <div class="font-bold">Program Committee:</div>
-                        Help select talks and shape the content of the conference
-                    </TagBlock>
-                </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 m-auto w-full justify-center">
+                <Fly offset={-10} duration={1000}>
+                    {@html organize}
+                </Fly>
+                <Fly offset={10} duration={1000}>
+                    <div class="w-full mt-4">
+                        <TagBlock class="max-w-lg" direction="left" backgroundColor="north" extend>
+                            <div class="font-bold">Promotion & Communication:</div>
+                            Social media, newsletters, community outreach
+                        </TagBlock>
+                        <TagBlock class="mt-4 ml-8 max-w-lg" direction="left" backgroundColor="north2" extend>
+                            <div class="font-bold">Organizing Committee:</div>
+                            Help plan logistics, coordinate with partners,<br>and make the event run smoothly
+                        </TagBlock>
+                        <TagBlock class="mt-4 ml-16 max-w-lg" direction="left" backgroundColor="north3" extend>
+                            <div class="font-bold">Program Committee:</div>
+                            Help select talks and shape the content of the conference
+                        </TagBlock>
+                    </div>
+                </Fly>
             </div>
 
             <div class="mt-12 italic text-center">
@@ -75,5 +98,13 @@
             </TagBlock>
         </div>
 
-	</div>
+    </div>
+
+    <Storyset />
 </div>
+
+<style>
+    .top-image > :global(svg) {
+        max-height: 400px;
+    }
+</style>

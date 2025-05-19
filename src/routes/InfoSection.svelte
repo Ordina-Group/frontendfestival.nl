@@ -6,6 +6,7 @@
 	import talk from '$lib/assets/images/Public talk-pana.svg?raw';
 	import community from '$lib/assets/images/Team spirit-pana.svg?raw';
 	import immerse from '$lib/assets/images/Visual data-pana.svg?raw';
+	import Storyset from '$lib/components/Storyset.svelte';
 </script>
 
 <div class="z-10 w-full bg-western py-6 text-black custom-info" id="info">
@@ -109,9 +110,8 @@
 		<div class="clear-both" />
 
 	</div>
-	<div class="hidden lg:block text-sm mt-12 w-full text-center">
-		<a href="https://storyset.com/people">People illustrations by Storyset</a>
-	</div>
+
+	<Storyset />
 </div>
 
 <style>
