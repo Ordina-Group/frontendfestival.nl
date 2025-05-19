@@ -1,6 +1,11 @@
 <script>
+	import Fly from '$lib/components/Fly.svelte';
 	import TagBlock from '$lib/components/TagBlock.svelte';
 	import Video from '$lib/components/Video.svelte';
+
+	import talk from '$lib/assets/images/Public talk-pana.svg?raw';
+	import community from '$lib/assets/images/Team spirit-pana.svg?raw';
+	import immerse from '$lib/assets/images/Visual data-pana.svg?raw';
 </script>
 
 <div class="z-10 w-full bg-western py-6 text-black custom-info" id="info">
@@ -14,55 +19,85 @@
 		/>
 	</div>
 
-	<div class="grid m-auto w-full max-w-6xl py-6 text-xl text-black">
-		<div>
+	<div class="grid lg:grid-cols-2 grid-cols-1 m-auto w-full max-w-6xl py-6 text-xl text-black items-center">
+		<Fly offset={-10} duration={1000} delay={200}>
 			<TagBlock
 				class="float-left max-w-lg"
 				direction="right"
 				extend={true}
 				backgroundColor="north3"
 			>
-				<p>Join us for an electrifying celebration of Python programming at PyCon NL, where
-				enthusiasts, professionals, and curious minds converge to explore the endless possibilities
-				of this dynamic language.</p>
-				<p>Inspired by the success of other PyCon events, but also our own
-				previous experience with organizing and hosting the Python Conference for 4 years, PyCon NL
-				promises an unforgettable experience packed with insightful talks, engaging workshops,
-				vibrant networking opportunities, and of course, plenty of food, drinks, and fun!</p>
+				<p>
+				Join us for an <span class="italic">electrifying</span> celebration of Python
+				programming at <span class="font-bold">PyCon NL</span>,
+				where enthusiasts, professionals, and curious minds converge to explore the
+				<span class="italic">endless possibilities</span> of this dynamic language.
+				</p>
+
+				<p>
+				Inspired by the success of other PyCon events, and fueled by our own
+				experience hosting the Python Conference for 4 years,
+				<span class="font-bold">PyCon NL</span> promises an
+				<span class="italic">unforgettable</span> experience packed with:
+				</p>
+
+				<ul class="list-disc list-inside mt-2">
+				<li>Insightful talks</li>
+				<li>Engaging workshops</li>
+				<li>Vibrant networking opportunities</li>
+				<li><span class="font-bold">Plenty of food, drinks, and fun 🎉</span></li>
+				</ul>
 			</TagBlock>
+		</Fly>
+		<div class="hidden lg:block">
+			<Fly offset={10} duration={1000} delay={400}>
+				{@html talk}
+			</Fly>
 		</div>
-		<div>
+
+		<div class="hidden lg:block">
+			<Fly offset={-10} duration={1000} delay={400}>
+				<div class="mb-[-8em]">{@html immerse}</div>
+			</Fly>
+		</div>
+		<Fly offset={10} duration={1000} delay={200}>
 			<TagBlock
-				class="float-right max-w-lg "
+				class="float-right max-w-lg mt-14"
 				direction="left"
 				backgroundColor="north2"
 				extend={true}
 			>
 				<p class="font-bold">What to expect?</p>
-				<p>At PyCon NL, expect a lineup of captivating speakers who will delve
+				<p>At <span class="font-bold">PyCon NL</span>, expect a lineup of captivating speakers who will delve
 				into the latest trends, innovations, and best practices shaping the Python landscape.</p>
 				<p>Immerse yourself in a diverse array of talks covering a wide range
 				of topics, from web development and data science to machine learning and
 				artificial intelligence.</p>
 			</TagBlock>
-		</div>
+		</Fly>
 
-		<div>
+		<Fly offset={-10} duration={1000} delay={200}>
 			<TagBlock
-				class="float-left max-w-lg"
+				class="float-left max-w-lg mt-14"
 				direction="right"
 				extend={true}
 				backgroundColor="north3"
 			>
 				<p>But PyCon NL is not just about passive learning; it's about active participation and
-				community building.</p>
+				<span class="font-bold">community building</span>.</p>
 				<p>Engage in hands-on workshops where you can deepen your skills, exchange
 				ideas, and collaborate with fellow Python enthusiasts.</p>
 				<p>Network with industry leaders, seasoned professionals, and passionate learners,
 				forging connections that can propel your career and projects forward.</p>
 			</TagBlock>
+		</Fly>
+		<div class="hidden lg:block">
+			<Fly offset={10} duration={1000} delay={400}>
+				{@html community}
+			</Fly>
 		</div>
-		<div class="flex-center">
+
+		<div class="flex-center lg:col-span-2">
 			<div class="mx-4 pt-12 text-xl font-bold max-w-[768px]">
 				<p>So, mark your calendars, spread the word, and get ready for an unforgettable experience at
 				PyCon NL.</p>
@@ -72,6 +107,10 @@
 			</div>
 		</div>
 		<div class="clear-both" />
+
+	</div>
+	<div class="hidden lg:block text-sm mt-12 w-full text-center">
+		<a href="https://storyset.com/people">People illustrations by Storyset</a>
 	</div>
 </div>
 

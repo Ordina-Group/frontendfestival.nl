@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="flex-center relative w-full flex-col bg-north-300 py-16 text-white"
+	class="mt-16 flex-center relative w-full flex-col bg-north-300 py-16 text-white"
 	id="practical-information"
 >
 	<div class="text-4xl font-bold">Practical information</div>

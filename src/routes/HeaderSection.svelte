@@ -5,7 +5,7 @@
 	import { chevronDown } from 'svelte-awesome/icons';
 	import Countdown from './Countdown.svelte';
 	import TopNavSection from './TopNavSection.svelte';
-	import { fade, fly } from "svelte/transition";
+	import Fly from "$lib/components/Fly.svelte";
 
 	interface Menu {
 		label: string
@@ -32,7 +32,7 @@
 		<div class="menu">
 
 			<div class="left">
-				<div class="fly-right">
+				<Fly offset={-10}>
 					<TagBlock direction="right" extend={true} backgroundColor="north3">
 						<div class="inline-flex text-lg text-white">
 							<div class="text-xl">
@@ -41,19 +41,17 @@
 							</div>
 						</div>
 					</TagBlock>
-				</div>
+				</Fly>
 				{#each menusLeft as menu, i}
 					<!-- i + 1 because of the Countdown above -->
-					<div
-						class="fly-right"
-						style:animation-delay="{(i + 1) * 200}ms"
-						style:padding-right="{menuStagger * (i + 1)}em"
-					>
-						<TagBlock direction="right" extend={true} backgroundColor="north2" link={menu.link}>
-							<div class="inline-flex text-lg">
-								<span class="pr-4 text-ordina font-bold" class:text-white={menu.disabled}>{menu.label}</span>
-							</div>
-						</TagBlock>
+					<div style:padding-right="{menuStagger * (i + 1)}em">
+						<Fly offset={-10} delay={(i + 1) * 200}>
+							<TagBlock direction="right" extend={true} backgroundColor="north2" link={menu.link}>
+								<div class="inline-flex text-lg">
+									<span class="pr-4 text-ordina font-bold" class:text-white={menu.disabled}>{menu.label}</span>
+								</div>
+							</TagBlock>
+						</Fly>
 					</div>
 				{/each}
 			</div>
@@ -69,16 +67,14 @@
 
 			<div class="right">
 				{#each menusRight as menu, i}
-					<div
-						class="fly-left"
-						style:animation-delay="{i * 200}ms"
-						style:padding-left="{menuStagger * i}em"
-					>
-						<TagBlock direction="left" extend={true} backgroundColor="north2" link={menu.link}>
-							<div class="inline-flex text-lg">
-								<span class="pr-4 text-ordina font-bold" class:text-white={menu.disabled}>{menu.label}</span>
-							</div>
-						</TagBlock>
+					<div style:padding-left="{menuStagger * i}em">
+						<Fly offset={10} delay={i * 200}>
+							<TagBlock direction="left" extend={true} backgroundColor="north2" link={menu.link}>
+								<div class="inline-flex text-lg">
+									<span class="pr-4 text-ordina font-bold" class:text-white={menu.disabled}>{menu.label}</span>
+								</div>
+							</TagBlock>
+						</Fly>
 					</div>
 				{/each}
 			</div>
@@ -97,11 +93,11 @@
 			</TagBlock>
 		</div>
 
-		<div class="mt-2 flex justify-center">
-			<a class="mb-10 inline" href="#info">
-				<Icon class="text-white opacity-75" data={chevronDown} scale={3} />
-			</a>
-		</div>
+		<a class="mt-8 flex justify-center text-white hover:text-north2 transition-all opacity-75 hover:opacity-100" href="#info">
+			<div class="my-10 inline">
+				<Icon class="" data={chevronDown} scale={3} />
+			</div>
+		</a>
 	</div>
 </header>
 
@@ -114,19 +110,6 @@
 
 	@keyframes anim-fade-in {
 		to { opacity: 1; }
-	}
-
-	.fly-left, .fly-right {
-		opacity: 0;
-		transform: translateX(10em);
-		animation: anim-fly 0.5s ease-in-out forwards;
-	}
-
-	.fly-left { transform: translateX(10em); }
-	.fly-right { transform: translateX(-10em); }
-
-	@keyframes anim-fly {
-		to { transform: translateX(0); opacity: 1; }
 	}
 
 	.header {
