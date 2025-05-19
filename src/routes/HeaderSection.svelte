@@ -93,11 +93,16 @@
 			</TagBlock>
 		</div>
 
-		<a class="mt-8 flex justify-center text-white hover:text-north2 transition-all opacity-75 hover:opacity-100" href="#info">
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
+		<!-- svelte-ignore a11y-no-static-element-interactions -->
+		<div
+			class="mt-8 flex justify-center text-white hover:text-north2 transition-all opacity-75 hover:opacity-100 cursor-pointer"
+			on:click={() => document.getElementById("info")?.scrollIntoView({ behavior: "smooth" })}
+		>
 			<div class="my-10 inline">
 				<Icon class="" data={chevronDown} scale={3} />
 			</div>
-		</a>
+		</div>
 	</div>
 </header>
 

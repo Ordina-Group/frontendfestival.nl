@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../reset.pcss';
 	import '../tailwind.pcss';
+
 	import PracticalInformationSection from "./PracticalInformationSection.svelte";
 	import TopNavSection from "./TopNavSection.svelte";
 </script>
@@ -20,8 +21,8 @@
 	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
-<div class="flex h-screen w-screen flex-col overflow-x-hidden">
-	<div class="min-h-screen overflow-x-hidden scroll-smooth">
+<div class="flex h-screen w-screen flex-col">
+	<div class="min-h-screen">
 
 		<div class="bg-western">
 			<header class="flex-center relative w-full bg-shark" id="header">
