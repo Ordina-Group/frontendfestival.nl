@@ -4,6 +4,14 @@
 
 	import PracticalInformationSection from "./PracticalInformationSection.svelte";
 	import TopNavSection from "./TopNavSection.svelte";
+
+ 	import { afterNavigate } from '$app/navigation';
+
+	let container: HTMLElement;
+
+    afterNavigate(() => {
+        container.scrollTo({ top: 0 });
+    });
 </script>
 
 <svelte:head>
@@ -21,7 +29,7 @@
 	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
-<div class="flex h-screen w-screen flex-col">
+<div bind:this={container} class="flex h-screen w-screen flex-col overflow-x-hidden relative">
 	<div class="min-h-screen">
 
 		<div class="bg-western">
@@ -37,8 +45,3 @@
 	</div>
 </div>
 
-<style>
-	:global(body) {
-		overflow-x: hidden;
-	}
-</style>

@@ -27,7 +27,7 @@
 <nav class="bg-north2 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 min-h-[72px]">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
-    <a href="https://pycon-nl.org/" class="min-h-[40px]">
+    <a href="/" class="min-h-[40px]">
       <img src="/logo-sopra4.svg" alt="Python Conference Logo" class="w-10" />
     </a>
 
@@ -55,6 +55,7 @@
               class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:hover:underline dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               rel="noreferrer"
               href={item.route}
+              on:click={() => menuOpen = false}
             >
               {item.label}
             </a>
