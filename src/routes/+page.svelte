@@ -3,6 +3,7 @@
 	import InfoSection from './InfoSection.svelte';
 	import PastEventsSection from './PastEventsSection.svelte';
 	import PracticalInformationSection from './PracticalInformationSection.svelte';
+	import SpeakerScheduleSection from './SpeakerScheduleSection.svelte';
 	import SpeakerSection from './SpeakerSection.svelte';
 </script>
 
