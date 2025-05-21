@@ -36,7 +36,7 @@
 			</TagBlock>
 		</div>
 		<div class="flex-center absolute bottom-0 left-0 w-full">
-			<a class="mb-10 inline" href="#info">
+			<a class="mb-10 inline" href="/#info">
 				<Icon class="text-white opacity-75" data={chevronDown} scale={3} />
 			</a>
 		</div>
