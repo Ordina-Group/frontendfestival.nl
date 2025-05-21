@@ -7,41 +7,39 @@
 		speaker?: string;
 	};
 
-	let schedule: ScheduleItem[] = []
-	// [
-	// 	{
-	// 		time: '17:00',
-	// 		title: 'Walk-in and dinner'
-	// 	},
-	// 	{
-	// 		time: '18:30',
-	// 		title: 'Custom Elements, or How to Make it Easy for People to Use Your Code',
-	// 		speaker: 'Stacy Cashmore'
-	// 	},
-	// 	{
-	// 		time: '19:00',
-	// 		title: 'Ctrl+Alt+VR: Create VR-First Websites for the 2D Web',
-	// 		speaker: 'Jorrik Klijnsma'
-	// 	},
-	// 	{
-	// 		time: '20:00',
-	// 		title: 'An Intro to Nx',
-	// 		speaker: 'Bjorn Schijff'
-	// 	},
-	// 	{
-	// 		time: '20:30',
-	// 		title: 'Beats in the Browser - Coding Music with JavaScript',
-	// 		speaker: 'Rowdy Rabouw'
-	// 	},
-	// 	{
-	// 		time: '21:00',
-	// 		title: 'Wrap-up & Drinks'
-	// 	},
-	// 	{
-	// 		time: '22:00',
-	// 		title: 'Closing'
-	// 	}
-	// ];
+	let schedule: ScheduleItem[] = [
+		{
+			time: '17:00',
+			title: 'Walk-in and dinner'
+		},
+		{
+			time: '18:30',
+			title: 'Keynote',
+			speaker: 'Jad Joubran'
+		},
+		{
+			time: '19:15',
+			title: 'To be announced',
+			speaker: 'To be announced'
+		},
+		{
+			time: '19:45',
+			title: 'Break'
+		},
+		{
+			time: '20:00',
+			title: 'To be announced',
+			speaker: 'To be announced'
+		},
+		{
+			time: '21:30',
+			title: 'Wrap-up & Drinks'
+		},
+		{
+			time: '22:30',
+			title: 'Closing'
+		}
+	];
 </script>
 
 <div class="flex-center w-full flex-col bg-shark py-10 text-white" id="schedule">
