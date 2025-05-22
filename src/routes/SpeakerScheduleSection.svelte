@@ -32,11 +32,16 @@
 			speaker: 'To be announced'
 		},
 		{
-			time: '21:30',
+			time: '20:30',
+			title: 'To be announced',
+			speaker: 'To be announced'
+		},
+		{
+			time: '21:00',
 			title: 'Wrap-up & Drinks'
 		},
 		{
-			time: '22:30',
+			time: '22:00',
 			title: 'Closing'
 		}
 	];
