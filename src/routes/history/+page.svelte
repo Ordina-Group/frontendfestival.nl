@@ -4,7 +4,6 @@
 
     import growth from "$lib/assets/images/Social Growth-pana.svg?raw";
 	import Fly from "$lib/components/Fly.svelte";
-	import Storyset from "$lib/components/Storyset.svelte";
 </script>
 
 <div class="m-8 mt-20 py-6">
@@ -48,8 +47,6 @@
             class="center max-h-[480px]"
         />
     </div>
-
-    <Storyset />
 </div>
 
 <style>

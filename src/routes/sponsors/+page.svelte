@@ -5,7 +5,6 @@
 	import Fly from "$lib/components/Fly.svelte";
     import sponsors from "$lib/assets/images/Sponsor-pana.svg?raw";
     import tiers from "$lib/assets/images/Holding the arrow-pana.svg?raw";
-	import Storyset from "$lib/components/Storyset.svelte";
 
     export let data: PageData;
 
@@ -250,8 +249,6 @@
         </div>
 
         <!-- TODO: sponsors 2025 toevoegen -->
-
-        <Storyset />
     </div>
 </div>
 

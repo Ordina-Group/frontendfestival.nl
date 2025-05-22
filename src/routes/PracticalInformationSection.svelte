@@ -10,7 +10,7 @@
 
 	<TagBlock class="mt-5" direction="right" extend={true} backgroundColor="north3">
 		<div class="flex justify-end w-screen max-w-xl gap-5 text-black">
-			<div class="pl-5 text-2xl sm:pl-0">When: October 16th 2025</div>
+			<div class="pl-5 text-2xl sm:pl-0"><span class="font-bold">When:</span> October 16th 2025</div>
 		</div>
 	</TagBlock>
 
@@ -26,8 +26,8 @@
 					/></a
 				>
 				<div class="md:pl-6 flex flex-col">
-					<div class="text-2xl">Where: Media Plaza (Jaarbeurs Utrecht)</div>
-					<div class="text-xl">Jaarbeursplein 6</div>
+					<div class="text-2xl"><span class="font-bold">Where:</span> Media Plaza<br>(Jaarbeurs Utrecht)</div>
+					<div class="text-xl mt-4">Jaarbeursplein 6</div>
 					<div class="text-xl">3521 AL Utrecht</div>
 					<div class="text-xl">The Netherlands</div>
 					<button class="mt-2 ml-6 cursor-pointer text-left select-none">
@@ -56,13 +56,23 @@
 		</TagBlock>
 	</a> -->
 
-	<div class="mt-10 inline">
+	<div class="mt-10 inline flex flex-col gap-4 lg:block">
+		<span class="text-sm mt-12 w-full text-center">
+    		Made with Svelte
+		</span>
+
 		<TagBlock
+			class="mx-8"
 			backgroundColor="north3" small
 			link="https://github.com/Ordina-Group/pythonconferentie.nl"
 			externalLink
 		>
 			Source on GitHub
 		</TagBlock>
+
+		<span class="text-sm">
+    		<a href="https://storyset.com/people">People illustrations by Storyset</a>
+		</span>
+
 	</div>
 </div>

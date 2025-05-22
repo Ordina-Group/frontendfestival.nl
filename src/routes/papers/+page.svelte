@@ -3,9 +3,6 @@
 	import Fly from "$lib/components/Fly.svelte";
 
     import speaker from "$lib/assets/images/Conference speaker-pana.svg?raw";
-    import organize from "$lib/assets/images/Organizing projects-pana.svg?raw";
-    import ambassador from "$lib/assets/images/Ambassador-pana.svg?raw";
-	import Storyset from "$lib/components/Storyset.svelte";
 </script>
 
 <div class="m-8 mt-20 py-6">
@@ -63,6 +60,4 @@
         </div>
 
     </div>
-
-    <Storyset />
 </div>
