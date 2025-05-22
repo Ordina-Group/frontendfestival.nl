@@ -43,10 +43,10 @@
 				</p>
 
 				<ul class="list-disc list-inside mt-2">
-				<li>Insightful talks</li>
-				<li>Engaging workshops</li>
-				<li>Vibrant networking opportunities</li>
-				<li><span class="font-bold">Plenty of food, drinks, and fun 🎉</span></li>
+					<li>Insightful talks</li>
+					<li>Engaging workshops</li>
+					<li>Vibrant networking opportunities</li>
+					<li><span class="font-bold">Plenty of food, drinks, and fun 🎉</span></li>
 				</ul>
 			</TagBlock>
 		</Fly>
@@ -56,7 +56,7 @@
 			</Fly>
 		</div>
 
-		<div class="hidden lg:block">
+		<div class="hidden lg:block z-[1]">
 			<Fly offset={-10} duration={1000} delay={400}>
 				<div class="mb-[-8em]">{@html immerse}</div>
 			</Fly>

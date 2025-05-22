@@ -26,9 +26,6 @@
             </p>
         </div>
 
-        <div class="w-full">
-        </div>
-
         <div class="grid grid-cols-1 lg:grid-cols-2 m-auto w-full items-center justify-center">
             <Fly offset={-10} duration={1000}>
                 <TagBlock class="max-w-lg" direction="right" backgroundColor="fountain" extend>
@@ -37,25 +34,22 @@
                         From helping us spread the word, to joining the organizing team, or shaping the content and talks through the program committee.
                     </p>
                 </TagBlock>
-            </Fly>
-            <Fly offset={10} duration={1000}>
-                {@html organize}
-            </Fly>
-        </div>
-
-
-        <div class="my-8 w-full flex flex-col items-center">
-            <div class="max-w-2xl p-8 bg-north3">
-                <div class="text-xl font-bold">
-                    Why volunteer?
+                <div class="mt-8 max-w-2xl p-8 bg-north3">
+                    <div class="text-xl font-bold">
+                        Why volunteer?
+                    </div>
+                    <ul class="mt-4 pl-8 list-disc">
+                        <li>Help create a meaningful event for the Python community</li>
+                        <li>Free access to the conference</li>
+                        <li>Collaborate with a fantastic team</li>
+                        <li>A unique chance to get involved behind the scenes</li>
+                    </ul>
                 </div>
-                <ul class="mt-4 pl-8 list-disc">
-                    <li>Help create a meaningful event for the Python community</li>
-                    <li>Free access to the conference</li>
-                    <li>Collaborate with a fantastic team</li>
-                    <li>A unique chance to get involved behind the scenes</li>
-                </ul>
-            </div>
+            </Fly>
+
+            <Fly offset={10} duration={1000}>
+                {@html ambassador}
+            </Fly>
         </div>
 
         <div>
