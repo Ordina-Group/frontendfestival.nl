@@ -13,10 +13,10 @@
 		disabled?: boolean
 	}
 
-	const tickets = { label: "Tickets coming soon", disabled: true };
+	const tickets = { label: "Tickets coming soon !", disabled: true };
 	const sponsors = { label: "Call for Sponsors", link: "/sponsors" };
 	const volunteers = { label: "Call for Volunteers", link: "/volunteers" };
-	const papers = { label: "Call for Papers" };
+	const papers = { label: "Call for Papers", link: "/papers" };
 
 	const menusLeft: Menu[] = [sponsors, volunteers];
 	const menusRight: Menu[] = [papers, tickets];
@@ -48,7 +48,7 @@
 						<Fly offset={-10} delay={(i + 1) * 200}>
 							<TagBlock direction="right" extend={true} backgroundColor="north2" link={menu.link}>
 								<div class="inline-flex text-lg">
-									<span class="pr-4 text-ordina font-bold" class:text-white={menu.disabled}>{menu.label}</span>
+									<span class="pr-4 text-ordina font-bold" class:disabled={menu.disabled}>{menu.label}</span>
 								</div>
 							</TagBlock>
 						</Fly>
@@ -71,7 +71,7 @@
 						<Fly offset={10} delay={i * 200}>
 							<TagBlock direction="left" extend={true} backgroundColor="north2" link={menu.link}>
 								<div class="inline-flex text-lg">
-									<span class="pr-4 text-ordina font-bold" class:text-white={menu.disabled}>{menu.label}</span>
+									<span class="pr-4 text-ordina font-bold" class:disabled={menu.disabled}>{menu.label}</span>
 								</div>
 							</TagBlock>
 						</Fly>
@@ -154,6 +154,13 @@
 	.logo {
 		width: 100%;
 		height: auto;
+	}
+
+	.disabled {
+		color: white;
+		opacity: 0.5;
+		font-style: italic;
+		cursor: default;
 	}
 
 	@media (max-width: 767px) {

@@ -10,8 +10,8 @@
 
   const items: MenuItem[] = [
     { label: "Home", route: "/" },
-    { label: "Agenda", route: "/agenda" },
-    { label: "Speakers", route: "/speakers" },
+    { label: "CFP", route: "/papers" },
+    { label: "Volunteers", route: "/volunteers" },
     { label: "Sponsors", route: "/sponsors" },
     { label: "History", route: "/history" },
     { label: "Code of Conduct", route: "/code-of-conduct" },
