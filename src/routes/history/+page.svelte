@@ -13,23 +13,31 @@
             {@html growth}
         </Fly>
 
-        <Fly offset={10} duration={1000}>
-            <TagBlock class="max-w-lg" direction="left" extend={true} backgroundColor="north2">
-                <p>What began as a small meet-up in 2019 with just 40 attendees quickly evolved into something much bigger.</p>
-            </TagBlock>
+        <div>
+            <Fly offset={10} duration={1000}>
+                <TagBlock class="max-w-lg" direction="left" extend={true} backgroundColor="north2">
+                    <p>What began as a small meet-up in 2019 with just 40 attendees quickly evolved into something much bigger.</p>
+                </TagBlock>
+            </Fly>
 
-            <TagBlock class="mt-4 ml-6 max-w-lg" direction="left" extend={true} backgroundColor="north3">
-                <p>By 2023, the “Python Conference” had grown into a vibrant event, drawing up to 150 participants!</p>
-            </TagBlock>
+            <Fly offset={10} duration={1000} delay={200}>
+                <TagBlock class="mt-4 ml-6 max-w-lg" direction="left" extend={true} backgroundColor="north3">
+                    <p>By 2023, the “Python Conference” had grown into a vibrant event, drawing up to 150 participants!</p>
+                </TagBlock>
+            </Fly>
 
-            <TagBlock class="mt-4 ml-12 max-w-lg" direction="left" extend={true} backgroundColor="north2">
-                <p>In 2024, the organizing team took a major step forward by applying to the Python Software Foundation to officially host PyCon Netherlands.</p>
-            </TagBlock>
+            <Fly offset={10} duration={1000} delay={400}>
+                <TagBlock class="mt-4 ml-12 max-w-lg" direction="left" extend={true} backgroundColor="north2">
+                    <p>In 2024, the organizing team took a major step forward by applying to the Python Software Foundation to officially host PyCon Netherlands.</p>
+                </TagBlock>
+            </Fly>
 
-            <TagBlock class="mt-4 ml-20 max-w-lg" direction="left" extend={true} backgroundColor="north3">
-                <p>We're now proud to say that on October 10th, 2024, we successfully hosted the very first PyCon NL!</p>
-            </TagBlock>
-        </Fly>
+            <Fly offset={10} duration={1000} delay={600}>
+                <TagBlock class="mt-4 ml-20 max-w-lg" direction="left" extend={true} backgroundColor="north3">
+                    <p>We're now proud to say that on October 10th, 2024, we successfully hosted the very first PyCon NL!</p>
+                </TagBlock>
+            </Fly>
+        </div>
     </div>
 
     <div class="pt-10 mb-10 flex-center flex-col">

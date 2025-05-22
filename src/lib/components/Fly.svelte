@@ -23,6 +23,7 @@
     .unviewed {
         opacity: 0;
     }
+
     .fly {
         --offset: 10em;
         --delay: 0ms;

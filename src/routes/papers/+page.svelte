@@ -28,22 +28,26 @@
                 <Fly offset={-10} duration={1000}>
                     {@html speaker}
                 </Fly>
-                <Fly offset={10} duration={1000}>
-                    <div class="w-full mt-4">
+                <div class="w-full mt-4">
+                    <Fly offset={10} duration={1000}>
                         <TagBlock class="max-w-lg" direction="left" backgroundColor="north" extend>
                             <div class="font-bold">Conference Format:</div>
                             PyCon Netherlands 2025 is a multi-track Python conference. Talk slots are 25 minutes (excluding a 5 minute Q&A), Workshop slots are 105 minutes.
                         </TagBlock>
+                    </Fly>
+                    <Fly offset={10} duration={1000} delay={200}>
                         <TagBlock class="mt-4 ml-8 max-w-lg" direction="left" backgroundColor="north2" extend>
                             <div class="font-bold">Topics:</div>
                             The topic of your talk or workshop should interest a broad audience of Python enthusiasts. Note that if your talk or workshop focuses heavily on data or artificial intelligence, consider submitting your proposal to <a class="font-bold hover:underline" href="https://amsterdam.pydata.org/">PyData Amsterdam</a> instead.
                         </TagBlock>
+                    </Fly>
+                    <Fly offset={10} duration={1000} delay={400}>
                         <TagBlock class="mt-4 ml-16 max-w-lg" direction="left" backgroundColor="north3" extend>
                             <div class="font-bold">Your Submission:</div>
                             In our experience, attendees pay close attention to proposal abstracts when deciding which talks to attend during the conference. The submitted abstract will be published as is in the conference schedule.
                         </TagBlock>
-                    </div>
-                </Fly>
+                    </Fly>
+                </div>
             </div>
         </div>
 
