@@ -8,15 +8,14 @@
 >
 	<div class="text-3xl font-bold">Practical information</div>
 
-	<TagBlock class="mt-5" direction="right" extend={true} backgroundColor="north3">
-		<div class="pr-10 flex justify-end w-screen max-w-xl gap-5 text-black">
-			<div class="pl-5 text-xl sm:pl-0"><span class="font-bold">When:</span> October 16th 2025</div>
+	<TagBlock class="mt-5 lg:mr-28" direction="right" extend={true} backgroundColor="north3">
+		<div class="flex w-screen max-w-xl justify-center lg:justify-end text-black">
+			<div class="px-5 text-xl sm:pl-0"><span class="font-bold">When:</span> October 16th 2025</div>
 		</div>
 	</TagBlock>
 
 	<TagBlock class="mt-8" direction="left" extend={true} backgroundColor="north2">
 		<div class="flex w-full">
-			<div class="pl-5" />
 			<div class="flex flex-col items-center gap-2 md:flex-row">
 				<a target="_blank" rel="noreferrer" href="https://goo.gl/maps/PM1SP5jn8Z9M3LZa7"
 					><img
@@ -25,7 +24,7 @@
 						alt="A map showing where the Jaarbeurs Utrecht is located"
 					/></a
 				>
-				<div class="md:pl-6 flex flex-col text-right">
+				<div class="flex flex-col text-center lg:text-right">
 					<div class="text-xl"><span class="font-bold">Where:</span> Media Plaza<br>(Jaarbeurs Utrecht)</div>
 					<div class="text-lg mt-4">Jaarbeursplein 6</div>
 					<div class="text-lg">3521 AL Utrecht</div>
