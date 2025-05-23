@@ -87,7 +87,7 @@
 				class="text-lg"
 				backgroundColor="north"
 			>
-				<div class="text-3xl font-bold">
+				<div class="text-3xl font-bold cursor-default">
 					PYCON NL<span class="px-4">|</span><span class="pr-4 text-ordina">2025</span>
 				</div>
 			</TagBlock>
@@ -146,9 +146,12 @@
 		align-items: start;
 	}
 
+	.middle {
+		max-width: 30em;
+	}
+
 	.logo-container {
 		width: 100%;
-		max-width: 22rem;
 	}
 
 	.logo {

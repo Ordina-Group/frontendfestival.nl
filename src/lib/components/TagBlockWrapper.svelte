@@ -26,6 +26,6 @@
     }
 
     .both:hover > :global(*) {
-        transform: scaleX(1.05);
+        transform: scaleX(1.07);
     }
 </style>
