@@ -3,19 +3,19 @@
 </script>
 
 <div
-	class="mt-16 flex-center relative w-full flex-col bg-north-300 py-16 text-white"
+	class="mt-16 flex-center relative w-full flex-col bg-north-300 pt-16 pb-8 text-white"
 	id="practical-information"
 >
 	<div class="text-4xl font-bold">Practical information</div>
 
 	<TagBlock class="mt-5" direction="right" extend={true} backgroundColor="north3">
-		<div class="flex justify-end w-screen max-w-xl gap-5 text-black">
+		<div class="pr-10 flex justify-end w-screen max-w-xl gap-5 text-black">
 			<div class="pl-5 text-2xl sm:pl-0"><span class="font-bold">When:</span> October 16th 2025</div>
 		</div>
 	</TagBlock>
 
 	<TagBlock class="mt-8" direction="left" extend={true} backgroundColor="north2">
-		<div class="flex w-screen max-w-xl items-center">
+		<div class="flex w-full">
 			<div class="pl-5 text-2xl" />
 			<div class="flex flex-col items-center gap-2 md:flex-row">
 				<a target="_blank" rel="noreferrer" href="https://goo.gl/maps/PM1SP5jn8Z9M3LZa7"
@@ -25,16 +25,14 @@
 						alt="A map showing where the Jaarbeurs Utrecht is located"
 					/></a
 				>
-				<div class="md:pl-6 flex flex-col">
+				<div class="md:pl-6 flex flex-col text-right">
 					<div class="text-2xl"><span class="font-bold">Where:</span> Media Plaza<br>(Jaarbeurs Utrecht)</div>
 					<div class="text-xl mt-4">Jaarbeursplein 6</div>
 					<div class="text-xl">3521 AL Utrecht</div>
 					<div class="text-xl">The Netherlands</div>
-					<button class="mt-2 ml-6 cursor-pointer text-left select-none">
-						<TagBlock small backgroundColor="ordina" class="hover:scale-105" link='/practical-information'>
-							More info
-						</TagBlock>
-					</button>
+					<TagBlock small backgroundColor="ordina" class="m-4" link='/practical-information'>
+						More info
+					</TagBlock>
 				</div>
 			</div>
 		</div>
@@ -56,7 +54,7 @@
 		</TagBlock>
 	</a> -->
 
-	<div class="mt-10 inline flex flex-col gap-4 lg:block">
+	<div class="mt-16 inline flex flex-col gap-4 lg:block">
 		<span class="text-sm mt-12 w-full text-center">
     		Made with Svelte
 		</span>

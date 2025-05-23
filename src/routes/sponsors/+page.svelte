@@ -36,7 +36,7 @@
 </script>
 
 <div class="m-8 mt-20 py-6">
-    <div class="grid m-auto w-full max-w-6xl text-xl text-black">
+    <div class="grid m-auto w-full max-w-6xl text-xl text-black place-items-center">
         <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
             <Fly offset={-10} duration={1000}>
                 <TagBlock class="float-left max-w-lg" direction="right" extend={true} backgroundColor="north3">
@@ -53,7 +53,7 @@
 
         <h2 class="font-bold text-2xl mb-4 spacing-top">Package Details</h2>
 
-        <div class="mt-8">
+        <div class="mt-8 max-w-3xl">
             <div class="grid gap-4">
                 <TagBlock extend={true} direction="both" backgroundColor="north">
                     <h3 class="font-bold text-xl">Gold Package</h3>
@@ -223,14 +223,12 @@
             </TagBlock>
         </div>
 
-        <div class="mt-8">
+        <div class="mt-20 max-w-4xl">
             <p>We would be delighted to discuss which package best aligns with your marketing and engagement goals. Please let us know if you have any specific requests or ideas for recognition that would make this partnership even more valuable for you.</p>
+            <p class="mt-[1em]">If you are interested in participating or have any questions, please get in touch with:</p>
         </div>
 
-        <div class="mt-8">
-            <p>If you are interested in participating or have any questions, please get in touch with:</p>
-        </div>
-        <address class="italic">
+        <address class="italic mt-4">
             <p>Eva Munscher</p>
             <p>Esther Roghair</p>
             <a href="mailto:pycon.netherlands@gmail.com">pycon.netherlands@gmail.com</a><br />
@@ -244,7 +242,7 @@
             </TagBlock>
         </div>
 
-        <div class="mt-8">
+        <div class="mt-20 max-w-4xl">
             <p>Thank you for considering this opportunity. We look forward to the possibility of collaborating with you to make PyCon NL 2025 a success!</p>
         </div>
 

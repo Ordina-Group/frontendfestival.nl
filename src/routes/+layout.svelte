@@ -39,6 +39,10 @@
 
 			<slot />
 
+			<div class="w-full flex justify-center -mb-12 mt-12">
+				<img src="/footer.png" alt="" class="max-h-[15em] footer" />
+			</div>
+
 			<PracticalInformationSection></PracticalInformationSection>
 		</div>
 
