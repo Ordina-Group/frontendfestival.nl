@@ -19,8 +19,8 @@
 		/>
 	</div>
 
-	<div class="grid lg:grid-cols-2 grid-cols-1 m-auto w-full max-w-6xl py-6 text-xl text-black items-center">
-		<div class="order-2 lg:order-1">
+	<div class="grid md:grid-cols-2 grid-cols-1 m-auto w-full max-w-6xl py-6 text-xl text-black items-center">
+		<div class="order-2 md:order-1">
 			<Fly offset={-10} duration={1000} delay={200}>
 				<TagBlock
 					class="float-left max-w-lg"
@@ -51,7 +51,7 @@
 				</TagBlock>
 			</Fly>
 		</div>
-		<div class="order-1 lg:order-2">
+		<div class="order-1 md:order-2">
 			<Fly offset={10} duration={1000} delay={400}>
 				{@html talk}
 			</Fly>
@@ -59,7 +59,7 @@
 
 		<div class="order-3 z-[1]">
 			<Fly offset={-10} duration={1000} delay={400}>
-				<div class="mb-[-3em] lg:mb-[-8em]">{@html immerse}</div>
+				<div class="mb-[-3em] md:mb-[-8em]">{@html immerse}</div>
 			</Fly>
 		</div>
 		<div class="order-4">
@@ -80,7 +80,7 @@
 			</Fly>
 		</div>
 
-		<div class="order-6 lg:order-5">
+		<div class="order-6 md:order-5">
 			<Fly offset={-10} duration={1000} delay={200}>
 				<TagBlock
 					class="float-left max-w-lg mt-14"
@@ -97,13 +97,13 @@
 				</TagBlock>
 			</Fly>
 		</div>
-		<div class="order-5 lg:order-6">
+		<div class="order-5 md:order-6">
 			<Fly offset={10} duration={1000} delay={400}>
 				{@html community}
 			</Fly>
 		</div>
 
-		<div class="order-7 flex-center lg:col-span-2">
+		<div class="order-7 flex-center md:col-span-2">
 			<div class="mx-4 pt-12 text-xl font-bold max-w-[768px]">
 				<p>So, mark your calendars, spread the word, and get ready for an unforgettable experience at
 				PyCon NL.</p>
