@@ -19,8 +19,8 @@
 		},
 		{
 			time: '19:15',
-			title: 'To be announced',
-			speaker: 'To be announced'
+			title: 'Beyond Chatbots: Engineering AI Experiences That Users Actually Love',
+			speaker: 'Stacy Cashmore'
 		},
 		{
 			time: '19:45',
@@ -28,13 +28,13 @@
 		},
 		{
 			time: '20:00',
-			title: 'To be announced',
-			speaker: 'To be announced'
+			title: 'Welcome to the world of agentic frontend builders',
+			speaker: 'Roelant Dieben'
 		},
 		{
 			time: '20:30',
-			title: 'To be announced',
-			speaker: 'To be announced'
+			title: 'DDD Full Stack – from Front to Back',
+			speaker: 'Frederieke Scheper & Peter Eijgermans'
 		},
 		{
 			time: '21:00',
