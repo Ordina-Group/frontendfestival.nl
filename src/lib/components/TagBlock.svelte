@@ -1,4 +1,6 @@
 <script lang="ts">
+	import TagBlockWrapper from "./TagBlockWrapper.svelte";
+
 	export let backgroundColor:
 		| 'shark'
 		| 'fountain'
@@ -10,10 +12,14 @@
 	export let direction: 'left' | 'right' | 'both' = 'both';
 	export let extend: boolean = false;
 	export let small: boolean = false;
+	export let link: string | undefined = undefined;
+	export let externalLink: boolean = false;
 
 	let componentClass: string = '';
 	export { componentClass as class };
 </script>
+
+<TagBlockWrapper {link} {externalLink} {direction}>
 
 <div
 	class="relative inline-flex {componentClass} {backgroundColor === 'north3'
@@ -53,6 +59,7 @@
 		/>
 	{/if}
 	<div
+		id="main-container"
 		class="inline py-4 pl-4 pr-4"
 		class:py-4={!small}
 		class:pl-4={!small}
@@ -109,3 +116,11 @@
 		/>
 	{/if}
 </div>
+
+</TagBlockWrapper>
+
+<style>
+	#main-container > :global(p:not(:first-child)) {
+		margin-top: 1rem;
+	}
+</style>

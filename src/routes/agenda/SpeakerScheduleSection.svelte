@@ -1,7 +1,7 @@
 <script lang="ts">
 	import TagBlock from '$lib/components/TagBlock.svelte';
 	import { fade } from 'svelte/transition';
-	import SpeakerBio from '../SpeakerBio.svelte';
+	import SpeakerBio from '$lib/components/SpeakerBio.svelte';
 	import { scheduleItems } from './scheduleData';
 
 	let focussedSpeaker: number | null = null;

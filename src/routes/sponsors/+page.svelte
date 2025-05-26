@@ -1,9 +1,10 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import TopNavSection from '../TopNavSection.svelte';
     import type { PageData } from './$types';
     import TagBlock from '$lib/components/TagBlock.svelte';
-    import PracticalInformationSection from '../PracticalInformationSection.svelte';
+	import Fly from "$lib/components/Fly.svelte";
+    import sponsors from "$lib/assets/images/Sponsor-pana.svg?raw";
+    import tiers from "$lib/assets/images/Holding the arrow-pana.svg?raw";
 
     export let data: PageData;
 
@@ -34,219 +35,219 @@
     });
 </script>
 
-<div class="bg-western">
-    <header class="flex-center relative w-full bg-shark" id="header">
-        <TopNavSection></TopNavSection>
-    </header>
-    <div class="m-8 mt-20 py-6">
-        <div class="grid m-auto w-full max-w-6xl text-xl text-black">
-            <div>
+<div class="m-8 mt-20 py-6">
+    <div class="grid m-auto w-full max-w-6xl text-xl text-black place-items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
+            <Fly offset={-10} duration={1000}>
                 <TagBlock class="float-left max-w-lg" direction="right" extend={true} backgroundColor="north3">
-                    We are excited to invite you to explore our sponsor packages for PyCon NL 2025, taking place on October 16, 2025. Our packages are designed to offer you maximum visibility and engagement with our vibrant community of Python enthusiasts from all over the world.
+                    <p>We are excited to invite you to explore our sponsor packages for PyCon NL 2025, taking place on October 16, 2025.</p>
+                    <p>Our packages are designed to offer you maximum visibility and engagement with our vibrant community of Python enthusiasts from all over the world.</p>
+                </TagBlock>
+            </Fly>
+            <Fly offset={10} duration={1000} delay={400}>
+                <div class="svg-max">
+                    {@html sponsors}
+                </div>
+            </Fly>
+        </div>
+
+        <h2 class="font-bold text-2xl mb-4 spacing-top">Package Details</h2>
+
+        <div class="mt-8 max-w-3xl">
+            <div class="grid gap-4">
+                <TagBlock extend={true} direction="both" backgroundColor="north">
+                    <h3 class="font-bold text-xl">Gold Package</h3>
+                    <p>The Gold Package provides substantial visibility with logo placements, mentions in email newsletters, and social media promotions and the opening speech. Gold sponsors will also have 6 conference passes, and will be able to network directly with attendees via their networking table.</p>
+                </TagBlock>
+                <TagBlock extend={true} direction="both" backgroundColor="north2">
+                    <h3 class="font-bold text-xl">Silver Package</h3>
+                    <p>Our Silver Package includes logo placements on the website and in promotional materials, as well as mentions in event communications. Silver sponsors will have 3 conference passes, connecting with industry professionals and enthusiasts.</p>
+                </TagBlock>
+                <TagBlock extend={true} direction="both" backgroundColor="north3">
+                    <h3 class="font-bold text-xl">Bronze Package</h3>
+                    <p>The Bronze Package offers basic visibility with logo placements on the website and in select promotional materials. Bronze sponsors will be featured in event programs or on specific event pages and have 2 complimentary conference passes.</p>
                 </TagBlock>
             </div>
-
-            <h2 class="font-bold text-2xl mb-4 spacing-top">Package Details</h2>
-            
-            <div class="mt-8">
-                <div class="grid gap-4">
-                    <TagBlock extend={true} direction="both" backgroundColor="north">
-                        <h3 class="font-bold text-xl">Gold Package</h3>
-                        <p>The Gold Package provides substantial visibility with logo placements, mentions in email newsletters, and social media promotions and the opening speech. Gold sponsors will also have 6 conference passes, and will be able to network directly with attendees via their networking table.</p>
-                    </TagBlock>
-                    <TagBlock extend={true} direction="both" backgroundColor="north2">
-                        <h3 class="font-bold text-xl">Silver Package</h3>
-                        <p>Our Silver Package includes logo placements on the website and in promotional materials, as well as mentions in event communications. Silver sponsors will have 3 conference passes, connecting with industry professionals and enthusiasts.</p>
-                    </TagBlock>
-                    <TagBlock extend={true} direction="both" backgroundColor="north3">
-                        <h3 class="font-bold text-xl">Bronze Package</h3>
-                        <p>The Bronze Package offers basic visibility with logo placements on the website and in select promotional materials. Bronze sponsors will be featured in event programs or on specific event pages and have 2 complimentary conference passes.</p>
-                    </TagBlock>
-                </div>
-            </div>
-
-            <div class="mt-4 flex items-center justify-center">
-                <table class="table-with-spacing border border-gray-400 responsive-table">
-                    <thead>
-                        <tr class="header-row-color">
-                            <th class="border border-gray-300 px-4 py-2"></th>
-                            <th class="border border-gray-300 px-4 py-2">Gold</th>
-                            <th class="border border-gray-300 px-4 py-2">Silver</th>
-                            <th class="border border-gray-300 px-4 py-2">Bronze</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="border border-gray-300 px-4 py-2 first-column-color align-top">
-                                <div class="pricing_row_1">Pricing</div>
-                                <div class="pricing_row_2">Package price (excluding VAT)</div>
-                            </td>
-                            <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                                <div class="pricing_row_1"></div>
-                                <div class="pricing_row_2">€4,000.00</div>
-                            </td>
-                            <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                                <div class="pricing_row_1"></div>
-                                <div class="pricing_row_2">€2,000.00</div>
-                            </td>
-                            <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                                <div class="pricing_row_1"></div>
-                                <div class="pricing_row_2">€1,000.00</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="border border-gray-300 px-4 py-2 first-column-color align-top">
-                                <div class="available_row_1">Availability</div>
-                                <div class="available_row_2">Number of available slots</div>
-                            </td>
-                            <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                                <div class="available_row_1"></div>
-                                <div class="available_row_2">2</div>
-                            </td>
-                            <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                                <div class="available_row_1"></div>
-                                <div class="available_row_2">2</div>
-                            </td>
-                            <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                                <div class="available_row_1"></div>
-                                <div class="available_row_2">3</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="border border-gray-300 px-4 py-2 first-column-color align-top">
-                                <div class="session_row_1">Session passes</div>
-                                <div class="session_row_2">Complementary conference passes</div>
-                                <div class="session_row_3">Conference passes with 50% discount</div>
-                            </td>
-                            <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                                <div class="session_row_1"></div>
-                                <div class="session_row_2">6</div>
-                                <div class="session_row_3">6</div>
-                            </td>
-                            <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                                <div class="session_row_1"></div>
-                                <div class="session_row_2">3</div>
-                                <div class="session_row_3">3</div>
-                            </td>
-                            <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                                <div class="session_row_1"></div>
-                                <div class="session_row_2">2</div>
-                                <div class="session_row_3">1</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="border border-gray-300 px-4 py-2 first-column-color align-top">
-                                <div class="brand_row_1">Brand visibility</div>
-                                <div class="brand_row_2">Table space</div>
-                                <div class="brand_row_3">Mention in opening speech</div>
-                                <div class="brand_row_4">Logo on PyConNL video</div>
-                                <div class="brand_row_5">Logo on PyConNL banners</div>
-                                <div class="brand_row_6">Logo on PyConNL website</div>
-                                <div class="brand_row_7">Option to distribute goodies at the event</div>
-                                <div class="brand_row_8">Vacancy flyer on centrally placed table</div>
-                                <div class="brand_row_9">Logo in the PyConNL digital program guide</div>
-                                <div class="brand_row_10">Advertisement in program guide</div>
-                            </td>
-                            <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                                <div class="brand_row_1"></div>
-                                <div class="brand_row_2">✔</div>
-                                <div class="brand_row_3">✔</div>
-                                <div class="brand_row_4">✔</div>
-                                <div class="brand_row_5">✔</div>
-                                <div class="brand_row_6">✔</div>
-                                <div class="brand_row_7">✔</div>
-                                <div class="brand_row_8">✔</div>
-                                <div class="brand_row_9">✔</div>
-                                <div class="brand_row_10">Full page</div>
-                            </td>
-                            <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                                <div class="brand_row_1"></div>
-                                <div class="brand_row_2"></div>
-                                <div class="brand_row_3"></div>
-                                <div class="brand_row_4"></div>
-                                <div class="brand_row_5"></div>
-                                <div class="brand_row_6">✔</div>
-                                <div class="brand_row_7">✔</div>
-                                <div class="brand_row_8"></div>
-                                <div class="brand_row_9">✔</div>
-                                <div class="brand_row_10">Half page</div>
-                            </td>
-                            <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                                <div class="brand_row_1"></div>
-                                <div class="brand_row_2"></div>
-                                <div class="brand_row_3"></div>
-                                <div class="brand_row_4"></div>
-                                <div class="brand_row_5"></div>
-                                <div class="brand_row_6"></div>
-                                <div class="brand_row_7">✔</div>
-                                <div class="brand_row_8"></div>
-                                <div class="brand_row_9"></div>
-                                <div class="brand_row_10">Quarter page</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="border border-gray-300 px-4 py-2 first-column-color align-top">
-                                <div class="communicatie_row_1">Communicatie</div>
-                                <div class="communicatie_row_2">Social media announcement</div>
-                            </td>
-                            <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                                <div class="communicatie_row_1"></div>
-                                <div class="communicatie_row_2">✔</div>
-                            </td>
-                            <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                                <div class="communicatie_row_1"></div>
-                                <div class="communicatie_row_2">✔</div>
-                            </td>
-                            <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                                <div class="communicatie_row_1"></div>
-                                <div class="communicatie_row_2">✔</div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="mt-4 flex items-center justify-center">
-                <a href="/PYCON NL Sponsorship brochure.pdf" target="_blank" rel="noopener noreferrer">
-                    <TagBlock class="text-lg" backgroundColor="north">
-                        <div class="hover:scale-105 font-bold">
-                            Download <span class="px-4">|</span><span class="text-ordina">PYCON NL Sponsorship brochure</span>
-                        </div>
-                    </TagBlock>
-                </a>
-            </div>
-
-            <div class="mt-8">
-                <p>We would be delighted to discuss which package best aligns with your marketing and engagement goals. Please let us know if you have any specific requests or ideas for recognition that would make this partnership even more valuable for you.</p>
-            </div>
-
-            <div class="mt-8">
-                <p>If you are interested in participating or have any questions, please get in touch with:</p>
-            </div>
-            <address class="italic">
-                <p>Eva Munscher</p>
-                <p>Esther Roghair</p>
-                <a href="mailto:pycon.netherlands@gmail.com">pycon.netherlands@gmail.com</a><br />
-            </address>
-
-            <div class="mt-4 flex items-center justify-center">
-                <a href="mailto:pycon.netherlands@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <TagBlock class="text-lg" backgroundColor="north">
-                        <div class="hover:scale-105 font-bold">
-                            Contact <span class="px-4">|</span><span class="text-ordina">Get in contact about sponsorship!</span>
-                        </div>
-                    </TagBlock>
-                </a>
-            </div>
-
-            <div class="mt-8">
-                <p>Thank you for considering this opportunity. We look forward to the possibility of collaborating with you to make PyCon NL 2025 a success!</p>
-            </div>
-
-            <!-- TODO: sponsors 2025 toevoegen -->
         </div>
+
+        <div class="w-full flex justify-center svg-max">
+            {@html tiers}
+        </div>
+
+        <div class="mt-4 flex items-center justify-center">
+            <table class="table-with-spacing border border-gray-400 responsive-table">
+                <thead>
+                    <tr class="header-row-color">
+                        <th class="border border-gray-300 px-4 py-2"></th>
+                        <th class="border border-gray-300 px-4 py-2">Gold</th>
+                        <th class="border border-gray-300 px-4 py-2">Silver</th>
+                        <th class="border border-gray-300 px-4 py-2">Bronze</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border border-gray-300 px-4 py-2 first-column-color align-top">
+                            <div class="pricing_row_1">Pricing</div>
+                            <div class="pricing_row_2">Package price (excluding VAT)</div>
+                        </td>
+                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
+                            <div class="pricing_row_1"></div>
+                            <div class="pricing_row_2">€4,000.00</div>
+                        </td>
+                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
+                            <div class="pricing_row_1"></div>
+                            <div class="pricing_row_2">€2,000.00</div>
+                        </td>
+                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
+                            <div class="pricing_row_1"></div>
+                            <div class="pricing_row_2">€1,000.00</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-300 px-4 py-2 first-column-color align-top">
+                            <div class="available_row_1">Availability</div>
+                            <div class="available_row_2">Number of available slots</div>
+                        </td>
+                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
+                            <div class="available_row_1"></div>
+                            <div class="available_row_2">2</div>
+                        </td>
+                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
+                            <div class="available_row_1"></div>
+                            <div class="available_row_2">2</div>
+                        </td>
+                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
+                            <div class="available_row_1"></div>
+                            <div class="available_row_2">3</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-300 px-4 py-2 first-column-color align-top">
+                            <div class="session_row_1">Session passes</div>
+                            <div class="session_row_2">Complementary conference passes</div>
+                            <div class="session_row_3">Conference passes with 50% discount</div>
+                        </td>
+                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
+                            <div class="session_row_1"></div>
+                            <div class="session_row_2">6</div>
+                            <div class="session_row_3">6</div>
+                        </td>
+                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
+                            <div class="session_row_1"></div>
+                            <div class="session_row_2">3</div>
+                            <div class="session_row_3">3</div>
+                        </td>
+                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
+                            <div class="session_row_1"></div>
+                            <div class="session_row_2">2</div>
+                            <div class="session_row_3">1</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-300 px-4 py-2 first-column-color align-top">
+                            <div class="brand_row_1">Brand visibility</div>
+                            <div class="brand_row_2">Table space</div>
+                            <div class="brand_row_3">Mention in opening speech</div>
+                            <div class="brand_row_4">Logo on PyConNL video</div>
+                            <div class="brand_row_5">Logo on PyConNL banners</div>
+                            <div class="brand_row_6">Logo on PyConNL website</div>
+                            <div class="brand_row_7">Option to distribute goodies at the event</div>
+                            <div class="brand_row_8">Vacancy flyer on centrally placed table</div>
+                            <div class="brand_row_9">Logo in the PyConNL digital program guide</div>
+                            <div class="brand_row_10">Advertisement in program guide</div>
+                        </td>
+                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
+                            <div class="brand_row_1"></div>
+                            <div class="brand_row_2">✔</div>
+                            <div class="brand_row_3">✔</div>
+                            <div class="brand_row_4">✔</div>
+                            <div class="brand_row_5">✔</div>
+                            <div class="brand_row_6">✔</div>
+                            <div class="brand_row_7">✔</div>
+                            <div class="brand_row_8">✔</div>
+                            <div class="brand_row_9">✔</div>
+                            <div class="brand_row_10">Full page</div>
+                        </td>
+                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
+                            <div class="brand_row_1"></div>
+                            <div class="brand_row_2"></div>
+                            <div class="brand_row_3"></div>
+                            <div class="brand_row_4"></div>
+                            <div class="brand_row_5"></div>
+                            <div class="brand_row_6">✔</div>
+                            <div class="brand_row_7">✔</div>
+                            <div class="brand_row_8"></div>
+                            <div class="brand_row_9">✔</div>
+                            <div class="brand_row_10">Half page</div>
+                        </td>
+                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
+                            <div class="brand_row_1"></div>
+                            <div class="brand_row_2"></div>
+                            <div class="brand_row_3"></div>
+                            <div class="brand_row_4"></div>
+                            <div class="brand_row_5"></div>
+                            <div class="brand_row_6"></div>
+                            <div class="brand_row_7">✔</div>
+                            <div class="brand_row_8"></div>
+                            <div class="brand_row_9"></div>
+                            <div class="brand_row_10">Quarter page</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-300 px-4 py-2 first-column-color align-top">
+                            <div class="communicatie_row_1">Communicatie</div>
+                            <div class="communicatie_row_2">Social media announcement</div>
+                        </td>
+                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
+                            <div class="communicatie_row_1"></div>
+                            <div class="communicatie_row_2">✔</div>
+                        </td>
+                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
+                            <div class="communicatie_row_1"></div>
+                            <div class="communicatie_row_2">✔</div>
+                        </td>
+                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
+                            <div class="communicatie_row_1"></div>
+                            <div class="communicatie_row_2">✔</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-4 flex items-center justify-center">
+            <TagBlock class="text-lg" backgroundColor="north" link="/PYCON NL Sponsorship brochure.pdf" externalLink>
+                <div class="font-bold">
+                    Download<span class="px-2">|</span><span class="text-ordina">PYCON NL Sponsorship brochure</span>
+                </div>
+            </TagBlock>
+        </div>
+
+        <div class="mt-20 max-w-4xl">
+            <p>We would be delighted to discuss which package best aligns with your marketing and engagement goals. Please let us know if you have any specific requests or ideas for recognition that would make this partnership even more valuable for you.</p>
+            <p class="mt-[1em]">If you are interested in participating or have any questions, please get in touch with:</p>
+        </div>
+
+        <address class="italic mt-4">
+            <p>Eva Munscher</p>
+            <p>Esther Roghair</p>
+            <a href="mailto:pycon.netherlands@gmail.com">pycon.netherlands@gmail.com</a><br />
+        </address>
+
+        <div class="mt-4 flex items-center justify-center">
+            <TagBlock class="text-lg" backgroundColor="north" link="mailto:pycon.netherlands@gmail.com" externalLink>
+                <div class="font-bold">
+                    Contact<span class="px-2">|</span><span class="text-ordina">Get in contact about sponsorship!</span>
+                </div>
+            </TagBlock>
+        </div>
+
+        <div class="mt-20 max-w-4xl">
+            <p>Thank you for considering this opportunity. We look forward to the possibility of collaborating with you to make PyCon NL 2025 a success!</p>
+        </div>
+
+        <!-- TODO: sponsors 2025 toevoegen -->
     </div>
-    <PracticalInformationSection></PracticalInformationSection>
 </div>
 
 <style>
@@ -284,5 +285,11 @@
     }
     .spacing-top {
         margin-top: 2rem;
+    }
+
+    .svg-max > :global(svg) {
+        max-height: 400px;
+        aspect-ratio: 1 / 1;
+        width: 100%;
     }
 </style>

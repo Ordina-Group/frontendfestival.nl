@@ -25,7 +25,7 @@
 		endLeft = screenWidth + BLUR_RADIUS + size;
 		transitionTime = Math.round(((endLeft - left) / speed) * 1000);
 
-		let timeout;
+		let timeout: number;
 		if (screenWidth > 768 && animated) {
 			timeout = setTimeout(() => {
 				started = true;
@@ -42,7 +42,7 @@
 </script>
 
 <div
-	class="ball"
+	class="ball fade-in"
 	class:started={started && screenWidth > 768 && animated}
 	style="
 	  --blurRadius: {BLUR_RADIUS};
@@ -58,6 +58,16 @@
 />
 
 <style lang="postcss">
+	.fade-in {
+		opacity: 0;
+		animation: anim-fade-in 1s ease-out forwards;
+		animation-delay: 100ms;
+	}
+
+	@keyframes anim-fade-in {
+		to { opacity: 1; }
+	}
+
 	.ball {
 		@apply pointer-events-none absolute rounded-full;
 		background-color: var(--backgroundColor);
