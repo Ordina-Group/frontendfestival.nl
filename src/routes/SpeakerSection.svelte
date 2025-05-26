@@ -29,20 +29,28 @@
 			bio: 'Speaker, author, and software developer. Stacy has been developing solutions since the mid-1990s in various companies and industries ranging from facilitating contract jobbing to allowing consumers to close a mortgage without the help of a financial adviser – with lots in between.\n\nShe has a passion for sharing knowledge: using storytelling for sharing her experiences to help teams grow in the ways that they develop software and work together and performing live coding demonstrations to inspire others to try new technologies.\n\nStacy published her first book in 2022, aimed at helping developers get started building dynamic applications using C#, Azure Functions, and Azure Static Web Apps. She is currently busy updating it for a second edition with new SWA functionality and using .NET 9.\n\nFor her effort in the community, Stacy has been awarded the Microsoft MVP for Developer Technologies since 2020.'
 		},
 		{
+			name: 'Peter Eijgermans',
+			letters: 'PE',
+			title: '',
+			employer: 'Sopra Steria',
+			image: '/speakers/pe.webp',
+			bio: 'Peter Eijgermans is a long-time software developer and an adventurous and passionate CodeSmith Frontend at Sopra Steria (Ordina). He likes to travel around the world with his bike. Always seeking for the unexpected and unknown. For his job he tries out the latest techniques and frameworks. He loves to share his experience by speaking at conferences all over the World and writing for the Dutch Java magazine and DZone. He believes that you as the front-end developer are the spider in the web to bring the user, the team and the product together.'
+		},
+		{
+			name: 'Frederieke Scheper',
+			letters: 'FS',
+			title: 'Java Architect and CodeSmith',
+			employer: 'Sopra Steria',
+			image: '/speakers/fs.webp',
+			bio: 'With more than 20 years of enterprise Java experience, Frederieke has worked with all the usual technologies in the Java ecosystem. Her expertise includes reactive messaging systems, Kafka, JAX-RS, JSON binding, Java persistence, Spring, and various front-end technologies. Since functional languages emerged on the JVM, she began working on big data and fast data technologies using Python, Java, and Scala. Outside work, she is actively contributing to the Java Meetup in Groningen (NL).'
+		},
+		{
 			name: 'Roelant Dieben',
 			letters: 'RD',
 			title: 'Cloud & AI architect',
 			employer: 'Sopra Steria',
 			image: '/speakers/rd.webp',
 			bio: 'With over 20 years of experience developing software on the Microsoft stack, Roelant Dieben has a lot to share about stuff that has been obsolete for years. At Sopra Steria he is helping companies with their Azure cloud and AI challenges, he is a Microsoft Azure & AI MVP, and has a passion for machine learning & AI and application lifecycle management.'
-		},
-		{
-			name: 'Coming soon!',
-			letters: 'CS',
-			title: '',
-			employer: '',
-			image: '/speakers/coming-soon.webp',
-			bio: 'Coming soon!'
 		}
 	];
 	// [
