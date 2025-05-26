@@ -52,7 +52,7 @@
             <p class="italic text-lg">
                 We hope to see you on stage at PyCon NL 2025 on October 16, 2025.
             </p>
-            <TagBlock class="mt-8 text-lg" backgroundColor="north" link="https://forms.office.com/e/zqDxc8eL4e" externalLink>
+            <TagBlock class="mt-8 text-lg" backgroundColor="north" link="https://forms.gle/UrVA9YCaDC6WhD3F7" externalLink>
                 <div class="font-bold">
                     Call for Papers form<span class="px-2">|</span><span class="text-ordina">PYCON NL</span>
                 </div>
