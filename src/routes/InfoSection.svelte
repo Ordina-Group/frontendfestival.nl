@@ -44,7 +44,7 @@
 
 					<ul class="list-disc list-inside mt-2">
 						<li>Insightful talks</li>
-						<li>Engaging workshops</li>
+						<li>Engaging tutorials</li>
 						<li>Vibrant networking opportunities</li>
 						<li><span class="font-bold">Plenty of food, drinks, and fun 🎉</span></li>
 					</ul>
@@ -90,7 +90,7 @@
 				>
 					<p>But PyCon NL is not just about passive learning; it's about active participation and
 					<span class="font-bold">community building</span>.</p>
-					<p>Engage in hands-on workshops where you can deepen your skills, exchange
+					<p>Engage in hands-on tutorials where you can deepen your skills, exchange
 					ideas, and collaborate with fellow Python enthusiasts.</p>
 					<p>Network with industry leaders, seasoned professionals, and passionate learners,
 					forging connections that can propel your career and projects forward.</p>

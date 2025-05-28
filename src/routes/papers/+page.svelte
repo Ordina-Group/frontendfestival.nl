@@ -10,7 +10,7 @@
 
         <div class="flex flex-col items-center">
             <div class="my-8 max-w-xl text-3xl font-bold text-center">
-                Thank you for your interest in submitting your proposal for a talk or workshop to PyCon NL 2025!
+                Thank you for your interest in submitting your proposal for a talk or tutorial to PyCon NL 2025!
             </div>
             <div>
                 <p>Please note:</p>
@@ -29,13 +29,13 @@
                     <Fly offset={10} duration={1000}>
                         <TagBlock class="max-w-lg" direction="left" backgroundColor="north" extend>
                             <div class="font-bold">Conference Format:</div>
-                            PyCon Netherlands 2025 is a multi-track Python conference. Talk slots are 25 minutes (excluding a 5 minute Q&A), Workshop slots are 105 minutes.
+                            PyCon Netherlands 2025 is a multi-track Python conference. Talk slots are 25 minutes (excluding a 5 minute Q&A), Tutorial slots are 105 minutes.
                         </TagBlock>
                     </Fly>
                     <Fly offset={10} duration={1000} delay={200}>
                         <TagBlock class="mt-4 ml-8 max-w-lg" direction="left" backgroundColor="north2" extend>
                             <div class="font-bold">Topics:</div>
-                            The topic of your talk or workshop should interest a broad audience of Python enthusiasts. Note that if your talk or workshop focuses heavily on data or artificial intelligence, consider submitting your proposal to <a class="font-bold hover:underline" href="https://amsterdam.pydata.org/">PyData Amsterdam</a> instead.
+                            The topic of your talk or tutorial should interest a broad audience of Python enthusiasts. Note that if your talk or tutorial focuses heavily on data or artificial intelligence, consider submitting your proposal to <a class="font-bold hover:underline" href="https://amsterdam.pydata.org/">PyData Amsterdam</a> instead.
                         </TagBlock>
                     </Fly>
                     <Fly offset={10} duration={1000} delay={400}>
