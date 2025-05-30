@@ -1,38 +1,68 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
-    import type { PageData } from './$types';
     import TagBlock from '$lib/components/TagBlock.svelte';
 	import Fly from "$lib/components/Fly.svelte";
     import sponsors from "$lib/assets/images/Sponsor-pana.svg?raw";
     import tiers from "$lib/assets/images/Holding the arrow-pana.svg?raw";
 
-    export let data: PageData;
+    const headers = ["", "Gold", "Silver", "Bronze"];
 
-    function adjustRowHeights() {
-        const firstColumnRows = document.querySelectorAll('td.first-column-color div');
-        const otherColumnsRows = document.querySelectorAll('td.cell-color div');
-
-        firstColumnRows.forEach(row => {
-            const rowClass = row.className;
-            const rowHeight = row.offsetHeight;
-
-            otherColumnsRows.forEach(otherRow => {
-                if (otherRow.className === rowClass) {
-                    otherRow.style.height = `${rowHeight}px`;
-                }
-            });
-        });
-    }
-
-    onMount(() => {
-        adjustRowHeights();
-        window.addEventListener('resize', adjustRowHeights);
-
-        // Clean up the event listener on component destroy
-        return () => {
-            window.removeEventListener('resize', adjustRowHeights);
-        };
-    });
+    const tableRows = [
+        {
+            label: "Pricing",
+            content: [
+                ["Package price (excluding VAT)"],
+                ["€4,000.00"],
+                ["€2,500.00"],
+                ["€1,000.00"]
+            ]
+        },
+        {
+            label: "Availability",
+            content: [
+                ["Number of available slots"],
+                ["4"],
+                ["3"],
+                ["3"]
+            ]
+        },
+        {
+            label: "Session passes",
+            content: [
+                ["Free conference passes", "Exhibitor passes", "Discounted conference passes"],
+                ["6", "4", "6"],
+                ["3", "3", "3"],
+                ["2", "2", "1"]
+            ]
+        },
+        {
+            label: "Brand visibility",
+            content: [
+                [
+                    "Social media announcement",
+                    "Mention in opening speech",
+                    "Logo on badges",
+                    "Logo on PyConNL video",
+                    "Logo on PyConNL banners",
+                    "Logo on PyConNL website",
+                    "Option to distribute goodies at the event",
+                    "Vacancy flyer may be distrubited",
+                    "Logo in the PyConNL digital program guide"
+                ],
+                ["✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔"],
+                ["✔", "", "✔", "✔", "", "✔", "€200 extra", "✔", "✔"],
+                ["✔", "", "", "", "", "✔", "", "", "✔"]
+            ]
+        },
+        {
+            label: "Booths",
+            content: [
+                ["Power & Wi-Fi", "Premier booth location", "Booth dimensions"],
+                ["✔", "✔", "3 × 2.5 (10m&sup2;)"],
+                ["✔", "", "2 × 2 (4m&sup2;)"],
+                ["✔", "", "Table"]
+            ]
+        }
+    ];
 </script>
 
 <div class="m-8 mt-20 py-6">
@@ -74,143 +104,28 @@
             {@html tiers}
         </div>
 
-        <div class="mt-4 flex items-center justify-center">
-            <table class="table-with-spacing border border-gray-400 responsive-table">
+        <div class="mt-4 flex items-center justify-center overflow-x-auto">
+            <table class="table-with-spacing responsive-table">
                 <thead>
                     <tr class="header-row-color">
-                        <th class="border border-gray-300 px-4 py-2"></th>
-                        <th class="border border-gray-300 px-4 py-2">Gold</th>
-                        <th class="border border-gray-300 px-4 py-2">Silver</th>
-                        <th class="border border-gray-300 px-4 py-2">Bronze</th>
+                    {#each headers as header}
+                        <th class="px-4 py-2">{header}</th>
+                    {/each}
                     </tr>
                 </thead>
                 <tbody>
+                    {#each tableRows as row}
                     <tr>
-                        <td class="border border-gray-300 px-4 py-2 first-column-color align-top">
-                            <div class="pricing_row_1">Pricing</div>
-                            <div class="pricing_row_2">Package price (excluding VAT)</div>
+                        {#each row.content as cellContent, i}
+                        <td class="px-4 py-2 {i === 0 ? 'first-column-color' : 'cell-color'} align-top">
+                            <div class="row_header">{@html i == 0 ? row.label : "&nbsp;"}</div>
+                            {#each cellContent as item, j}
+                                <div class="row_content">{@html item ? item : "&nbsp;"}</div>
+                            {/each}
                         </td>
-                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                            <div class="pricing_row_1"></div>
-                            <div class="pricing_row_2">€4,000.00</div>
-                        </td>
-                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                            <div class="pricing_row_1"></div>
-                            <div class="pricing_row_2">€2,000.00</div>
-                        </td>
-                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                            <div class="pricing_row_1"></div>
-                            <div class="pricing_row_2">€1,000.00</div>
-                        </td>
+                        {/each}
                     </tr>
-                    <tr>
-                        <td class="border border-gray-300 px-4 py-2 first-column-color align-top">
-                            <div class="available_row_1">Availability</div>
-                            <div class="available_row_2">Number of available slots</div>
-                        </td>
-                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                            <div class="available_row_1"></div>
-                            <div class="available_row_2">2</div>
-                        </td>
-                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                            <div class="available_row_1"></div>
-                            <div class="available_row_2">2</div>
-                        </td>
-                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                            <div class="available_row_1"></div>
-                            <div class="available_row_2">3</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-300 px-4 py-2 first-column-color align-top">
-                            <div class="session_row_1">Session passes</div>
-                            <div class="session_row_2">Complementary conference passes</div>
-                            <div class="session_row_3">Conference passes with 50% discount</div>
-                        </td>
-                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                            <div class="session_row_1"></div>
-                            <div class="session_row_2">6</div>
-                            <div class="session_row_3">6</div>
-                        </td>
-                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                            <div class="session_row_1"></div>
-                            <div class="session_row_2">3</div>
-                            <div class="session_row_3">3</div>
-                        </td>
-                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                            <div class="session_row_1"></div>
-                            <div class="session_row_2">2</div>
-                            <div class="session_row_3">1</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-300 px-4 py-2 first-column-color align-top">
-                            <div class="brand_row_1">Brand visibility</div>
-                            <div class="brand_row_2">Table space</div>
-                            <div class="brand_row_3">Mention in opening speech</div>
-                            <div class="brand_row_4">Logo on PyConNL video</div>
-                            <div class="brand_row_5">Logo on PyConNL banners</div>
-                            <div class="brand_row_6">Logo on PyConNL website</div>
-                            <div class="brand_row_7">Option to distribute goodies at the event</div>
-                            <div class="brand_row_8">Vacancy flyer on centrally placed table</div>
-                            <div class="brand_row_9">Logo in the PyConNL digital program guide</div>
-                            <div class="brand_row_10">Advertisement in program guide</div>
-                        </td>
-                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                            <div class="brand_row_1"></div>
-                            <div class="brand_row_2">✔</div>
-                            <div class="brand_row_3">✔</div>
-                            <div class="brand_row_4">✔</div>
-                            <div class="brand_row_5">✔</div>
-                            <div class="brand_row_6">✔</div>
-                            <div class="brand_row_7">✔</div>
-                            <div class="brand_row_8">✔</div>
-                            <div class="brand_row_9">✔</div>
-                            <div class="brand_row_10">Full page</div>
-                        </td>
-                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                            <div class="brand_row_1"></div>
-                            <div class="brand_row_2"></div>
-                            <div class="brand_row_3"></div>
-                            <div class="brand_row_4"></div>
-                            <div class="brand_row_5"></div>
-                            <div class="brand_row_6">✔</div>
-                            <div class="brand_row_7">✔</div>
-                            <div class="brand_row_8"></div>
-                            <div class="brand_row_9">✔</div>
-                            <div class="brand_row_10">Half page</div>
-                        </td>
-                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                            <div class="brand_row_1"></div>
-                            <div class="brand_row_2"></div>
-                            <div class="brand_row_3"></div>
-                            <div class="brand_row_4"></div>
-                            <div class="brand_row_5"></div>
-                            <div class="brand_row_6"></div>
-                            <div class="brand_row_7">✔</div>
-                            <div class="brand_row_8"></div>
-                            <div class="brand_row_9"></div>
-                            <div class="brand_row_10">Quarter page</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-300 px-4 py-2 first-column-color align-top">
-                            <div class="communicatie_row_1">Communicatie</div>
-                            <div class="communicatie_row_2">Social media announcement</div>
-                        </td>
-                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                            <div class="communicatie_row_1"></div>
-                            <div class="communicatie_row_2">✔</div>
-                        </td>
-                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                            <div class="communicatie_row_1"></div>
-                            <div class="communicatie_row_2">✔</div>
-                        </td>
-                        <td class="border border-gray-300 px-4 py-2 cell-color align-top">
-                            <div class="communicatie_row_1"></div>
-                            <div class="communicatie_row_2">✔</div>
-                        </td>
-                    </tr>
+                    {/each}
                 </tbody>
             </table>
         </div>
@@ -266,7 +181,7 @@
         border-spacing: 10px;
         border-collapse: separate;
     }
-    .brand_row_1, .communicatie_row_1, .session_row_1, .available_row_1, .pricing_row_1 {
+    .row_header {
         font-weight: bold;
         font-size: 1.2em;
     }
@@ -276,6 +191,7 @@
     }
     /* Ik wil de tabel altijd volledig in beeld, met font groote dat leesbaar is op elk apparaat. We passen het aan op basis van de view width */
     .responsive-table {
+        min-width: 500px;
         width: 100%;
         font-size: calc(0.2rem + 1vw);
     }
