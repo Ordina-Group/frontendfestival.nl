@@ -25,7 +25,7 @@
 					/></a
 				>
 				<div class="flex flex-col text-center md:text-right">
-					<div class="text-xl"><span class="font-bold">Where:</span> Media Plaza<br>(Jaarbeurs Utrecht)</div>
+					<div class="text-xl"><span class="font-bold">Where:</span> Supernova<br>(Jaarbeurs Utrecht)</div>
 					<div class="text-lg mt-4">Jaarbeursplein 6</div>
 					<div class="text-lg">3521 AL Utrecht</div>
 					<div class="text-lg">The Netherlands</div>
