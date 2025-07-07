@@ -13,7 +13,7 @@
 		disabled?: boolean
 	}
 
-	const tickets = { label: "Tickets Shop", link: "https://www.eventbrite.nl/e/1388174410029?aff=oddtdtcreator" };
+	const tickets = { label: "Ticket Shop", link: "https://www.eventbrite.nl/e/1388174410029?aff=oddtdtcreator" };
 	const sponsors = { label: "Call for Sponsors", link: "/sponsors" };
 	const volunteers = { label: "Call for Volunteers", link: "/volunteers" };
 	const papers = { label: "Call for Papers", link: "/papers" };
