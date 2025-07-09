@@ -14,12 +14,12 @@
 	}
 
 	const tickets = { label: "Ticket Shop", link: "https://www.eventbrite.nl/e/1388174410029?aff=oddtdtcreator" };
-	const sponsors = { label: "Call for Sponsors", link: "/sponsors" };
-	const volunteers = { label: "Call for Volunteers", link: "/volunteers" };
-	const papers = { label: "Call for Papers", link: "/papers" };
+	const sponsors = { label: "Call for Sponsors", link: "/call-for-sponsors" };
+	const volunteers = { label: "Call for Volunteers", link: "/call-for-volunteers" };
+	const papers = { label: "Call for Papers", link: "/call-for-papers" };
 
 	const menusLeft: Menu[] = [tickets];
-	const menusRight: Menu[] = [sponsors, volunteers, papers];
+	const menusRight: Menu[] = [papers, sponsors, volunteers];
 
 	const menuStagger = 4;
 </script>
