@@ -27,17 +27,14 @@
 <header class="flex-center relative w-full bg-shark header" id="header">
 	<Poster />
 	<div class="relative mt-3 w-full">
-		<TopNavSection></TopNavSection>
-
 		<div class="menu">
-
 			<div class="left">
 				<Fly offset={-10}>
 					<TagBlock direction="right" extend={true} backgroundColor="north3">
 						<div class="inline-flex text-lg text-white">
 							<div class="text-xl">
-								<span class="pr-4 text-ordina font-bold">Save the date <span class="whitespace-pre">16-10-2025</span></span>
-								<Countdown></Countdown>
+								<span class="pr-4 text-north2 font-bold">Save the date <span class="whitespace-pre">16-10-2025</span></span>
+								<Countdown />
 							</div>
 						</div>
 					</TagBlock>
