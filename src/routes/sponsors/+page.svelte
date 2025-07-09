@@ -22,6 +22,13 @@
             tier: "silver",
             name: "Vakgroep Software Ontwikkeling",
             logo: "/sponsors/vso.png",
+            url: "https://www.amsterdam.nl/bestuur-organisatie/organisatie/digitalisering-innovatie-en-informatie/",
+        },
+        {
+            tier: "gold",
+            name: "Sopra Steria",
+            logo: "/sponsors/ssg.jpg",
+            url: "https://www.soprasteria.nl",
         },
     ];
 
@@ -43,8 +50,11 @@
             <div class="mt-4 flex flex-wrap gap-4 justify-center">
                 {#each tierSponsors as sponsor}
                     <a href={sponsor.url} target="_blank">
-                        <div class="rounded-xl bg-white w-52 md:w-80 aspect-square grid place-items-center">
-                            <img class="object-contain" src={sponsor.logo} alt={sponsor.name} />
+                        <div
+                            class="rounded-xl bg-white w-52 md:w-80 aspect-square grid place-items-center bg-contain bg-no-repeat bg-center"
+                            style="background-image: url({sponsor.logo});"
+                            title={sponsor.name}
+                        >
                         </div>
                     </a>
                 {/each}
