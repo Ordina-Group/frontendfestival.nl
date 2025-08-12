@@ -15,7 +15,7 @@
             <div>
                 <p>Please note:</p>
                 <ul class="list-disc list-inside mt-2">
-                    <li>Proposal deadline: Friday, August 17, 2025 at 23:59 CEST</li>
+                    <li>Proposal deadline: Sunday, August 17, 2025 at 23:59 CEST</li>
                     <li>Conference date: Thursday, October 16, 2025</li>
                     <li>Venue: Jaarbeurs Utrecht, Netherlands</li>
                 </ul>
