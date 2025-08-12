@@ -8,7 +8,12 @@
 </script>
 
 <div class="m-8 mt-20 py-6">
-	<div class="m-auto w-full max-w-6xl text-black">
+    <div class="m-auto w-full max-w-6xl text-black">
+        <div class="w-full my-8 text-2xl flex justify-center text-center font-bold">
+            <div class="max-w-2xl">
+                The volunteer sign up sheet is now closed, we thank everyone who signed up to become a volunteer!
+            </div>
+        </div>
         <div class="w-full text-center font-bold text-xl">
             <TagBlock backgroundColor="north3">
                 Want to help make PyCon NL 2025 an unforgettable event?
@@ -88,7 +93,7 @@
         </div>
 
         <div class="mt-4 flex items-center justify-center">
-            <TagBlock class="text-lg" backgroundColor="north" link="https://forms.office.com/e/zqDxc8eL4e" externalLink>
+            <TagBlock class="text-lg" backgroundColor="north" externalLink>
                 <div class="font-bold">
                     Fill form<span class="px-2">|</span><span class="text-ordina">PYCON NL Volunteer Program</span>
                 </div>
