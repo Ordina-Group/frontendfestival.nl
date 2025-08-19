@@ -35,7 +35,13 @@
             name: "Qstars IT",
             logo: "/sponsors/qstars.png",
             url: "https://www.qstars.nl",
-        }
+        },
+        {
+            tier: "bronze",
+            name: "Four Digits",
+            logo: "/sponsors/fourdigits.png",
+            url: "https://www.fourdigits.nl/",
+        },
     ];
 
     const byTier: Partial<Record<Tier, Sponsor[]>> = groupBy(sponsors, s => s.tier);
