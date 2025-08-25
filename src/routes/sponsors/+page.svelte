@@ -42,6 +42,12 @@
             logo: "/sponsors/fourdigits.png",
             url: "https://www.fourdigits.nl/",
         },
+        {
+            tier: "bronze",
+            name: "Channable",
+            logo: "/sponsors/channable.png",
+            url: "https://www.channable.com/",
+        },
     ];
 
     const byTier: Partial<Record<Tier, Sponsor[]>> = groupBy(sponsors, s => s.tier);
