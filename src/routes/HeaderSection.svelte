@@ -16,9 +16,11 @@
 	const sponsors = { label: "Call for Sponsors", link: "/call-for-sponsors" };
 	const volunteers = { label: "Call for Volunteers", link: "/call-for-volunteers" };
 	const papers = { label: "Call for Papers", link: "/call-for-papers" };
+	const speakers = { label: "Speakers", link: "/speakers", disabled: true };
+	const schedule = { label: "Schedule	", link: "/schedule", disabled: true };
 
 	const menusLeft: Menu[] = [tickets];
-	const menusRight: Menu[] = [papers, sponsors, volunteers];
+	const menusRight: Menu[] = [sponsors, speakers, schedule];
 
 	const menuStagger = 4;
 </script>
@@ -45,7 +47,7 @@
 					<!-- i + 1 because of the Countdown above -->
 					<div style:padding-right="{menuStagger * (i + 1)}em">
 						<Fly offset={-10} delay={(i + 1) * 200}>
-							<TagBlock direction="right" extend backgroundColor="north2" link={menu.link}>
+							<TagBlock direction="right" extend backgroundColor="north2" link={menu.disabled ? undefined : menu.link}>
 								<div class="inline-flex text-lg">
 									<span class="pr-4 text-ordina font-bold" class:disabled={menu.disabled}>{menu.label}</span>
 								</div>
@@ -68,7 +70,7 @@
 				{#each menusRight as menu, i}
 					<div style:padding-left="{menuStagger * i}em">
 						<Fly offset={10} delay={i * 200}>
-							<TagBlock direction="left" extend backgroundColor="north2" link={menu.link}>
+							<TagBlock direction="left" extend backgroundColor="north2" link={menu.disabled ? undefined : menu.link}>
 								<div class="inline-flex text-lg">
 									<span class="pr-4 text-ordina font-bold" class:disabled={menu.disabled}>{menu.label}</span>
 								</div>
