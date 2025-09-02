@@ -7,20 +7,27 @@
     type MenuItem = {
         label: string
         route?: string
-        submenu?: { label: string, route: string}[]
+        submenu?: { label: string, route: string, disabled?: boolean }[]
     }
 
     const items: MenuItem[] = [
         { label: "Home", route: "/" },
         {
-            label: "Get Involved",
+            label: "The Event",
             submenu: [
-                { label: "Call for Papers", route: "/call-for-papers" },
-                { label: "Call for Sponsors", route: "/call-for-sponsors" },
-                { label: "Call for Volunteers", route: "/call-for-volunteers" },
+                { label: "Sponsors", route: "/sponsors", },
+                { label: "Speakers", route: "/speakers", },
+                { label: "Schedule", route: "/schedule", disabled: true },
             ],
         },
-        { label: "Our Sponsors", route: "/sponsors" },
+        {
+            label: "Get Involved",
+            submenu: [
+                { label: "Call for Sponsors", route: "/call-for-sponsors" },
+                { label: "Call for Papers", route: "/call-for-papers", disabled: true },
+                { label: "Call for Volunteers", route: "/call-for-volunteers", disabled: true },
+            ],
+        },
         {
             label: "About Us",
             submenu: [
@@ -74,14 +81,20 @@
                         {#if item.submenu}
                             {#if menuOpen}
                                 {#each item.submenu as sub}
-                                    <a
-                                        href={sub.route}
-                                        class:active={currentPath === sub.route}
-                                        class="block rounded py-2 px-3 text-white hover:text-north2 hover:bg-gray-100"
-                                        on:click={() => menuOpen = false}
-                                    >
-                                        {sub.label}
-                                    </a>
+                                    {#if sub.disabled}
+                                        <div class="block rounded py-2 px-3 text-white opacity-50 cursor-not-allowed">
+                                            {sub.label}
+                                        </div>
+                                    {:else}
+                                        <a
+                                            href={sub.route}
+                                            class:active={currentPath === sub.route}
+                                            class="block rounded py-2 px-3 text-white hover:text-north2 hover:bg-gray-100"
+                                            on:click={() => menuOpen = false}
+                                        >
+                                            {sub.label}
+                                        </a>
+                                    {/if}
                                 {/each}
                             {:else}
                                 <span
@@ -94,15 +107,21 @@
                                 <ul class="animate-dropdown hidden absolute left-0 md:group-hover:block z-30 pt-2">
                                     <div class="p-2 bg-north text-white rounded-md shadow-lg md:min-w-[250px]">
                                         {#each item.submenu as sub}
-                                            <li>
-                                                <a
-                                                    href={sub.route}
-                                                    class:active={currentPath === sub.route}
-                                                    class="block px-4 py-2 hover:bg-gray-100 rounded-md hover:text-north"
-                                                >
+                                            {#if sub.disabled}
+                                                <div class="block px-4 py-2 rounded-md opacity-50 cursor-not-allowed">
                                                     {sub.label}
-                                                </a>
-                                            </li>
+                                                </div>
+                                            {:else}
+                                                <li>
+                                                    <a
+                                                        href={sub.route}
+                                                        class:active={currentPath === sub.route}
+                                                        class="block px-4 py-2 hover:bg-gray-100 rounded-md hover:text-north"
+                                                    >
+                                                        {sub.label}
+                                                    </a>
+                                                </li>
+                                            {/if}
                                         {/each}
                                     </div>
                                 </ul>

@@ -1,5 +1,6 @@
 // scheduleData.ts
-import { speakers } from './speakersTalk';
+
+import { speakers } from "$lib/data/speakers";
 
 export interface ScheduleItem {
   time: string;
@@ -13,5 +14,14 @@ export interface ScheduleItem {
 }
 
 export const scheduleItems: ScheduleItem[] = [
-  // TODO: Add schedule items here
+  {
+    time: "2025-09-13T12:00",
+    title: "My Amazing Talk",
+    speaker: speakers[0],
+    partialText: "foo",
+    direction: "left",
+    backgroundColor: "north2",
+    fontBold: false,
+    id: 0,
+  }
 ]
