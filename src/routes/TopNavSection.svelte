@@ -16,7 +16,7 @@
             label: "The Event",
             submenu: [
                 { label: "Sponsors", route: "/sponsors", },
-                { label: "Speakers", route: "/speakers", disabled: true },
+                { label: "Speakers", route: "/speakers", },
                 { label: "Schedule", route: "/schedule", disabled: true },
             ],
         },
