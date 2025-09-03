@@ -48,6 +48,12 @@
             logo: "/sponsors/channable.png",
             url: "https://www.channable.com/",
         },
+        {
+            tier: "silver",
+            name: "Red Hat",
+            logo: "/sponsors/redhat.png",
+            url: "https://www.redhat.com/",
+        }
     ];
 
     const byTier: Partial<Record<Tier, Sponsor[]>> = groupBy(sponsors, s => s.tier);
