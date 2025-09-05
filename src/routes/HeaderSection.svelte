@@ -17,7 +17,7 @@
 	const volunteers = { label: "Call for Volunteers", link: "/call-for-volunteers" };
 	const papers = { label: "Call for Papers", link: "/call-for-papers" };
 	const speakers = { label: "Speakers", link: "/speakers" };
-	const schedule = { label: "Schedule	", link: "/schedule", disabled: true };
+	const schedule = { label: "Schedule	", link: "/schedule" };
 
 	const menusLeft: Menu[] = [tickets];
 	const menusRight: Menu[] = [sponsors, speakers, schedule];

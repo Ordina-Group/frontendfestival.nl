@@ -5,7 +5,7 @@ export const rooms = {
 } as const;
 
 export const timeSlots = {
-    2025: ["07:30", "09:00", "10:30", "12:00", "13:30"]
+    2025: ["08:00", "09:30", "09:45", "10:30", "10:45", "11:25", "12:05", "12:35", "13:30", "14:05", "14:35", "14:50", "15:25", "15:55", "16:10", "16:55", "17:05"]
 } as const;
 
 export type Speaker = {
@@ -27,32 +27,34 @@ interface Talk<Y extends Year> {
     speakerId: number
 }
 
-interface SingleSlotTalk<Y extends Year> extends Talk<Y> {
+interface SingleTrackTalk<Y extends Year> extends Talk<Y> {
     type: "talk"
-    slotType: "single"
+    trackType: "single"
     room: Room<Y>
+    multiSlot?: number
 }
 
-interface CommonSlotTalk<Y extends Year> extends Talk<Y> {
+interface CommonTalk<Y extends Year> extends Talk<Y> {
     type: "talk"
-    slotType: "common"
+    trackType: "common"
     room: string
 }
 
-interface SingleSlot<Y extends Year> {
+interface SingleTrackEvent<Y extends Year> {
     type: "other"
-    slotType: "single"
+    trackType: "single"
+    title: string,
     room: Room<Y>
 }
 
-interface CommonSlot {
+interface CommonEvent {
     type: "other"
-    slotType: "common"
+    trackType: "common"
     title: string,
-    description: string,
+    description?: string,
 }
 
-type Slot<Y extends Year> = (SingleSlotTalk<Y> | CommonSlotTalk<Y> | SingleSlot<Y> | CommonSlot) & {
+export type Slot<Y extends Year> = (SingleTrackTalk<Y> | CommonTalk<Y> | SingleTrackEvent<Y> | CommonEvent) & {
     timeSlot: (typeof timeSlots)[Y][number]
 }
 

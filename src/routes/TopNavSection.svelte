@@ -17,7 +17,7 @@
             submenu: [
                 { label: "Sponsors", route: "/sponsors", },
                 { label: "Speakers", route: "/speakers", },
-                { label: "Schedule", route: "/schedule", disabled: true },
+                { label: "Schedule", route: "/schedule", },
             ],
         },
         {
