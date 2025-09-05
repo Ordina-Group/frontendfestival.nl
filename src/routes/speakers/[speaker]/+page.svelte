@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Fly from "$lib/components/Fly.svelte";
+	import Markdown from "$lib/components/Markdown.svelte";
 	import TagBlock from "$lib/components/TagBlock.svelte";
 	import { initials } from "$lib/data/types.js";
 
@@ -30,11 +31,7 @@
         <div class="flex flex-col text-justify hyphens-auto">
             <div class="font-bold mb-4">Biography:</div>
             <Fly offset={10} duration={1000} delay={0}>
-                <div class="flex flex-col gap-4">
-                    {#each speaker.bio.split("\n") as paragraph}
-                        <p>{paragraph}</p>
-                    {/each}
-                </div>
+                <Markdown class="flex flex-col gap-4" text={speaker.bio} />
             </Fly>
             <Fly offset={10} duration={1000} delay={200}>
                 <TagBlock
