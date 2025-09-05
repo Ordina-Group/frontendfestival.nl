@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Fly from "$lib/components/Fly.svelte";
 	import TagBlock from "$lib/components/TagBlock.svelte";
-	import { initials } from "$lib/data/speakers.js";
+	import { initials } from "$lib/data/types.js";
 
     export let data;
     const speaker = data.speaker;

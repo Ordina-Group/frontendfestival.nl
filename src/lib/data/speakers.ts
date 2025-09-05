@@ -1,17 +1,4 @@
-export type Speaker = {
-    id: number,
-    name: string;
-    position: string;
-    company?: string;
-    image?: string;
-    bio: string;
-    years: number[]
-};
-
-export function initials(speaker: Speaker) {
-    const parts = speaker.name.split(" ")
-    return parts[0].at(0)!.toUpperCase() + parts[parts.length - 1].at(0)!.toUpperCase()
-}
+import type { Speaker } from "./types";
 
 // Note: never remove speakers, only add or update
 // this way permalinks to speakers will be valid in the future pycon years

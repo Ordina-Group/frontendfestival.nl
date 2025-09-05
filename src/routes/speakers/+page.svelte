@@ -1,9 +1,12 @@
 <script lang="ts">
-	import PosterizedImage from "$lib/components/PosterizedImage.svelte";
-	import { initials, speakers, type Speaker } from "$lib/data/speakers";
-	import tiler from '$lib/assets/images/tiler-pana.svg?raw';
 	import { onMount } from "svelte";
 	import { scale } from "svelte/transition";
+
+    import PosterizedImage from "$lib/components/PosterizedImage.svelte";
+	import tiler from '$lib/assets/images/tiler-pana.svg?raw';
+
+    import { speakers } from "$lib/data/speakers";
+	import { initials, type Speaker } from "$lib/data/types";
 
     function shuffled<T>(ts: T[]) {
         return ts.map(value => ({ value, sort: Math.random() }))
