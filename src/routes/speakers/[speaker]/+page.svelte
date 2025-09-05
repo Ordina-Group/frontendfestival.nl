@@ -2,10 +2,14 @@
 	import Fly from "$lib/components/Fly.svelte";
 	import Markdown from "$lib/components/Markdown.svelte";
 	import TagBlock from "$lib/components/TagBlock.svelte";
-	import { initials } from "$lib/data/types.js";
+	import { allSchedules } from "$lib/data/schedules";
+	import { initials, type Slot } from "$lib/data/types.js";
 
     export let data;
+
     const speaker = data.speaker;
+
+    const talks = Object.values(allSchedules).flat().filter(s => s.type === "talk" && s.speakerId === speaker.id);
 </script>
 
 <div class="p-8 mt-20 py-6 flex flex-col items-center w-full">
@@ -33,16 +37,20 @@
             <Fly offset={10} duration={1000} delay={0}>
                 <Markdown class="flex flex-col gap-4" text={speaker.bio} />
             </Fly>
-            <Fly offset={10} duration={1000} delay={200}>
-                <TagBlock
-                    class="mt-10 ml-28"
-                    direction="left"
-                    extend
-                    backgroundColor="north3"
-                >
-                    Talk information coming soon
-                </TagBlock>
-            </Fly>
+            {#each talks as talk, i}
+                <Fly offset={10} duration={1000} delay={200 + 200 * i}>
+                    <!-- TODO: Link to talk -->
+                    <TagBlock
+                        class="mt-10 ml-28"
+                        direction="left"
+                        extend
+                        backgroundColor="north3"
+                    >
+                        <div class="font-bold">PyCon NL {talk.year}:</div>
+                        <div>{talk.title}</div>
+                    </TagBlock>
+                </Fly>
+            {/each}
         </div>
     </div>
 </div>

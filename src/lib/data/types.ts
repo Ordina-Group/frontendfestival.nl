@@ -1,4 +1,6 @@
-export type Year = 2025
+export type Year = 2025 // | 2026 | 2027 ...
+
+export const currentYear: Year = 2025
 
 export const rooms = {
     2025: ["Progress", "Quest"],

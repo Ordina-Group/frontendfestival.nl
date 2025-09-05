@@ -1,4 +1,4 @@
-import type { Schedule } from "./types";
+import type { Schedule, Year } from "./types";
 
 export const schedule2025: Schedule<2025> = [
     {
@@ -266,3 +266,7 @@ You’ll walk away with sharper debugging instincts, some practical tricks, and 
         timeSlot: "17:05",
     },
 ]
+
+export const allSchedules: Partial<Record<Year, Schedule<Year>>> = {
+    2025: schedule2025
+}
