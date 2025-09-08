@@ -67,6 +67,7 @@ I am also a strong advocate for open-source software, and I find working with th
         name: "Klaas van Schelven",
         position: "Creator of Bugsink",
         company: "Bugsink",
+        image: "/speakers/klaas_van_schelven.jpg",
         bio: `Klaas van Schelven is the creator of Bugsink, an error tracker written in Python and one of the most successful Dutch Python projects in recent years.
 
 He has contributed to Django and many other Python open source projects.
@@ -100,6 +101,7 @@ In his free time, Alex enjoys playing chess and bouldering.`,
         name: "Aris Nivorlis",
         position: "Researcher Geophysicist and Data Steward",
         company: "Deltares",
+        image: "/speakers/aris_nivorlis.jpg",
         bio: `Aris Nivorlis is a researcher geophysicist and data steward at Deltares, where he uses data and tooling to answer complex questions about the subsurface.
 
 He is passionate about promoting good practices in data management and scientific coding, helping teams build sustainable and reproducible workflows.
@@ -160,6 +162,19 @@ He co-designed the language that Python is based on, was the first user of the o
 
 In 2022 he received the ACM SIGCHI Lifetime Practice Award, and in 2023 was named an ACM Distinguished Speaker.`,
         image: "/speakers/steven_pemberton.jpg",
+        years: [2025],
+    },
+    {
+        id: 12,
+        name: "Sofie van Landeghem",
+        position: "Software Engineer",
+        company: "OxyKodit",
+        bio: `Sofie is a software developer who firmly believes in the power of data to transform decision making in industry.
+
+Through her one-woman consulting company OxyKodit, she develops tailored AI solutions for a variety of businesses and domains, leaning on nearly 2 decades of experience (and a PhD) in Natural Language Processing and Machine Learning.
+
+She's also passionate about open-source, having worked on various popular Python packages including FastAPI, Typer and spaCy.`,
+        image: "/speakers/sofie_van_landeghem.jpg",
         years: [2025],
     }
 ];

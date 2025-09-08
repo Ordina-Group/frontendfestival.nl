@@ -53,10 +53,8 @@
                         <div class="mt-12 text-xl md:text-2xl font-bold">{speaker.name}</div>
                         {#if speaker.company}
                             <div class="text-lg">{speaker.company}</div>
-                            <div class="text-md italic">{speaker.position}</div>
-                        {:else}
-                            <div class="text-lg">{speaker.position}</div>
                         {/if}
+                        <div class="text-md italic">{speaker.position}</div>
                     </div>
                 </div>
                 <!-- <div class="mb-16 h-56 w-full">

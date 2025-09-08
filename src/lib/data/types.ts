@@ -24,6 +24,7 @@ export type Room<Y extends Year> = (typeof rooms)[Y][number]
 
 interface Talk<Y extends Year> {
     year: Y
+    id: number
     title: string
     description: string
     speakerId: number

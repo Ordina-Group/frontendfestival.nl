@@ -11,9 +11,10 @@
 
 <div class="m-8 mt-20 py-6">
 	<div class="m-auto w-full max-w-3xl text-black flex flex-col items-center">
-		<div class="font-bold text-3xl">Schedule PyCon NL 2025</div>
+		<div class="mt-4 font-bold text-3xl">Schedule PyCon NL 2025</div>
+		<div class="italic text-lg">(Main events happen in the Progress room)</div>
 
-		<div class="mt-4 flex flex-col md:grid md-schedule-columns text-center gap-2 items-center">
+		<div class="mt-12 flex flex-col md:grid md-schedule-columns text-center gap-2 items-center">
 
 			<div class="hidden md:block"></div>
 			{#each rooms as room}
@@ -21,7 +22,7 @@
 			{/each}
 
 			{#each timeSlots as timeSlot}
-				<div class="text-right text-xl font-bold md:font-normal md:text-base mt-6 md:mt-0">
+				<div class="text-right text-xl font-bold md:font-normal md:text-base mt-6 md:mt-0 select-none">
 					{timeSlot}
 				</div>
 

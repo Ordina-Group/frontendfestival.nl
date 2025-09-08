@@ -27,6 +27,7 @@ Does that mean we are doing it wrong? And if so, what are the alternatives?
         speakerId: 11,
         timeSlot: "09:45",
         year: 2025,
+        id: 1,
     },
     {
         type: "other",
@@ -45,7 +46,7 @@ In this talk, we’ll dive into some of these powerful typing features and see h
 * Overloads
 * Generics
 * TypeGuard / TypeIs
-* Proper **kwargs typing
+* Proper \`**kwargs\` typing
 * Overrides
 * And more…
 
@@ -55,6 +56,7 @@ Let’s take your static typing skills to the next level - and become true typin
         speakerId: 3,
         timeSlot: "10:45",
         year: 2025,
+        id: 2,
     },
     {
         type: "talk",
@@ -65,6 +67,7 @@ Let’s take your static typing skills to the next level - and become true typin
         speakerId: -1,
         timeSlot: "10:45",
         year: 2025,
+        id: 3,
     },
     {
         type: "talk",
@@ -80,6 +83,7 @@ This is a practical talk for engineers and teams considering FastAPI in producti
         speakerId: 1,
         timeSlot: "11:25",
         year: 2025,
+        id: 4,
     },
     {
         type: "talk",
@@ -95,19 +99,21 @@ By the end of the talk, you’ll see how a carefully engineered Python stack can
         speakerId: 6,
         timeSlot: "11:25",
         year: 2025,
+        id: 5,
     },
     {
         type: "talk",
         trackType: "single",
         title: "Performance Myths and Silent Pitfalls of __slots__",
-        description: `When optimizing Python, many developers reach for __slots__ to save memory and speed up attribute access. But much of the common wisdom about this feature is outdated. On modern Python, long-held assumptions often fail—and subtle misconfigurations can quietly make code slower and less efficient.
+        description: `When optimizing Python, many developers reach for \`__slots__\` to save memory and speed up attribute access. But much of the common wisdom about this feature is outdated. On modern Python, long-held assumptions often fail—and subtle misconfigurations can quietly make code slower and less efficient.
 
-Is your knowledge current, or are your optimizations working against you? This session cuts through the myths with fresh data, shows you how to spot hidden traps, and helps you ensure __slots__ delivers real performance gains—not surprises.
+Is your knowledge current, or are your optimizations working against you? This session cuts through the myths with fresh data, shows you how to spot hidden traps, and helps you ensure \`__slots__\` delivers real performance gains—not surprises.
 `,
         room: "Progress",
         speakerId: 2,
         timeSlot: "12:05",
         year: 2025,
+        id: 6,
     },
     {
         type: "talk",
@@ -123,6 +129,7 @@ Whether you're building a data science tool, a web app, an API or a library, thi
         speakerId: 7,
         timeSlot: "12:05",
         year: 2025,
+        id: 7,
     },
     {
         type: "other",
@@ -148,6 +155,7 @@ By the end of my talk, you will not be a security expert, but you should have en
         speakerId: 10,
         timeSlot: "13:30",
         year: 2025,
+        id: 8,
     },
     {
         type: "talk",
@@ -164,16 +172,24 @@ The Python development workflow your past self had always hoped for is finally h
         timeSlot: "13:30",
         year: 2025,
         multiSlot: 2,
+        id: 9,
     },
     {
         type: "talk",
         trackType: "single",
         title: "Leading Kedro: lessons from maintaining an open source Python framework",
-        description: `Maintaining an open source project sounds exciting…until you're juggling user requests, roadmap decisions, contributor onboarding, and technical debt all at once. In this talk, I’ll share my journey as a tech lead on Kedro, an open source Python framework for building robust data and machine learning pipelines. Over the past six years, Kedro has grown into a mature project with 10,000+ GitHub stars and a global community of users and contributors. I’ll walk through the practical strategies and hard-earned lessons from leading the project: how we scale community contributions, evolve the architecture, and strike the right balance between innovation and long-term sustainability. Whether you're an engineer relying on open source tools or someone curious about what it takes to maintain one, this talk will give you a behind-the-scenes look at the technical and human side of open source leadership.`,
+        description: `Maintaining an open source project sounds exciting… until you're juggling user requests, roadmap decisions, contributor onboarding, and technical debt all at once.
+
+In this talk, I’ll share my journey as a tech lead on Kedro, an open source Python framework for building robust data and machine learning pipelines.
+
+Over the past six years, Kedro has grown into a mature project with 10,000+ GitHub stars and a global community of users and contributors. I’ll walk through the practical strategies and hard-earned lessons from leading the project: how we scale community contributions, evolve the architecture, and strike the right balance between innovation and long-term sustainability.
+
+Whether you're an engineer relying on open source tools or someone curious about what it takes to maintain one, this talk will give you a behind-the-scenes look at the technical and human side of open source leadership.`,
         room: "Progress",
         speakerId: 4,
         timeSlot: "14:05",
         year: 2025,
+        id: 10,
     },
     {
         type: "other",
@@ -193,6 +209,7 @@ The Python development workflow your past self had always hoped for is finally h
         speakerId: -1,
         timeSlot: "14:50",
         year: 2025,
+        id: 11,
     },
     {
         type: "talk",
@@ -212,6 +229,7 @@ At the heart of them is a maturity model that helps drive practice quality at sc
         speakerId: 9,
         timeSlot: "14:50",
         year: 2025,
+        id: 12,
         multiSlot: 2,
     },
     {
@@ -236,6 +254,7 @@ You’ll walk away with sharper debugging instincts, some practical tricks, and 
         speakerId: 5,
         timeSlot: "15:25",
         year: 2025,
+        id: 13,
     },
     {
         type: "other",
@@ -246,12 +265,13 @@ You’ll walk away with sharper debugging instincts, some practical tricks, and 
     {
         type: "talk",
         trackType: "common",
-        title: "TBD",
-        description: "TBD",
+        title: "How to not get fooled by your data while AI engineering",
+        description: "Description TBD",
         room: "Progress",
-        speakerId: -1,
+        speakerId: 12,
         timeSlot: "16:10",
         year: 2025,
+        id: 14,
     },
     {
         type: "other",
