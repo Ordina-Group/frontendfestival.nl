@@ -24,7 +24,11 @@ import { speakers } from "$lib/data/speakers.js";
         <div class="mb-4 text-4xl font-bold text-center capitalize">{talk.title}</div>
         <div class="mb-2 text-xl">
             {talkType} presented by:
-            <a href="/speakers/{talk.speakerId}" class="underline">{speaker(talk.speakerId)?.name ?? "Unknown"}</a>
+            {#if talk.speakerId >= 0}
+                <a href="/speakers/{talk.speakerId}" class="underline">{speaker(talk.speakerId)?.name ?? "Unknown"}</a>
+            {:else}
+                TBD
+            {/if}
         </div>
         <div class="italic text-md">During PyCon NL {talk.year}, at {talk.timeSlot} in {talk.room}</div>
         <div class="bg-[url(/divider.png)] w-full h-24 bg-no-repeat bg-contain bg-center my-8"></div>
