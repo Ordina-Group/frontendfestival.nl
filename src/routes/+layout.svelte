@@ -2,8 +2,8 @@
 	import '../reset.pcss';
 	import '../tailwind.pcss';
 
-	import PracticalInformationSection from "./PracticalInformationSection.svelte";
-	import TopNavSection from "./TopNavSection.svelte";
+	import Footer from "$lib/footer/Footer.svelte";
+	import TopNavSection from "$lib/components/nav/Nav.svelte";
 
  	import { afterNavigate } from '$app/navigation';
 
@@ -43,7 +43,7 @@
 				<img src="/footer-animation.webp" alt="" class="max-h-[15em] footer" />
 			</div>
 
-			<PracticalInformationSection></PracticalInformationSection>
+			<Footer></Footer>
 		</div>
 
 	</div>

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { debounce, random, sample } from 'lodash-es';
-	import PosterBall from '$lib/components/PosterBall.svelte';
+	import PosterBall from './BackgroundBall.svelte';
 
 	const BLUR_RADIUS = 64;
 	const BALL_SIZE = [600, 800];

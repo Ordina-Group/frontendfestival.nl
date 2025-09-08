@@ -1,6 +1,6 @@
 <script lang="ts">
-	import TagBlock from "$lib/components/TagBlock.svelte";
-	import Fly from "$lib/components/Fly.svelte";
+	import TagBlock from "$lib/components/core/TagBlock.svelte";
+	import Fly from "$lib/components/fly/Fly.svelte";
 
     import volunteer from "$lib/assets/images/Hello-pana.svg?raw";
     import organize from "$lib/assets/images/Organizing projects-pana.svg?raw";

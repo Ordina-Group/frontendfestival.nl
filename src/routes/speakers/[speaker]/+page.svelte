@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Fly from "$lib/components/Fly.svelte";
-	import Markdown from "$lib/components/Markdown.svelte";
-	import TagBlock from "$lib/components/TagBlock.svelte";
+	import Fly from "$lib/components/fly/Fly.svelte";
+	import Markdown from "$lib/components/core/Markdown.svelte";
+	import TagBlock from "$lib/components/core/TagBlock.svelte";
 	import { allSchedules } from "$lib/data/schedules";
 	import { initials, type Slot } from "$lib/data/types.js";
 

@@ -1,7 +1,7 @@
 <script>
-	import Fly from '$lib/components/Fly.svelte';
-	import TagBlock from '$lib/components/TagBlock.svelte';
-	import Video from '$lib/components/Video.svelte';
+	import Fly from '$lib/components/fly/Fly.svelte';
+	import TagBlock from '$lib/components/core/TagBlock.svelte';
+	import Video from '$lib/components/core/Video.svelte';
 
 	import talk from '$lib/assets/images/Public talk-pana.svg?raw';
 	import community from '$lib/assets/images/Team spirit-pana.svg?raw';

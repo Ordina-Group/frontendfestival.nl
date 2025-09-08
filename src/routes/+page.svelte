@@ -1,7 +1,7 @@
 <script>
-	import HeaderSection from './HeaderSection.svelte';
-	import InfoSection from './InfoSection.svelte';
+	import Header from '$lib/components/home/Header.svelte';
+	import Info from '$lib/components/home/Info.svelte';
 </script>
 
-<HeaderSection />
-<InfoSection />
+<Header />
+<Info />

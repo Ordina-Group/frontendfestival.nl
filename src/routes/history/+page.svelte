@@ -1,9 +1,9 @@
 <script lang="ts">
-    import TagBlock from '$lib/components/TagBlock.svelte';
-    import Video from "$lib/components/Video.svelte";
+    import TagBlock from '$lib/components/core/TagBlock.svelte';
+    import Video from "$lib/components/core/Video.svelte";
 
     import growth from "$lib/assets/images/Social Growth-pana.svg?raw";
-	import Fly from "$lib/components/Fly.svelte";
+	import Fly from "$lib/components/fly/Fly.svelte";
 </script>
 
 <div class="m-8 mt-20 py-6">

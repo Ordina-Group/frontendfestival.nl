@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Poster from '$lib/components/Poster.svelte';
-	import TagBlock from '$lib/components/TagBlock.svelte';
+	import Poster from './Background.svelte';
+	import TagBlock from '$lib/components/core/TagBlock.svelte';
 	import { Icon } from 'svelte-awesome';
 	import { chevronDown } from 'svelte-awesome/icons';
 	import Countdown from './Countdown.svelte';
-	import Fly from "$lib/components/Fly.svelte";
+	import Fly from "$lib/components/fly/Fly.svelte";
 
 	interface Menu {
 		label: string

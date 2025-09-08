@@ -1,8 +1,8 @@
 <script lang="ts">
-	import Fly from "$lib/components/Fly.svelte";
-	import Markdown from "$lib/components/Markdown.svelte";
-	import TagBlock from "$lib/components/TagBlock.svelte";
-import { speakers } from "$lib/data/speakers.js";
+	import Fly from "$lib/components/fly/Fly.svelte";
+	import Markdown from "$lib/components/core/Markdown.svelte";
+	import TagBlock from "$lib/components/core/TagBlock.svelte";
+    import { speakers } from "$lib/data/speakers.js";
 
     export let data;
 

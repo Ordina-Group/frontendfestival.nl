@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { groupBy } from "lodash-es";
-	import TagBlock from "$lib/components/TagBlock.svelte";
+	import TagBlock from "$lib/components/core/TagBlock.svelte";
 
     type Tier = "gold" | "silver" | "bronze"
 

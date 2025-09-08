@@ -1,6 +1,6 @@
 <script lang="ts">
-    import TagBlock from '$lib/components/TagBlock.svelte';
-	import Fly from "$lib/components/Fly.svelte";
+    import TagBlock from '$lib/components/core/TagBlock.svelte';
+	import Fly from "$lib/components/fly/Fly.svelte";
     import sponsors from "$lib/assets/images/Sponsor-pana.svg?raw";
     import tiers from "$lib/assets/images/Holding the arrow-pana.svg?raw";
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { visible } from "$lib/visible";
+	import { visible } from "$lib/components/fly/visible";
 
     export let offset = 10;
     export let delay = 0;

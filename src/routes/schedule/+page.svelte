@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { schedule2025 } from "$lib/data/schedules";
 	import { rooms as allRooms, timeSlots as allTimeSlots, type Year } from "$lib/data/types";
-	import TimeSlot from "./TimeSlot.svelte";
+	import TimeSlot from "$lib/components/schedule/TimeSlot.svelte";
 
 	const year: Year = 2025
 

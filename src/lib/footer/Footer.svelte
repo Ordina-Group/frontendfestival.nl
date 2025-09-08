@@ -1,5 +1,5 @@
 <script>
-	import TagBlock from '$lib/components/TagBlock.svelte';
+	import TagBlock from '$lib/components/core/TagBlock.svelte';
 </script>
 
 <div
@@ -53,7 +53,7 @@
 		</TagBlock>
 	</a> -->
 
-	<div class="mt-16 inline flex flex-col gap-4 lg:block">
+	<div class="mt-16 flex flex-col gap-4 lg:block">
 		<span class="text-sm mt-12 w-full text-center">
     		Made with Svelte
 		</span>
