@@ -17,7 +17,7 @@
             submenu: [
                 { label: "Sponsors", route: "/sponsors", },
                 { label: "Speakers", route: "/speakers", },
-                { label: "Schedule", route: "/schedule", disabled: true },
+                { label: "Schedule", route: "/schedule", },
             ],
         },
         {
@@ -75,7 +75,7 @@
         </div>
 
         <div class={` items-center justify-between w-full md:flex md:w-auto md:order-1 ${menuOpen ? '' : 'hidden md:block'}`} id="navbar-sticky">
-            <ul class="flex flex-col grow text-xl p-4 md:p-0 mt-4 font-medium md:space-x-5 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-north2">
+            <ul class="flex flex-col grow text-xl p-4 md:p-0 mt-4 md:space-x-5 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-north2">
                 {#each items as item}
                     <li class="relative group">
                         {#if item.submenu}

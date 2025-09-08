@@ -81,7 +81,7 @@ module.exports = {
 				}
 			},
 			fontFamily: {
-				poppins: ['Poppins', 'sans-serif']
+				"fira-sans": ['Fira Sans', 'sans-serif']
 			}
 		}
 	},
