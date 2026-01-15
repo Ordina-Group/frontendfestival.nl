@@ -28,25 +28,25 @@
 		},
 		{
 			time: '19:55',
-			title: 'Adyen',
-			speaker: 'tba'
-		},
-		{
-			time: '20:40',
 			title: 'Buien radar',
 			speaker: 'tba'
 		},
 		{
-			time: '21:30',
-			title: 'Break'
-		},
-		{
-			time: '21:40',
-			title: 'Closing keynote',
+			time: '20:45',
+			title: 'Lightning talk',
 			speaker: 'tba'
 		},
 		{
-			time: '22:10',
+			time: '21:00',
+			title: 'Break'
+		},
+		{
+			time: '21:20',
+			title: 'Closing keynote',
+			speaker: 'Adyen'
+		},
+		{
+			time: '22:00',
 			title: 'Wrap-up & Drinks'
 		},
 		{

@@ -15,7 +15,7 @@
 		</div>
 	</TagBlock>
 
-	<TagBlock class="mt-2" direction="left" extend backgroundColor="honey-flower">
+	<TagBlock class="mt-5" direction="left" extend backgroundColor="honey-flower">
 		<div class="flex w-screen max-w-xl items-center gap-5">
 			<div class="pl-5 text-2xl" />
 			<div class="flex flex-col items-center gap-2 md:flex-row">
