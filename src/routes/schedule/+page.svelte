@@ -5,7 +5,6 @@
 
 <svelte:head>
 	<title>Frontend Festival 2026</title>
-
 	<meta name="title" property="og:title" content="Frontend Festival 2026" />
 	<meta
 		name="description"
