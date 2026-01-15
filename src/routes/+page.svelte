@@ -14,7 +14,7 @@
 	<meta
 		name="description"
 		property="og:description"
-		content="On the 19th of June, Sopra Steria will be hosting the third iteration of the Frontend Festival!"
+		content="On the 10th of June, Sopra Steria will be hosting the fourth iteration of the Frontend Festival!"
 	/>
 	<meta name="type" property="og:type" content="website" />
 	<meta name="url" property="og:url" content="https://frontendfestival.nl/" />

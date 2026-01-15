@@ -13,35 +13,44 @@
 			title: 'Walk-in and dinner'
 		},
 		{
-			time: '18:30',
+			time: '18:00',
 			title: 'Keynote',
-			speaker: 'Jad Joubran'
+			speaker: 'Davy Engone'
 		},
 		{
-			time: '19:15',
-			title: 'Beyond Chatbots: Engineering AI Experiences That Users Actually Love',
-			speaker: 'Stacy Cashmore'
+			time: '18:50',
+			title: 'Eurovision 2021: Crafting a performant & accessible 3D web experience',
+			speaker: 'Servin Nissen'
 		},
 		{
-			time: '19:45',
+			time: '19:35',
 			title: 'Break'
 		},
 		{
-			time: '20:00',
-			title: 'Welcome to the world of agentic frontend builders',
-			speaker: 'Roelant Dieben'
+			time: '19:55',
+			title: 'Adyen',
+			speaker: 'tba'
 		},
 		{
-			time: '20:30',
-			title: 'DDD Full Stack – from Front to Back',
-			speaker: 'Frederieke Scheper & Peter Eijgermans'
+			time: '20:40',
+			title: 'Buien radar',
+			speaker: 'tba'
 		},
 		{
-			time: '21:00',
+			time: '21:30',
+			title: 'Break'
+		},
+		{
+			time: '21:40',
+			title: 'Closing keynote',
+			speaker: 'tba'
+		},
+		{
+			time: '22:10',
 			title: 'Wrap-up & Drinks'
 		},
 		{
-			time: '22:00',
+			time: '22:30',
 			title: 'Closing'
 		}
 	];

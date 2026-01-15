@@ -13,20 +13,20 @@
 
 	let speakers: Speaker[] = [
 		{
-			name: 'Jad Joubran',
-			letters: 'JJ',
-			title: 'Web Performance Consultant & Educator',
+			name: 'Davy Engone',
+			letters: 'DE',
+			title: 'An idea machine',
 			employer: '',
-			image: '/speakers/jj.webp',
-			bio: "Jad is an independent web performance consultant and educator. He has taught more than 15,000 developers through online platforms, in-person training, and university lectures. He's also the creator of learnjavascript.online and several other courses. Jad was recognized by Google with the Developer Expert award for his contributions to the web community. He focuses on making Modern Web development enjoyable, clear, and accessible."
+			image: '/speakers/de.webp',
+			bio: "Davy Engone is the founder of Hackages, a company on a mission to grow the skills of developers in Europe. He's a passionate educator & software engineer with an impressive expertise in JavaScript. He's working with the programming language for over 15 years and has a rich experience on how it is evolving."
 		},
 		{
-			name: 'Stacy Cashmore',
-			letters: 'SC',
-			title: 'Tech Explorer DevOps',
-			employer: 'Omniplan',
-			image: '/speakers/sc.webp',
-			bio: 'Speaker, author, and software developer. Stacy has been developing solutions since the mid-1990s in various companies and industries ranging from facilitating contract jobbing to allowing consumers to close a mortgage without the help of a financial adviser – with lots in between.\n\nShe has a passion for sharing knowledge: using storytelling for sharing her experiences to help teams grow in the ways that they develop software and work together and performing live coding demonstrations to inspire others to try new technologies.\n\nStacy published her first book in 2022, aimed at helping developers get started building dynamic applications using C#, Azure Functions, and Azure Static Web Apps. She is currently busy updating it for a second edition with new SWA functionality and using .NET 9.\n\nFor her effort in the community, Stacy has been awarded the Microsoft MVP for Developer Technologies since 2020.'
+			name: 'Servin Nissen',
+			letters: 'SN',
+			title: 'Founder',
+			employer: 'Merlin',
+			image: '/speakers/sn.webp',
+			bio: 'Tba'
 		},
 		{
 			name: 'Peter Eijgermans',
