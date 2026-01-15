@@ -7,7 +7,6 @@
 	id="practical-information"
 >
 	<div class="text-4xl">Practical information</div>
-
 	<TagBlock class="mt-5" direction="right" extend backgroundColor="soprasteria">
 		<div class="flex w-screen max-w-xl gap-5">
 			<div class="pl-5 text-2xl sm:pl-0">When:</div>
