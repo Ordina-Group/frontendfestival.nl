@@ -29,28 +29,28 @@
 			bio: 'Tba'
 		},
 		{
-			name: 'Peter Eijgermans',
-			letters: 'PE',
+			name: 'Neil Bhatt',
+			letters: 'NB',
 			title: '',
-			employer: 'Sopra Steria',
-			image: '/speakers/pe.webp',
-			bio: 'Peter Eijgermans is a long-time software developer and an adventurous and passionate CodeSmith Frontend at Sopra Steria (Ordina). He likes to travel around the world with his bike. Always seeking for the unexpected and unknown. For his job he tries out the latest techniques and frameworks. He loves to share his experience by speaking at conferences all over the World and writing for the Dutch Java magazine and DZone. He believes that you as the front-end developer are the spider in the web to bring the user, the team and the product together.'
+			employer: 'Buienradar',
+			image: '/speakers/nb.webp',
+			bio: 'Tba'
 		},
 		{
-			name: 'Frederieke Scheper',
+			name: '',
 			letters: 'FS',
-			title: 'Java Architect and CodeSmith',
+			title: 'Lightning talk',
 			employer: 'Sopra Steria',
-			image: '/speakers/fs.webp',
-			bio: 'With more than 20 years of enterprise Java experience, Frederieke has worked with all the usual technologies in the Java ecosystem. Her expertise includes reactive messaging systems, Kafka, JAX-RS, JSON binding, Java persistence, Spring, and various front-end technologies. Since functional languages emerged on the JVM, she began working on big data and fast data technologies using Python, Java, and Scala. Outside work, she is actively contributing to the Java Meetup in Groningen (NL).'
+			image: '/speakers/coming-soon.webp',
+			bio: 'Tba'
 		},
 		{
-			name: 'Roelant Dieben',
-			letters: 'RD',
-			title: 'Cloud & AI architect',
-			employer: 'Sopra Steria',
-			image: '/speakers/rd.webp',
-			bio: 'With over 20 years of experience developing software on the Microsoft stack, Roelant Dieben has a lot to share about stuff that has been obsolete for years. At Sopra Steria he is helping companies with their Azure cloud and AI challenges, he is a Microsoft Azure & AI MVP, and has a passion for machine learning & AI and application lifecycle management.'
+			name: 'Tamas Munkacsi',
+			letters: 'TM',
+			title: 'Engineering Manager',
+			employer: 'Adyen',
+			image: '/speakers/tm.webp',
+			bio: 'Tba'
 		}
 	];
 

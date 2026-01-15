@@ -29,7 +29,7 @@
 		{
 			time: '19:55',
 			title: 'Buien radar',
-			speaker: 'tba'
+			speaker: 'Neel Bhatt'
 		},
 		{
 			time: '20:45',
@@ -43,7 +43,7 @@
 		{
 			time: '21:20',
 			title: 'Closing keynote',
-			speaker: 'Adyen'
+			speaker: 'Tamas Munkacsi'
 		},
 		{
 			time: '22:00',
