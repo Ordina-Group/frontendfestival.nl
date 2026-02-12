@@ -18,15 +18,15 @@
 			title: 'An idea machine',
 			employer: '',
 			image: '/speakers/de.webp',
-			bio: "Davy Engone is the founder of Hackages, a company on a mission to grow the skills of developers in Europe. He's a passionate educator & software engineer with an impressive expertise in JavaScript. He's working with the programming language for over 15 years and has a rich experience on how it is evolving."
+			bio: "Davy is a software engineer who loves types. He's building educational tools for developers. He loves sharing knowledge and learning from everyone. If he's not coding, he's spending time with his 2 boys and fiancee. He's also a long distance runner and a basketball player."
 		},
 		{
 			name: 'Servin Nissen',
 			letters: 'SN',
 			title: 'Founder',
-			employer: 'Merlin',
+			employer: 'Merlin Studio',
 			image: '/speakers/sn.webp',
-			bio: 'Tba'
+			bio: "Servin is a co founder at Merlin Studio, a code boutique based in Amsterdam. He builds high end motion first web experiences where design precision meets technical excellence. His focus sits at the intersection of creative front end development, performance and accessibility. He's known for translating ambitious concepts into polished, production ready experiences, with a sharp eye for detail and a calm, collaborative approach."
 		},
 		{
 			name: 'Neil Bhatt',
@@ -34,7 +34,7 @@
 			title: '',
 			employer: 'Buienradar',
 			image: '/speakers/nb.webp',
-			bio: 'Tba'
+			bio: 'TBA'
 		},
 		{
 			name: '',
@@ -42,7 +42,7 @@
 			title: 'Lightning talk',
 			employer: 'Sopra Steria',
 			image: '/speakers/coming-soon.webp',
-			bio: 'Tba'
+			bio: 'TBA'
 		},
 		{
 			name: 'Tamas Munkacsi',
@@ -50,7 +50,7 @@
 			title: 'Engineering Manager',
 			employer: 'Adyen',
 			image: '/speakers/tm.webp',
-			bio: 'Tba'
+			bio: 'TBA'
 		}
 	];
 

@@ -14,7 +14,7 @@
 		},
 		{
 			time: '18:00',
-			title: 'Keynote',
+			title: 'Save Your Software Engineering Career: Become James Bond',
 			speaker: 'Davy Engone'
 		},
 		{

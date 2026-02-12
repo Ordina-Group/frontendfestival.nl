@@ -39,7 +39,7 @@
 	<a
 		class="mt-5 inline"
 		target="_blank"
-		href="https://www.eventbrite.nl/e/frontend-festival-2025-tickets-1304037353829?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
+		href="https://www.eventbrite.nl/e/frontend-festival-2026-tickets-1982964181246?aff=oddtdtcreator"
 	>
 		<TagBlock class="text-xl">
 			tickets.getYours<span class="font-bold">Now</span>();
