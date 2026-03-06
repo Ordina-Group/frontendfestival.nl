@@ -9,7 +9,7 @@
 	const SPEED = [50, 70];
 
 	export let animated: boolean = false;
-	export let colors: string[] = ['#1A1D1F', '#4C1F82', '#4C1F82', '#E6E2DB', '#CF022B', '#CF022B'];
+	export let colors: string[] = ['#2E3235', '#6B2DB8', '#6B2DB8', '#EDE9E3', '#E8143D', '#E8143D'];
 	let width: number;
 	let height: number;
 	type PosterBallProps = ComponentProps<PosterBall> & { id: number };

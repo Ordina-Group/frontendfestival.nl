@@ -32,7 +32,9 @@
 		<!-- </a> -->
 		<div class="mt-10 inline">
 			<TagBlock class="text-lg" backgroundColor="soprasteria">
-				CFP is <span class="font-bold">closed! Thanks for applying!</span>
+				<a href="https://youtu.be/_8JrwfCcutM?si=vpB_gh42isQtfdGd" target="_blank">
+					View last year's recap!
+				</a>
 			</TagBlock>
 		</div>
 		<div class="flex-center absolute bottom-0 left-0 w-full">
