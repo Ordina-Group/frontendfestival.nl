@@ -34,7 +34,7 @@
 			title: '',
 			employer: 'Buienradar',
 			image: '/speakers/nb.webp',
-			bio: 'TBA'
+			bio: 'Neel is a tech enthusiast, blogger, writer, speaker and solutions architect. He has 10 years of professional experience. Apart from being a developer. he is an award-winning tech blogger. He likes to stay up-to-date with the latest technology stack, and he likes to share his knowledge with the community. He often arranges RTL meetups to share knowledge. He is a DZone MVB and Top 4% overall on the StackOverflow site.'
 		},
 		{
 			name: '',
@@ -45,11 +45,11 @@
 			bio: 'TBA'
 		},
 		{
-			name: 'Tamas Munkacsi',
-			letters: 'TM',
-			title: 'Engineering Manager',
-			employer: 'Adyen',
-			image: '/speakers/tm.webp',
+			name: '',
+			letters: 'FS',
+			title: 'Closing Keynote',
+			employer: '',
+			image: '/speakers/coming-soon.webp',
 			bio: 'TBA'
 		}
 	];
