@@ -34,7 +34,7 @@
 		{
 			time: '20:45',
 			title: 'Lightning talk',
-			speaker: 'tba'
+			speaker: 'TBA'
 		},
 		{
 			time: '21:00',
@@ -43,7 +43,7 @@
 		{
 			time: '21:20',
 			title: 'Closing keynote',
-			speaker: 'Tamas Munkacsi'
+			speaker: 'TBA'
 		},
 		{
 			time: '22:00',
