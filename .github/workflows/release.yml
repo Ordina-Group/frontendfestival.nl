@@ -52,6 +52,7 @@ jobs:
         run: |
           mkdir -p build/2023
           tar -xvf dist.tar.gz --directory build/2023
+
       - name: Download versions from 2024
         uses: robinraju/release-downloader@v1
         with:
@@ -61,6 +62,12 @@ jobs:
         run: |
           mkdir -p build/2024
           tar -xvf dist.tar.gz --directory build/2024
+
+      - name: Download versions from 2025
+        uses: robinraju/release-downloader@v1
+        with:
+          tag: '2025'
+          fileName: 'dist.tar.gz'
       - name: Extract versions from 2025
         run: |
           mkdir -p build/2025
