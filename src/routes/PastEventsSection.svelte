@@ -105,6 +105,9 @@
 >
 	<div class="text-4xl">Past Events</div>
 	<div class="flex m-5 text-xl flex-col md:flex-row gap-4 md:gap-20">
+		<a class="block" target="_blank" href="https://frontendfestival.nl/2025">
+			<TagBlock backgroundColor="shark" small>See the 2025 Edition</TagBlock>
+		</a>
 		<a class="block" target="_blank" href="https://frontendfestival.nl/2024">
 			<TagBlock backgroundColor="shark" small>See the 2024 Edition</TagBlock>
 		</a>
