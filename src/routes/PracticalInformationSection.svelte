@@ -7,15 +7,14 @@
 	id="practical-information"
 >
 	<div class="text-4xl">Practical information</div>
-
 	<TagBlock class="mt-5" direction="right" extend backgroundColor="soprasteria">
 		<div class="flex w-screen max-w-xl gap-5">
 			<div class="pl-5 text-2xl sm:pl-0">When:</div>
-			<div class="grow text-2xl">June 19th 2025, 17:00 - 22:00</div>
+			<div class="grow text-2xl">June 10th 2026, 17:00 - 22:30</div>
 		</div>
 	</TagBlock>
 
-	<TagBlock class="mt-2" direction="left" extend backgroundColor="honey-flower">
+	<TagBlock class="mt-5" direction="left" extend backgroundColor="honey-flower">
 		<div class="flex w-screen max-w-xl items-center gap-5">
 			<div class="pl-5 text-2xl" />
 			<div class="flex flex-col items-center gap-2 md:flex-row">
@@ -40,7 +39,7 @@
 	<a
 		class="mt-5 inline"
 		target="_blank"
-		href="https://www.eventbrite.nl/e/frontend-festival-2025-tickets-1304037353829?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
+		href="https://www.eventbrite.nl/e/frontend-festival-2026-tickets-1982964181246?aff=oddtdtcreator"
 	>
 		<TagBlock class="text-xl">
 			tickets.getYours<span class="font-bold">Now</span>();
