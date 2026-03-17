@@ -19,7 +19,7 @@
 		},
 		{
 			time: '18:50',
-			title: 'Eurovision 2021: Crafting a performant & accessible 3D web experience',
+			title: 'Eurovision 2021: Crafting a Performant & Accessible 3D Web Experience',
 			speaker: 'Servin Nissen'
 		},
 		{
@@ -28,13 +28,13 @@
 		},
 		{
 			time: '19:55',
-			title: 'Buien radar',
+			title: 'Scaling on National Level: Engineering Lessons from Buienradar',
 			speaker: 'Neel Bhatt'
 		},
 		{
 			time: '20:45',
 			title: 'Lightning talk',
-			speaker: 'TBA'
+			speaker: 'Mystery'
 		},
 		{
 			time: '21:00',
@@ -42,8 +42,8 @@
 		},
 		{
 			time: '21:20',
-			title: 'Closing keynote',
-			speaker: 'TBA'
+			title: 'Navigating the HTML and CSS Maze',
+			speaker: 'Rowdy Rabouw'
 		},
 		{
 			time: '22:00',
