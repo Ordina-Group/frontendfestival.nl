@@ -37,20 +37,20 @@
 			bio: 'Neel is a tech enthusiast, blogger, writer, speaker and solutions architect. He has 10 years of professional experience. Apart from being a developer. he is an award-winning tech blogger. He likes to stay up-to-date with the latest technology stack, and he likes to share his knowledge with the community. He often arranges RTL meetups to share knowledge. He is a DZone MVB and Top 4% overall on the StackOverflow site.'
 		},
 		{
-			name: '',
+			name: 'Mystery',
 			letters: 'FS',
 			title: 'Lightning talk',
 			employer: 'Sopra Steria',
 			image: '/speakers/coming-soon.webp',
-			bio: 'TBA'
+			bio: 'Anonymous'
 		},
 		{
-			name: '',
-			letters: 'FS',
-			title: 'Closing Keynote',
+			name: 'Rowdy Rabouw',
+			letters: 'RR',
+			title: 'Navigating the HTML and CSS maze',
 			employer: '',
-			image: '/speakers/coming-soon.webp',
-			bio: 'TBA'
+			image: '/speakers/ror.webp',
+			bio: 'Rowdy Rabouw is a Google Developer Expert in Web Technologies with 30 years of experience in HTML, CSS and JavaScript. Currently, he works as a Front-End-Focussed Senior DevOps Engineer on Vue, Node and NestJS projects, with a focus on usability and accessibility. Rowdy loves his electronic drum kit and dabbles in creating music on his laptop.'
 		}
 	];
 
