@@ -29,7 +29,7 @@
 			bio: "Servin is a co founder at Merlin Studio, a code boutique based in Amsterdam. He builds high end motion first web experiences where design precision meets technical excellence. His focus sits at the intersection of creative front end development, performance and accessibility. He's known for translating ambitious concepts into polished, production ready experiences, with a sharp eye for detail and a calm, collaborative approach."
 		},
 		{
-			name: 'Neil Bhatt',
+			name: 'Neel Bhatt',
 			letters: 'NB',
 			title: '',
 			employer: 'Buienradar',
