@@ -33,20 +33,11 @@
 		},
 		{
 			time: '20:45',
-			title: 'Lightning talk',
-			speaker: 'Mystery'
-		},
-		{
-			time: '21:00',
-			title: 'Break'
-		},
-		{
-			time: '21:20',
 			title: 'Navigating the HTML and CSS Maze',
 			speaker: 'Rowdy Rabouw'
 		},
 		{
-			time: '22:00',
+			time: '21:30',
 			title: 'Wrap-up & Drinks'
 		},
 		{

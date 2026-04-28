@@ -37,14 +37,6 @@
 			bio: 'Neel is a tech enthusiast, blogger, writer, speaker and solutions architect. He has 10 years of professional experience. Apart from being a developer. he is an award-winning tech blogger. He likes to stay up-to-date with the latest technology stack, and he likes to share his knowledge with the community. He often arranges RTL meetups to share knowledge. He is a DZone MVB and Top 4% overall on the StackOverflow site.'
 		},
 		{
-			name: 'Mystery',
-			letters: 'FS',
-			title: 'Lightning talk',
-			employer: 'Sopra Steria',
-			image: '/speakers/coming-soon.webp',
-			bio: 'Anonymous'
-		},
-		{
 			name: 'Rowdy Rabouw',
 			letters: 'RR',
 			title: 'Navigating the HTML and CSS maze',
