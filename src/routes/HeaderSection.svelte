@@ -32,9 +32,7 @@
 		<!-- </a> -->
 		<div class="mt-10 inline">
 			<TagBlock class="text-lg" backgroundColor="soprasteria">
-				<a href="https://youtu.be/_8JrwfCcutM?si=vpB_gh42isQtfdGd" target="_blank">
-					View last year's recap!
-				</a>
+				<a href="https://www.linkedin.com/posts/soprasteria_frontendfestival-frontenddevelopment-webdevelopment-activity-7473631866940538881-4w15?utm_source=share&utm_medium=member_ios&rcm=ACoAAACxa0gBQYs3C2U01fwNdt0EojV8e8sYQ9Y" target="_blank"> View the recap! </a>
 			</TagBlock>
 		</div>
 		<div class="flex-center absolute bottom-0 left-0 w-full">
